@@ -1,4 +1,4 @@
-vocabulary <http://example.com/project/description/test2#> as test2 {
+vocabulary <http://example.com/project/description/structure#> as test2 {
 	
 	extends <http://www.w3.org/2001/XMLSchema#> as xsd
 
