@@ -6,17 +6,48 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
 
     extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 	
-	// Top Level
+	// Aspect
     
     @rdfs:comment "The class of things that are uniquely identified by id"
     aspect IdentifiedThing [
         key hasId
     ]
     
-    @rdfs:comment "The class of datasheet"
-    aspect DataSheet [
-    	key hasId
+    aspect NamedEntityType [
+    	key name
+    	key shortDescription
+    	key longDescription
     ]
+    
+	
+	// Scalar property
+	
+    scalar Tension [
+    	oneOf "0V", "5V", "10V"
+    ]
+    
+    scalar State [
+    	oneOf "EntryState", "ExitState", "State", "Transition"
+    ]
+    
+    scalar property hasTension[
+    	domain Device
+    	range Tension
+    	functional
+    ]
+    
+    scalar property defaultEntryState[
+    	domain StateMachine
+    	range State
+    	functional
+    ]
+    
+    scalar property level [
+    	domain Interface
+    	range xsd:float
+    	functional
+    ]
+    
     
     @rdfs:comment "The id property of an identified thing"
     scalar property hasId [
@@ -25,35 +56,75 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
         functional
     ]
     
-    // DataSheet
+    @rdfs:comment "The name of a namedEntitype"
+    scalar property name [
+        domain NamedEntityType
+        range xsd:string
+        functional
+    ]
+    
+    @rdfs:comment "The short description of a namedEntitype"
+    scalar property shortDescription [
+        domain NamedEntityType
+        range xsd:string
+        functional
+    ]
+    
+    @rdfs:comment "The long description of a namedEntitype"
+    scalar property longDescription [
+        domain NamedEntityType
+        range xsd:string
+        functional
+    ]
+    
+    @rdfs:comment "The abstract of a interface"
+    scalar property abstract [
+    	domain Interface
+    	range xsd:boolean
+    	functional
+    ]
+    
+    // Concept
 
+    concept Metadata < IdentifiedThing[
+    	restricts some fromDevice to Device
+    ]
+    
+
+    @rdfs:comment "The class of datasheet"
+    concept DataSheet < IdentifiedThing 
+    
     @rdfs:comment "The class of device items"
-    concept Device < DataSheet[
+    concept Device < NamedEntityType[
     	restricts hasTension to "5V"
     	restricts some hasData to Metadata
 
     	]
-    
+
     
     @rdfs:comment "The class of package items"
-    concept Package < IdentifiedThing
+    concept Package < NamedEntityType
     
     // Package
     @rdfs:comment "The class of component items"
-    concept Component < IdentifiedThing
+    concept Component < NamedEntityType
     
     @rdfs:comment "The class of interface items"
-    concept Interface < IdentifiedThing
+    concept Interface < IdentifiedThing[
+    	restricts abstract to true
+    	restricts level to max 4
+    	restricts level to min 3
+    ]
     
     @rdfs:comment "The class of component datatype"
-    concept DataType < IdentifiedThing
+    concept DataType < NamedEntityType
     
     // Component
     @rdfs:comment "The class of state machine items"
     concept StateMachine < IdentifiedThing
     
     @rdfs:comment "The class of activity items"
-    concept Activity < IdentifiedThing
+    concept Activity < NamedEntityType
     
     // DataType
     @rdfs:comment "The class of array items"
@@ -67,6 +138,9 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
     
     @rdfs:comment "The class of range items"
     concept Range < IdentifiedThing
+    
+    
+    // RELATIONS BETWEEN ELEMENTS
     
     @rdfs:comment "Relation between metadata and device"
     relation entity ContainsDevice [
@@ -188,75 +262,7 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
     	functional
     	inverse functional	
     ]
+   
     
-    // 
-    scalar Tension [
-    	oneOf "0V", "5V", "10V"
-    ]
-    
-    scalar property hasTension[
-    	domain Device
-    	range Tension
-    	functional
-    ]
-    
-    concept Metadata < IdentifiedThing[
-    	restricts some fromDevice to Device
-    ]
-    
-    
-
-//    @rdfs:comment "A relation from a food to another used as an ingredient"
-//    relation entity HasIngredient [
-//        from Device
-//        to Device
-//        forward hasIngredient
-//        reverse isIngredientOf
-//        transitive
-//    ]
-//
-//    @rdfs:comment "An enumeration of spiciness levels"
-//    scalar Spiciness [
-//        oneOf "Hot", "Medium", "Mild"
-//    ]
-//
-//    @rdfs:comment "The spiciness property of a food item"
-//    scalar property hasSpiceness [
-//        domain Food
-//        range Spiciness
-//        functional
-//    ]
-//    
-//    // Foods
-//    
-//    @rdfs:comment "The class of pizzas"
-//    concept Pizza < Device [
-//        restricts some hasBase to PizzaBase
-//    ]
-//
-//    @rdfs:comment "The class of pizza bases"
-//    concept PizzaBase < Device
-//
-//    @rdfs:comment "The class of pizza toppings"
-//    concept PizzaTopping < Device
-//
-//    @rdfs:comment "A relation from a pizza to a base"
-//    relation entity HasBase [
-//        from Pizza
-//        to PizzaBase
-//        forward hasBase
-//        reverse isBaseOf
-//        functional
-//        inverse functional
-//    ] < HasIngredient 
-//
-//    @rdfs:comment "A relation from a pizza to a topping"
-//    relation entity HasTopping [
-//        from Pizza
-//        to PizzaTopping
-//        forward hasTopping
-//        reverse isToppingOf
-//        inverse functional
-//    ] < HasIngredient
     
 }
