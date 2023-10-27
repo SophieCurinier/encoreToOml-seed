@@ -46,6 +46,16 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
     @rdfs:comment "The class of activity items"
     concept Activity < Component
     
+    // DataType
+    @rdfs:comment "The class of array items"
+    concept Array < DataType
+    
+    @rdfs:comment "The class of container items"
+    concept Container < DataType
+    
+    @rdfs:comment "The class of scalar items"
+    concept Scalar < DataType
+    
     // 
     scalar Tension [
     	oneOf "0V", "5V", "10V"
