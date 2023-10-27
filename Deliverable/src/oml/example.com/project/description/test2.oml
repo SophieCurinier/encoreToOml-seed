@@ -1,2 +1,101 @@
 vocabulary <http://example.com/project/description/test2#> as test2 {
+	
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+    extends <http://purl.org/dc/elements/1.1/> as dc
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+	
+	// Top Level
+    
+    @rdfs:comment "The class of datasheet"
+    aspect DataSheet [
+    	key hasId
+    ]
+    
+    @rdfs:comment "The id property of an identified thing"
+    scalar property hasId [
+        domain DataSheet
+        range xsd:string
+        functional
+    ]
+    
+    // DataSheet
+
+    @rdfs:comment "The class of device items"
+    concept Device < DataSheet
+    
+    @rdfs:comment "The class of package items"
+    concept Package < DataSheet
+    
+    // 
+    scalar Tension [
+    	oneOf "0V", "5V", "10V"
+    ]
+    
+    scalar property hasTension[
+    	domain Device
+    	range Tension
+    	functional
+    ]
+    
+    concept Metadata < Device[
+    	restricts hasTension to "5V"
+    ]
+    
+    
+
+//    @rdfs:comment "A relation from a food to another used as an ingredient"
+//    relation entity HasIngredient [
+//        from Device
+//        to Device
+//        forward hasIngredient
+//        reverse isIngredientOf
+//        transitive
+//    ]
+//
+//    @rdfs:comment "An enumeration of spiciness levels"
+//    scalar Spiciness [
+//        oneOf "Hot", "Medium", "Mild"
+//    ]
+//
+//    @rdfs:comment "The spiciness property of a food item"
+//    scalar property hasSpiceness [
+//        domain Food
+//        range Spiciness
+//        functional
+//    ]
+//    
+//    // Foods
+//    
+//    @rdfs:comment "The class of pizzas"
+//    concept Pizza < Device [
+//        restricts some hasBase to PizzaBase
+//    ]
+//
+//    @rdfs:comment "The class of pizza bases"
+//    concept PizzaBase < Device
+//
+//    @rdfs:comment "The class of pizza toppings"
+//    concept PizzaTopping < Device
+//
+//    @rdfs:comment "A relation from a pizza to a base"
+//    relation entity HasBase [
+//        from Pizza
+//        to PizzaBase
+//        forward hasBase
+//        reverse isBaseOf
+//        functional
+//        inverse functional
+//    ] < HasIngredient 
+//
+//    @rdfs:comment "A relation from a pizza to a topping"
+//    relation entity HasTopping [
+//        from Pizza
+//        to PizzaTopping
+//        forward hasTopping
+//        reverse isToppingOf
+//        inverse functional
+//    ] < HasIngredient
+    
 }
