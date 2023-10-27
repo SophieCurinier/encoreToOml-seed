@@ -25,8 +25,26 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
     @rdfs:comment "The class of device items"
     concept Device < DataSheet
     
+    
     @rdfs:comment "The class of package items"
     concept Package < DataSheet
+    
+    // Package
+    @rdfs:comment "The class of component items"
+    concept Component < Package
+    
+    @rdfs:comment "The class of interface items"
+    concept Interface < Package
+    
+    @rdfs:comment "The class of component datatype"
+    concept DataType < Package
+    
+    // Component
+    @rdfs:comment "The class of state machine items"
+    concept StateMachine < Component
+    
+    @rdfs:comment "The class of activity items"
+    concept Activity < Component
     
     // 
     scalar Tension [

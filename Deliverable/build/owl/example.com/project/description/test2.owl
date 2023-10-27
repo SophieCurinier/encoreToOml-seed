@@ -107,6 +107,28 @@
     
 
 
+    <!-- http://example.com/project/description/test2#Activity -->
+
+
+    <owl:Class rdf:about="http://example.com/project/description/test2#Activity">
+        <rdfs:subClassOf rdf:resource="http://example.com/project/description/test2#Component"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of activity items</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/project/description/test2#Component -->
+
+
+    <owl:Class rdf:about="http://example.com/project/description/test2#Component">
+        <rdfs:subClassOf rdf:resource="http://example.com/project/description/test2#Package"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of component items</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/project/description/test2#DataSheet -->
 
 
@@ -120,6 +142,17 @@
     
 
 
+    <!-- http://example.com/project/description/test2#DataType -->
+
+
+    <owl:Class rdf:about="http://example.com/project/description/test2#DataType">
+        <rdfs:subClassOf rdf:resource="http://example.com/project/description/test2#Package"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of component datatype</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/project/description/test2#Device -->
 
 
@@ -127,6 +160,17 @@
         <rdfs:subClassOf rdf:resource="http://example.com/project/description/test2#DataSheet"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>The class of device items</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/project/description/test2#Interface -->
+
+
+    <owl:Class rdf:about="http://example.com/project/description/test2#Interface">
+        <rdfs:subClassOf rdf:resource="http://example.com/project/description/test2#Package"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of interface items</rdfs:comment>
     </owl:Class>
     
 
@@ -154,6 +198,17 @@
         <rdfs:subClassOf rdf:resource="http://example.com/project/description/test2#DataSheet"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>The class of package items</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/project/description/test2#StateMachine -->
+
+
+    <owl:Class rdf:about="http://example.com/project/description/test2#StateMachine">
+        <rdfs:subClassOf rdf:resource="http://example.com/project/description/test2#Component"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>The class of state machine items</rdfs:comment>
     </owl:Class>
 </rdf:RDF>
 
