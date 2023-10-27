@@ -8,6 +8,11 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
 	
 	// Top Level
     
+    @rdfs:comment "The class of things that are uniquely identified by id"
+    aspect IdentifiedThing [
+        key hasId
+    ]
+    
     @rdfs:comment "The class of datasheet"
     aspect DataSheet [
     	key hasId
@@ -23,28 +28,32 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
     // DataSheet
 
     @rdfs:comment "The class of device items"
-    concept Device < DataSheet
+    concept Device < DataSheet[
+    	restricts hasTension to "5V"
+    	restricts some hasData to Metadata
+
+    	]
     
     
     @rdfs:comment "The class of package items"
-    concept Package < DataSheet
+    concept Package < IdentifiedThing
     
     // Package
     @rdfs:comment "The class of component items"
-    concept Component < Package
+    concept Component < IdentifiedThing
     
     @rdfs:comment "The class of interface items"
-    concept Interface < Package
+    concept Interface < IdentifiedThing
     
     @rdfs:comment "The class of component datatype"
-    concept DataType < Package
+    concept DataType < IdentifiedThing
     
     // Component
     @rdfs:comment "The class of state machine items"
-    concept StateMachine < Component
+    concept StateMachine < IdentifiedThing
     
     @rdfs:comment "The class of activity items"
-    concept Activity < Component
+    concept Activity < IdentifiedThing
     
     // DataType
     @rdfs:comment "The class of array items"
@@ -55,6 +64,130 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
     
     @rdfs:comment "The class of scalar items"
     concept Scalar < DataType
+    
+    @rdfs:comment "The class of range items"
+    concept Range < IdentifiedThing
+    
+    @rdfs:comment "Relation between metadata and device"
+    relation entity ContainsDevice [
+    	from Metadata
+    	to Device
+    	forward fromDevice
+    	reverse hasData
+    	functional
+    	inverse functional	
+    ]
+    
+    
+    @rdfs:comment "Relation between datasheet and device"
+    relation entity DeviceContainsDatasheet [
+    	from Device
+    	to DataSheet
+    	forward deviceContainsDatasheet
+    	reverse isDatasheetOfDevice
+    	functional
+    	inverse functional	
+    ]
+    
+    @rdfs:comment "Relation between datasheet and package"
+    relation entity PackageContainsDatasheet [
+    	from Package
+    	to DataSheet
+    	forward packageContainsDatasheet
+    	reverse isDatasheetOfPackage
+    	functional
+    	inverse functional	
+    ]
+    
+    @rdfs:comment "Relation between package and component"
+    relation entity ContainsPackage [
+    	from Component
+    	to Package
+    	forward containsPackage
+    	reverse isPackageContainedBy
+    	functional
+    	inverse functional	
+    ]
+    
+    @rdfs:comment "Relation between package and interface"
+    relation entity DeclaresPackage [
+    	from Interface
+    	to Package
+    	forward declaresPackage
+    	reverse isPackageDeclaredBy
+    	functional
+    	inverse functional	
+    ]   
+
+    @rdfs:comment "Relation between package and datatype"
+    relation entity DefinesPackage [
+    	from DataType
+    	to Package
+    	forward definesPackage
+    	reverse isPackageDefinedBy
+    	functional
+    	inverse functional	
+    ]    
+
+    @rdfs:comment "Relation between interface and component"
+    relation entity ReferencesInterface [
+    	from Component
+    	to Interface
+    	forward referencesInterface
+    	reverse isInterfaceReferencedBy
+    	functional
+    	inverse functional	
+    ]
+ 
+    @rdfs:comment "Relation between interface and datatype"
+    relation entity ReferencesDataType [
+    	from Interface
+    	to DataType
+    	forward referencesDataType
+    	reverse isDataTypeReferencedBy
+    	functional
+    	inverse functional	
+    ]
+
+    @rdfs:comment "Relation between state machine and component"
+    relation entity DefinedByComponent [
+    	from StateMachine
+    	to Component
+    	forward definedByComponent
+    	reverse definesStateMachine
+    	functional
+    	inverse functional	
+    ]
+    
+    @rdfs:comment "Relation between activity and component"
+    relation entity ContainsComponent [
+    	from Activity
+    	to Component
+    	forward containsComponent
+    	reverse isComponentContainedBy
+    	functional
+    	inverse functional	
+    ]
+
+    @rdfs:comment "Relation between activity and state machine"
+    relation entity ControlsActivity [
+    	from StateMachine
+    	to Activity
+    	forward controlsActivity
+    	reverse isControledBy
+    	functional
+    	inverse functional	
+    ]
+    
+    @rdfs:comment "Relation between scalar and range"
+    relation entity LimitsScalar [
+    	from Range
+    	to Scalar
+    	forward limitsScalar
+    	reverse isLimitedBy
+    	functional
+    	inverse functional	
+    ]
     
     // 
     scalar Tension [
@@ -67,8 +200,8 @@ vocabulary <http://example.com/project/description/test2#> as test2 {
     	functional
     ]
     
-    concept Metadata < Device[
-    	restricts hasTension to "5V"
+    concept Metadata < IdentifiedThing[
+    	restricts some fromDevice to Device
     ]
     
     
