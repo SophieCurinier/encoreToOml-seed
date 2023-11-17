@@ -1,5 +1,4 @@
 vocabulary <http://example.com/project/vocabulary/Metadata#> as Metadata {
-	extends <http://www.w3.org/2001/XMLSchema#> as xsd
 
     extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
     
