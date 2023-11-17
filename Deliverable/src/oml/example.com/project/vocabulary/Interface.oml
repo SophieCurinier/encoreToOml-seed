@@ -1,4 +1,5 @@
 vocabulary <http://example.com/project/vocabulary/Interface#> as Interface {
+	
 	extends <http://www.w3.org/2001/XMLSchema#> as xsd
 
     extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
@@ -8,8 +9,9 @@ vocabulary <http://example.com/project/vocabulary/Interface#> as Interface {
     @rdfs:comment "Defines connections and subnetwork interfaces"
     concept Interface < concepts:NamedEntityType[
     	restricts abstract to true
+    	// restricts level to min 3
     	restricts level to max 4
-    	restricts level to min 3
+    	
     ]
     
     @rdfs:comment "If true, indicates the interface may not be used directly by a component"
@@ -23,7 +25,6 @@ vocabulary <http://example.com/project/vocabulary/Interface#> as Interface {
     scalar property level [
     	domain Interface
     	range xsd:float
-    	functional
     ]
     
     concept Command < concepts:NamedEntityType
