@@ -1,0 +1,30 @@
+vocabulary <http://example.com/project/vocabulary/StateMachine#> as StateMachine {
+	
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    
+    extends <http://example.com/project/vocabulary/Concept#> as concepts
+    
+    @rdfs:comment "Responds to event and schedules the execution of activities"
+    concept StateMachine < concepts:NamedEntityType
+    
+    scalar property defaultEntryState[
+    	domain StateMachine
+    	range State
+    	functional
+    ]
+    
+    concept Variable < concepts:Field
+    
+    scalar State [
+    	oneOf "EntryState", "ExitState", "State", "Transition"
+    ]
+    
+    relation VariableOnStateMachine[
+    	from Variable
+    	to StateMachine
+    ]
+    
+    
+}

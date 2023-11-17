@@ -1,0 +1,30 @@
+vocabulary <http://example.com/project/vocabulary/Metadata#> as Metadata {
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    
+    extends <http://example.com/project/vocabulary/Concept#> as concepts
+    
+    
+    // Metadata Element
+    
+    @rdfs:comment "Used for configuration management information"
+    concept Metadata < concepts:IdentifiedThing
+    
+    @rdfs:comment"Specify a categorization or grouping of metadata"
+    concept Category < concepts:NamedEntityType
+    
+    scalar MetadataValue [
+    	oneOf "FloatValue", "DataValue", "IntegerValue", "StringValue" 
+    ]
+    
+    scalar property MetadataValueSet [
+    	domain Metadata
+    	range MetadataValue
+    ]
+    
+    relation CategoryOfMetadata[
+    	from Category
+    	to Metadata
+    ]
+}
