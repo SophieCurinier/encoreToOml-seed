@@ -27,6 +27,7 @@ buildscript {
         classpath 'io.opencaesar.owl:owl-reason-gradle:+'
         classpath 'io.opencaesar.oml:oml-merge-gradle:+'
         classpath 'io.opencaesar.adapters:oml2owl-gradle:+'
+        classpath 'io.opencaesar.owl:owl-doc-gradle:2.+'
 	}
 }
 
@@ -95,6 +96,25 @@ task owlReason(type:io.opencaesar.owl.reason.OwlReasonTask, group:"oml", depends
 }
 
 /*
+ * A task to generate documentation for the OWL catalog
+ * @seeAlso https://github.com/opencaesar/owl-tools/blob/master/owl-doc/README.md
+ */
+task generateDocs(type: io.opencaesar.owl.doc.OwlDocTask, dependsOn: owlReason) {
+    // OWL catalog
+    inputCatalogPath = file('build/owl/catalog.xml')
+    // OWL catalog title
+    inputCatalogTitle = 'Kepler16b'
+    // OWL catalog version
+    inputCatalogVersion = project.version
+    // OWL Ontology Iris
+    inputOntologyIris = [ "$rootIri/classes", "$rootIri/properties",  "$rootIri/individuals" ]
+    // Output folder
+    outputFolderPath = file('build/web/doc')
+    // Output case sensitivie path
+    outputCaseSensitive = org.gradle.internal.os.OperatingSystem.current().isLinux()
+}
+
+/*
  * Start the headless Fuseki server
  * @seeAlso https://github.com/opencaesar/owl-tools/blob/master/owl-doc/README.md
  */
@@ -135,7 +155,7 @@ task owlLoad(type:io.opencaesar.owl.load.OwlLoadTask, group:"oml", dependsOn: ow
 task owlQuery(type:io.opencaesar.owl.query.OwlQueryTask, group:"oml", dependsOn: owlLoad) {
     inputs.files(owlLoad.inputs.files) // rerun when the dataset changes
     endpointURL = "http://localhost:3030/$dataset".toString()
-    queryPath = file('src/sparql')
+    queryPath = file('src/oml/example.com/project/sparql')
     resultPath = file('build/results')
     format = 'json'
 }
