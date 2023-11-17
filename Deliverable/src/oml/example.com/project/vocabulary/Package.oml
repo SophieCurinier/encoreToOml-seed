@@ -1,0 +1,14 @@
+vocabulary <http://example.com/project/vocabulary/Package#> as Package {
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    
+    extends <http://example.com/project/vocabulary/Concept#> as concepts
+    
+    // Package Element
+
+	@rdfs:comment "Packages describe a related set of components, data types, and interfaces"
+    concept Package < concepts:NamedEntityType
+    
+    // TO DO
+}
