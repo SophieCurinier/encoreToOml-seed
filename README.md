@@ -1,4 +1,4 @@
-# encoreToOml-seed
+# OML-EDS
 
 ## Description
 Welcome to our solution designed to streamline and standardize the use of Electronic Data Sheets (EDS) in the space industry. Our project focuses on enhancing the efficiency and accuracy of spacecraft design and integration by leveraging the power of EDS.
