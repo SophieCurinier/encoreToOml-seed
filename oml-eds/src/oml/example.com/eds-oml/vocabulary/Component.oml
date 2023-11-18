@@ -1,0 +1,13 @@
+vocabulary <http://example.com/eds-oml/vocabulary/Component#> as Component {
+	
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    
+    extends <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+	
+	
+	@rdfs:comment "The class of component items"
+    concept Component < concepts:NamedEntityType
+    
+    // TO DO
+}

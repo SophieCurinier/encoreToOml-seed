@@ -1,0 +1,37 @@
+@dc:description "A description of the elements of a specific datasheet"
+description <http://example.com/eds-oml/description/datasheet#> as datasheet {
+	
+	uses <http://purl.org/dc/elements/1.1/> as dc
+	
+	uses <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+	
+	uses <http://example.com/eds-oml/vocabulary/Component#> as component
+    
+    uses <http://example.com/eds-oml/vocabulary/Package#> as package
+    
+    uses <http://example.com/eds-oml/vocabulary/Metadata#> as metadata
+    
+    uses <http://example.com/eds-oml/vocabulary/Interface#> as interface
+    
+    uses <http://example.com/eds-oml/vocabulary/Activity#> as activity
+    
+    uses <http://example.com/eds-oml/vocabulary/StateMachine#> as stateMachine
+    
+    uses <http://example.com/eds-oml/vocabulary/DataType#> as dataType
+    
+    
+	instance datasheet : concepts:DataSheet
+	instance device : concepts:Device
+	instance package : package:Package
+	instance metadata : metadata:Metadata
+	instance component : component:Component
+	instance dataType : dataType:DataType
+	instance interface : interface:Interface
+	instance activity : activity:Activity
+	instance stateMachine : stateMachine:StateMachine
+	
+	
+	
+	
+	
+}

@@ -1,7 +1,0 @@
-@dc:description "A vocabulary bundle for closed-world reasoning about electronic datasheet"
-vocabulary bundle <http://example.com/project/vocabulary/datasheet-bundle#> as datasheet-bundle {
-	
-	includes <http://purl.org/dc/elements/1.1/> as dc
-	
-	includes <http://example.com/project/vocabulary/Concept#>
-}
