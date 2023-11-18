@@ -1,0 +1,13 @@
+vocabulary <http://example.com/eds-oml/vocabulary/Package#> as Package {
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    
+    extends <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+    
+    // Package Element
+
+	@rdfs:comment "Packages describe a related set of components, data types, and interfaces"
+    concept Package < concepts:NamedEntityType
+    
+    // TO DO
+}

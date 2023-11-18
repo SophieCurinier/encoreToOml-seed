@@ -1,0 +1,28 @@
+vocabulary <http://example.com/eds-oml/vocabulary/DataType#> as DataType {
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    
+    extends <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+    
+        // Datatype Element
+    
+    @rdfs:comment "Describes the syntax and semantics of units of data that flow through interfaces"
+    concept DataType < concepts:NamedEntityType
+    
+    scalar DataTypeValue [
+    	oneOf "Array", "Binary", "Boolean", "Container", "Enumerated", "Float", "Integer", "String", "SubRange"
+    ]
+    
+    scalar property DataTypeSetType[
+    	domain DataType
+    	range DataTypeValue
+    ]
+    
+    concept Array < DataType
+    
+    concept Container < DataType
+    
+    concept Scalar < DataType
+    
+    concept Range < concepts:IdentifiedThing
+}
