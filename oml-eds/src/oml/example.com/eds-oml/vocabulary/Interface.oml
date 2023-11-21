@@ -4,10 +4,14 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 
     extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
     
-    extends <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+
+    extends <http://example.com/eds-oml/vocabulary/DataType#> as dataType
+
+    extends <http://example.com/eds-oml/vocabulary/Field#> as field
     
     @rdfs:comment "Defines connections and subnetwork interfaces"
-    concept Interface < concepts:NamedEntityType[
+    concept Interface < aspects:NamedEntityType[
     	restricts abstract to true
     	// restricts level to min 3
     	restricts level to max 4
@@ -27,9 +31,9 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
     	range xsd:float
     ]
     
-    concept Command < concepts:NamedEntityType
+    concept Command < aspects:NamedEntityType
     
-    concept Argument < concepts:ExternalField
+    concept Argument < field:ExternalField
     
     relation ArgumentOnCommand[
     	from Argument
@@ -37,9 +41,9 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
     ]
     
     @rdfs:comment "Specifies a generic type to be used by the interface"
-    concept GenericType < concepts:NamedEntityType
+    concept GenericType < aspects:NamedEntityType
     
-    concept Mapping < concepts:Field
+    concept Mapping < field:Field
     
     relation MappingOnGenericType[
     	from Mapping
@@ -47,9 +51,9 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
     ]
     
     @rdfs:comment "Identifies one existing interface definition"
-    concept BaseInterface < concepts:NamedEntityType
+    concept BaseInterface < aspects:NamedEntityType
     
-    concept Parameter < concepts:ExternalField
+    concept Parameter < field:ExternalField
     
     relation ParameterOnInterface[
     	from Parameter
@@ -59,5 +63,15 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
     relation CommandOnInterface[
     	from Command
     	to Interface
+    ]
+
+    @rdfs:comment "Interfaces reference datatypes"
+    relation entity InterfaceReferencesDataType [
+    	from Interface
+    	to dataType:DataType
+    	forward referencesDataType
+    	reverse isDataTypeReferencedBy
+    	functional
+    	inverse functional	
     ]
 }

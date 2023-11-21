@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/eds-oml/vocabulary/Aspects#"
+     xml:base="http://example.com/eds-oml/vocabulary/Aspects"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Aspects="http://example.com/eds-oml/vocabulary/Aspects#">
+    <owl:Ontology rdf:about="http://example.com/eds-oml/vocabulary/Aspects">
+        <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
+        <dc:description>A vocabulary about the aspects of the model</dc:description>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Aspects#hasId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Aspects#hasId">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#IdentifiedThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The id property of an identified thing</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Aspects#longDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Aspects#longDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The long description of a namedEntitype</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Aspects#name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Aspects#name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The name of a namedEntitype</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Aspects#shortDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Aspects#shortDescription">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>The short description of a namedEntitype</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Aspects#IdentifiedThing -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Aspects#IdentifiedThing">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Aspects#hasId"/>
+        </owl:hasKey>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+        <rdfs:comment>The class of things that are uniquely identified by id</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType">
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Aspects#longDescription"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Aspects#name"/>
+        </owl:hasKey>
+        <owl:hasKey rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Aspects#shortDescription"/>
+        </owl:hasKey>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Aspect"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+

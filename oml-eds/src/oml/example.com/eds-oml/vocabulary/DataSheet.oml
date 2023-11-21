@@ -1,0 +1,33 @@
+vocabulary <http://example.com/eds-oml/vocabulary/DataSheet#> as DataSheet {
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    
+    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+
+    extends <http://example.com/eds-oml/vocabulary/Device#> as device
+
+    extends <http://example.com/eds-oml/vocabulary/Package#> as package
+
+    @rdfs:comment "Contains all known information about a particular device or package"
+    concept DataSheet < aspects:IdentifiedThing 
+
+    @rdfs:comment "A DeviceDatasheet contains all known information about a particular device or class of devices"
+    relation entity DatasheetContainsDevice [
+    	from DataSheet
+    	to device:Device
+    	forward datasheetContainsDevice
+    	reverse isDeviceOfDatasheet
+    	functional
+    	inverse functional	
+    ]
+
+    @rdfs:comment "DataSheet may reference one or more Package Files that capture an independently managed subset of that data"
+    relation entity DatasheetContainsPackage [
+    	from DataSheet
+    	to package:Package
+    	forward datasheetContainsPackage
+    	reverse isPackageOfDatasheet
+    	functional
+    	inverse functional	
+    ]
+}

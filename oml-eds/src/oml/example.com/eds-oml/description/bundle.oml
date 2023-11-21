@@ -7,5 +7,5 @@ description bundle <http://example.com/eds-oml/description/bundle#> as ^bundle {
     uses <http://example.com/eds-oml/vocabulary/datasheet-bundle#>
 
     // The description bundle "includes" the restaurant description 
-    includes <http://example.com/eds-oml/description/datasheet#>
+    includes <http://example.com/eds-oml/description/main#>
 }

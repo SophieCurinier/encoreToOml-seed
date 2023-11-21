@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/eds-oml/vocabulary/Interface#"
+     xml:base="http://example.com/eds-oml/vocabulary/Interface"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:Interface="http://example.com/eds-oml/vocabulary/Interface#">
+    <owl:Ontology rdf:about="http://example.com/eds-oml/vocabulary/Interface">
+        <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/Aspects"/>
+        <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/DataType"/>
+        <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/Field"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#ArgumentOnCommand -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#ArgumentOnCommand">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Argument"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Command"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#CommandOnInterface -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#CommandOnInterface">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Command"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#MappingOnGenericType -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#MappingOnGenericType">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Mapping"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#GenericType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Parameter"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#isDataTypeReferencedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#isDataTypeReferencedBy">
+        <owl:inverseOf rdf:resource="http://example.com/eds-oml/vocabulary/Interface#referencesDataType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/DataType#DataType"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#referencesDataType -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#referencesDataType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/DataType#DataType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#abstract -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#abstract">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>If true, indicates the interface may not be used directly by a component</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#level -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#level">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+        <rdfs:comment>Indicates the system level at which it operates</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#Argument -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#Argument">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Field#ExternalField"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#BaseInterface -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#BaseInterface">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>Identifies one existing interface definition</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#Command -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#Command">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#GenericType -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#GenericType">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>Specifies a generic type to be used by the interface</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#Interface -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#Interface">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/eds-oml/vocabulary/Interface#abstract"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/eds-oml/vocabulary/Interface#level"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+        <rdfs:comment>Defines connections and subnetwork interfaces</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#InterfaceReferencesDataType -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#InterfaceReferencesDataType">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+        <rdfs:comment>Interfaces reference datatypes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#Mapping -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#Mapping">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Field#Field"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#Parameter -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#Parameter">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Field#ExternalField"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>referencesDataType derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#InterfaceReferencesDataType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#referencesDataType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.17.2020-11-07T15:03:35Z) https://github.com/owlcs/owlapi/ -->
+
+
