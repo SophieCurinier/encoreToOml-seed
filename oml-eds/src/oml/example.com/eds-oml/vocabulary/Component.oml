@@ -3,11 +3,47 @@ vocabulary <http://example.com/eds-oml/vocabulary/Component#> as Component {
 
     extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
     
-    extends <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+
+    extends <http://example.com/eds-oml/vocabulary/Activity#> as activity
+    
+    extends <http://example.com/eds-oml/vocabulary/StateMachine#> as stateMachine
+
+    extends <http://example.com/eds-oml/vocabulary/Interface#> as interface
 	
 	
 	@rdfs:comment "The class of component items"
-    concept Component < concepts:NamedEntityType
+    concept Component < aspects:NamedEntityType
+
+    @rdfs:comment "Components are defined by a set of State Machines"
+    relation entity ComponentDefinedByStateMachine [
+    	from Component
+    	to stateMachine:StateMachine
+    	forward definedByStateMachine
+    	reverse definesComponent
+    	functional
+    	inverse functional	
+    ]
+    
+    @rdfs:comment "Components contain of a set of Activities"
+    relation entity ComponentContainsActivity [
+    	from Component
+    	to activity:Activity
+    	forward containsActivity
+    	reverse isContainedByComponent
+    	functional
+    	inverse functional	
+    ]
+
+    @rdfs:comment "Components specify a behavioural mapping between the interfaces"
+    relation entity ComponentReferencesInterface [
+    	from Component
+    	to interface:Interface
+    	forward referencesInterface
+    	reverse isInterfaceReferencedBy
+    	functional
+    	inverse functional	
+    ]
     
     // TO DO
 }

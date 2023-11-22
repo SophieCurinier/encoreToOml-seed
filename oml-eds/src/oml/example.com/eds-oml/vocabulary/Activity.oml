@@ -3,18 +3,20 @@ vocabulary <http://example.com/eds-oml/vocabulary/Activity#> as Activity {
 
     extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
     
-    extends <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+
+    extends <http://example.com/eds-oml/vocabulary/Field#> as field
     
     
 	// Activity Element
     
-    concept Activity < concepts:NamedEntityType
+    concept Activity < aspects:NamedEntityType
     
     @rdfs:comment "Provide data values to be used by the activity"
-    concept Argument < concepts:Field
+    concept Argument < field:Field
     
      @rdfs:comment"The body of the activity contains statements that refer the arguments above"
-    concept Body < concepts:IdentifiedThing
+    concept Body < aspects:IdentifiedThing
     
     scalar BodyElements[
     	oneOf "SendParameterPrimitive", "SendCommandPrimitive", "Calibration",

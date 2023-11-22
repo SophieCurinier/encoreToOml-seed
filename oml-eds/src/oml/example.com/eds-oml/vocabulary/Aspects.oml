@@ -1,0 +1,53 @@
+@dc:description "A vocabulary about the aspects of the model"
+vocabulary <http://example.com/eds-oml/vocabulary/Aspects#> as Aspects {
+	
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+    
+    extends <http://purl.org/dc/elements/1.1/> as dc
+
+    
+    @rdfs:comment "The class of things that are uniquely identified by id"
+    aspect IdentifiedThing [
+        key hasId
+    ]
+    
+    aspect NamedEntityType [
+    	key name
+    	key shortDescription
+    	key longDescription
+    ]
+
+    
+    @rdfs:comment "The name of a namedEntitype"
+    scalar property name [
+        domain NamedEntityType
+        range xsd:string
+        functional
+    ]
+    
+
+    @rdfs:comment "The short description of a namedEntitype"
+    scalar property shortDescription [
+        domain NamedEntityType
+        range xsd:string
+        functional
+    ]
+    
+    @rdfs:comment "The long description of a namedEntitype"
+    scalar property longDescription [
+        domain NamedEntityType
+        range xsd:string
+        functional
+    ]  
+
+
+    @rdfs:comment "The id property of an identified thing"
+    scalar property hasId [
+        domain IdentifiedThing
+        range xsd:string
+        functional
+    ]
+    
+}

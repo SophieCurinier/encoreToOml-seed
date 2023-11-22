@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuites name="http://example.com/eds-oml/description/bundle">
+  <testsuite name="Consistency">
+    <testcase name="http://example.com/eds-oml/description/bundle"/>
+  </testsuite>
+  <testsuite name="Satisfiability">
+    <testcase name="http://example.com/eds-oml/vocabulary/Device#DeviceContainsMetadata"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataSheet#DataSheet"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/StateMachine#StateMachine"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Interface#Argument"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Interface#Mapping"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Field#ExternalField"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Package#PackageDefinesDataType"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataSheet#DatasheetContainsDevice"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/StateMachine#StateMachineControlsActivity"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataType#Scalar"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Interface#BaseInterface"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Package#PackageDeclaresInterface"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataSheet#DatasheetContainsPackage"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Activity#Argument"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Interface#GenericType"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/StateMachine#Variable"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Component#ComponentReferencesInterface"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Field#Entries"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Interface#Command"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataType#Array"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/StateMachine#VariableOnStateMachine"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Interface#InterfaceReferencesDataType"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Package#Package"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Package#PackageContainsComponent"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataType#Range"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Aspects#IdentifiedThing"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Metadata#Metadata"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Component#ComponentDefinedByStateMachine"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataType#Container"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Component#ComponentContainsActivity"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Metadata#Category"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Interface#Parameter"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Component#Component"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataType#RangeLimitsScalar"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Activity#Body"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Activity#Activity"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Device#Device"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/DataType#DataType"/>
+    <testcase name="http://example.com/eds-oml/vocabulary/Field#Field"/>
+  </testsuite>
+</testsuites>

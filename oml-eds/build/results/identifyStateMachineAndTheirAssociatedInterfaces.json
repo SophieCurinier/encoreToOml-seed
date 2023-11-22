@@ -1,0 +1,9 @@
+{ "head": {
+    "vars": [ "stateMachine" , "component" ]
+  } ,
+  "results": {
+    "bindings": [
+      
+    ]
+  }
+}

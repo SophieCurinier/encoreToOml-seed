@@ -1,0 +1,26 @@
+[2023-11-17 16:08:48] Server     INFO  Apache Jena Fuseki 4.6.1
+[2023-11-17 16:08:48] Server     INFO  Configuration file: ../.fuseki.ttl
+[2023-11-17 16:08:48] Server     INFO  Path = /Deliverable
+[2023-11-17 16:08:48] Server     INFO  System
+[2023-11-17 16:08:48] Server     INFO    Memory: 3.8 GiB
+[2023-11-17 16:08:48] Server     INFO    Java:   17.0.8.1
+[2023-11-17 16:08:48] Server     INFO    OS:     Linux 6.5.0-10-generic amd64
+[2023-11-17 16:08:48] Server     INFO    PID:    10045
+[2023-11-17 16:08:48] Server     INFO  Start Fuseki (http=3030)
+[2023-11-17 16:08:48] Fuseki     INFO  [1] GET http://localhost:3030/Deliverable
+[2023-11-17 16:08:49] Fuseki     INFO  [1] 200 OK (40 ms)
+[2023-11-17 16:08:49] Fuseki     INFO  [2] POST http://localhost:3030/Deliverable?graph=http://example.com/project/description/bundle
+[2023-11-17 16:08:49] Fuseki     INFO  [2] Body: Content-Length=1223, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=3 Triples=3 Quads=0
+[2023-11-17 16:08:49] Fuseki     INFO  [2] 201 Created (71 ms)
+[2023-11-17 16:08:49] Fuseki     INFO  [3] POST http://localhost:3030/Deliverable?graph=http://example.com/project/description/bundle/individuals
+[2023-11-17 16:08:49] Fuseki     INFO  [3] Body: Content-Length=730, Content-Type=text/turtle, Charset=null => Turtle : Count=10 Triples=10 Quads=0
+[2023-11-17 16:08:49] Fuseki     INFO  [3] 201 Created (30 ms)
+[2023-11-17 16:08:49] Fuseki     INFO  [4] POST http://localhost:3030/Deliverable?graph=http://example.com/project/description/bundle/properties
+[2023-11-17 16:08:49] Fuseki     INFO  [4] Body: Content-Length=781, Content-Type=text/turtle, Charset=null => Turtle : Count=11 Triples=11 Quads=0
+[2023-11-17 16:08:49] Fuseki     INFO  [4] 201 Created (11 ms)
+[2023-11-17 16:08:49] Fuseki     INFO  [5] POST http://localhost:3030/Deliverable?graph=http://example.com/project/description/bundle/classes
+[2023-11-17 16:08:49] Fuseki     INFO  [5] Body: Content-Length=726, Content-Type=text/turtle, Charset=null => Turtle : Count=10 Triples=10 Quads=0
+[2023-11-17 16:08:49] Fuseki     INFO  [5] 201 Created (18 ms)
+[2023-11-17 16:09:27] Fuseki     INFO  [6] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20xsd:%20%20%3Chttp://www.w3.org/2001/XMLSchema%23%3E%0APREFIX%20%20test2:%20%3Chttp://example.com/project/vocabulary/structure%23%3E%0A%0ASELECT%20%20?device%20?tension%20?metadata%0AWHERE%0A%20%20%7B%20?device%20%20a%20%20test2:Device%0A%20%20%20%20OPTIONAL%0A%20%20%20%20%20%20%7B%20?device%20%20test2:hasTension%20%20?tension%20%7D%0A%20%20%20%20OPTIONAL%0A%20%20%20%20%20%20%7B%20?metadata%20%20test2:fromDevice%20%20?device%20%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20test2:Metadata%0A%20%20%20%20%20%20%7D%0A%20%20%7D%0A
+[2023-11-17 16:09:27] Fuseki     INFO  [6] Query = PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#> PREFIX  test2: <http://example.com/project/vocabulary/structure#>  SELECT  ?device ?tension ?metadata WHERE   { ?device  a  test2:Device     OPTIONAL       { ?device  test2:hasTension  ?tension }     OPTIONAL       { ?metadata  test2:fromDevice  ?device ;                   a                 test2:Metadata       }   } 
+[2023-11-17 16:09:27] Fuseki     INFO  [6] 200 OK (65 ms)

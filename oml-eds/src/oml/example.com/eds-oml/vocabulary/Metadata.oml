@@ -2,16 +2,16 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 
     extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
     
-    extends <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
     
     
     // Metadata Element
     
     @rdfs:comment "Used for configuration management information"
-    concept Metadata < concepts:IdentifiedThing
+    concept Metadata < aspects:IdentifiedThing
     
     @rdfs:comment"Specify a categorization or grouping of metadata"
-    concept Category < concepts:NamedEntityType
+    concept Category < aspects:NamedEntityType
     
     scalar MetadataValue [
     	oneOf "FloatValue", "DataValue", "IntegerValue", "StringValue" 

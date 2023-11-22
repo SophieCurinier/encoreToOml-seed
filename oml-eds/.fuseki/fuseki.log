@@ -1,0 +1,178 @@
+[2023-11-18 18:00:42] Server     INFO  Apache Jena Fuseki 4.6.1
+[2023-11-18 18:00:42] Server     INFO  Configuration file: ../.fuseki.ttl
+[2023-11-18 18:00:42] Server     INFO  Path = /Deliverable
+[2023-11-18 18:00:42] Server     INFO  System
+[2023-11-18 18:00:42] Server     INFO    Memory: 3.8 GiB
+[2023-11-18 18:00:42] Server     INFO    Java:   17.0.8.1
+[2023-11-18 18:00:42] Server     INFO    OS:     Linux 6.5.0-10-generic amd64
+[2023-11-18 18:00:42] Server     INFO    PID:    46350
+[2023-11-18 18:00:42] Server     INFO  Start Fuseki (http=3030)
+[2023-11-18 18:00:44] Fuseki     INFO  [1] GET http://localhost:3030/Deliverable
+[2023-11-18 18:00:44] Fuseki     INFO  [1] 200 OK (9 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [2] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/individuals
+[2023-11-18 18:00:44] Fuseki     INFO  [2] Body: Content-Length=13251, Content-Type=text/turtle, Charset=null => Turtle : Count=180 Triples=180 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [2] 201 Created (76 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [3] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/properties
+[2023-11-18 18:00:44] Fuseki     INFO  [3] Body: Content-Length=17093, Content-Type=text/turtle, Charset=null => Turtle : Count=208 Triples=208 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [3] 201 Created (16 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [4] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/classes
+[2023-11-18 18:00:44] Fuseki     INFO  [4] Body: Content-Length=16685, Content-Type=text/turtle, Charset=null => Turtle : Count=221 Triples=221 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [4] 201 Created (23 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [5] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/datasheet
+[2023-11-18 18:00:44] Fuseki     INFO  [5] Body: Content-Length=4594, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=30 Triples=30 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [5] 201 Created (26 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [6] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Component
+[2023-11-18 18:00:44] Fuseki     INFO  [6] Body: Content-Length=1579, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=7 Triples=7 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [6] 201 Created (8 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [7] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Concept
+[2023-11-18 18:00:44] Fuseki     INFO  [7] Body: Content-Length=66195, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=602 Triples=602 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [7] 201 Created (31 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [8] POST http://localhost:3030/Deliverable?graph=http://purl.org/dc/elements/1.1
+[2023-11-18 18:00:44] Fuseki     INFO  [8] Body: Content-Length=3542, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=22 Triples=22 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [8] 201 Created (6 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [9] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle
+[2023-11-18 18:00:44] Fuseki     INFO  [9] Body: Content-Length=1973, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=10 Triples=10 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [9] 201 Created (4 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [10] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/DataType
+[2023-11-18 18:00:44] Fuseki     INFO  [10] Body: Content-Length=8744, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=54 Triples=54 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [10] 201 Created (6 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [11] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Metadata
+[2023-11-18 18:00:44] Fuseki     INFO  [11] Body: Content-Length=5615, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=35 Triples=35 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [11] 201 Created (4 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [12] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Package
+[2023-11-18 18:00:44] Fuseki     INFO  [12] Body: Content-Length=1606, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=7 Triples=7 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [12] 201 Created (6 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [13] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Activity
+[2023-11-18 18:00:44] Fuseki     INFO  [13] Body: Content-Length=8709, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=54 Triples=54 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [13] 201 Created (8 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [14] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/datasheet-bundle
+[2023-11-18 18:00:44] Fuseki     INFO  [14] Body: Content-Length=6031, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=87 Triples=87 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [14] 201 Created (12 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [15] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/StateMachine
+[2023-11-18 18:00:44] Fuseki     INFO  [15] Body: Content-Length=5687, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=35 Triples=35 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [15] 201 Created (7 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [16] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Interface
+[2023-11-18 18:00:44] Fuseki     INFO  [16] Body: Content-Length=8171, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=62 Triples=62 Quads=0
+[2023-11-18 18:00:44] Fuseki     INFO  [16] 201 Created (10 ms)
+[2023-11-18 18:00:44] Fuseki     INFO  [17] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20test2:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?device%20?component%0AWHERE%0A%20%20%7B%20?device%20%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Concept%23Device%3E%20.%0A%20%20%20%20?component%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Component%23Component%3E%20.%0A%20%20%20%20?device%20%20%20%3Chttp://example.com/eds-oml/relationship/hasComponent%3E%20%20?component%0A%20%20%7D%0A
+[2023-11-18 18:00:44] Fuseki     INFO  [17] Query = PREFIX  test2: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?device ?component WHERE   { ?device   a                     <http://example.com/eds-oml/vocabulary/Concept#Device> .     ?component  a                   <http://example.com/eds-oml/vocabulary/Component#Component> .     ?device   <http://example.com/eds-oml/relationship/hasComponent>  ?component   } 
+[2023-11-18 18:00:44] Fuseki     INFO  [17] 200 OK (27 ms)
+[2023-11-18 18:13:39] Fuseki     INFO  [18] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?dataType%20?package%0AWHERE%0A%20%20%7B%20?dataType%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/DataType%23DataType%3E%20.%0A%20%20%20%20?package%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Package%23Package%3E%20.%0A%20%20%20%20?dataType%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23definesPackage%3E%20%20?package%0A%20%20%7D%0A
+[2023-11-18 18:13:39] Fuseki     INFO  [19] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?device%20?metadata%0AWHERE%0A%20%20%7B%20?device%20%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Concept%23Device%3E%20.%0A%20%20%20%20?metadata%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Metadata%23Metadata%3E%20.%0A%20%20%20%20?device%20%20%20%3Chttp://example.com/eds-oml/relationship/hasMetadata%3E%20%20?metadata%0A%20%20%7D%0A
+[2023-11-18 18:13:39] Fuseki     INFO  [18] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?dataType ?package WHERE   { ?dataType  a                    <http://example.com/eds-oml/vocabulary/DataType#DataType> .     ?package  a                     <http://example.com/eds-oml/vocabulary/Package#Package> .     ?dataType  <http://example.com/eds-oml/vocabulary/Relations#definesPackage>  ?package   } 
+[2023-11-18 18:13:39] Fuseki     INFO  [19] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?device ?metadata WHERE   { ?device   a                     <http://example.com/eds-oml/vocabulary/Concept#Device> .     ?metadata  a                    <http://example.com/eds-oml/vocabulary/Metadata#Metadata> .     ?device   <http://example.com/eds-oml/relationship/hasMetadata>  ?metadata   } 
+[2023-11-18 18:13:39] Fuseki     INFO  [20] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20DISTINCT%20%20?dataType%0AWHERE%0A%20%20%7B%20?dataType%20%20a%20%20%3Chttp://example.com/eds-oml/vocabulary/DataType%23DataType%3E%20%7D%0A
+[2023-11-18 18:13:39] Fuseki     INFO  [21] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?activity%20?component%0AWHERE%0A%20%20%7B%20?activity%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Activity%23Activity%3E%20.%0A%20%20%20%20?component%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Component%23Component%3E%20.%0A%20%20%20%20?activity%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23containsComponent%3E%20%20?component%0A%20%20%7D%0A
+[2023-11-18 18:13:39] Fuseki     INFO  [22] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?stateMachine%20?component%0AWHERE%0A%20%20%7B%20?stateMachine%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/StateMachine%23StateMachine%3E%20.%0A%20%20%20%20?component%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Component%23Component%3E%20.%0A%20%20%20%20?stateMachine%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23definedByComponent%3E%20%20?component%0A%20%20%7D%0A
+[2023-11-18 18:13:39] Fuseki     INFO  [20] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT DISTINCT  ?dataType WHERE   { ?dataType  a  <http://example.com/eds-oml/vocabulary/DataType#DataType> } 
+[2023-11-18 18:13:39] Fuseki     INFO  [23] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?component%20?interface%0AWHERE%0A%20%20%7B%20?component%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Component%23Component%3E%20.%0A%20%20%20%20?interface%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Interface%23Interface%3E%20.%0A%20%20%20%20?component%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23referencesInterface%3E%20%20?interface%0A%20%20%7D%0A
+[2023-11-18 18:13:39] Fuseki     INFO  [21] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?activity ?component WHERE   { ?activity  a                    <http://example.com/eds-oml/vocabulary/Activity#Activity> .     ?component  a                   <http://example.com/eds-oml/vocabulary/Component#Component> .     ?activity  <http://example.com/eds-oml/vocabulary/Relations#containsComponent>  ?component   } 
+[2023-11-18 18:13:39] Fuseki     INFO  [22] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?stateMachine ?component WHERE   { ?stateMachine               a                     <http://example.com/eds-oml/vocabulary/StateMachine#StateMachine> .     ?component  a                   <http://example.com/eds-oml/vocabulary/Component#Component> .     ?stateMachine               <http://example.com/eds-oml/vocabulary/Relations#definedByComponent>  ?component   } 
+[2023-11-18 18:13:39] Fuseki     INFO  [24] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?device%20?metadata%0AWHERE%0A%20%20%7B%20?device%20%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Concept%23Device%3E%20.%0A%20%20%20%20?metadata%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Metadata%23Metadata%3E%20.%0A%20%20%20%20?device%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23containsMetadata%3E%20%20?metadata%0A%20%20%7D%0A
+[2023-11-18 18:13:39] Fuseki     INFO  [23] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?component ?interface WHERE   { ?component  a                   <http://example.com/eds-oml/vocabulary/Component#Component> .     ?interface  a                   <http://example.com/eds-oml/vocabulary/Interface#Interface> .     ?component  <http://example.com/eds-oml/vocabulary/Relations#referencesInterface>  ?interface   } 
+[2023-11-18 18:13:39] Fuseki     INFO  [24] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?device ?metadata WHERE   { ?device   a                     <http://example.com/eds-oml/vocabulary/Concept#Device> .     ?metadata  a                    <http://example.com/eds-oml/vocabulary/Metadata#Metadata> .     ?device   <http://example.com/eds-oml/vocabulary/Relations#containsMetadata>  ?metadata   } 
+[2023-11-18 18:13:39] Fuseki     INFO  [22] 200 OK (2 ms)
+[2023-11-18 18:13:39] Fuseki     INFO  [19] 200 OK (2 ms)
+[2023-11-18 18:13:39] Fuseki     INFO  [23] 200 OK (1 ms)
+[2023-11-18 18:13:39] Fuseki     INFO  [18] 200 OK (2 ms)
+[2023-11-18 18:13:39] Fuseki     INFO  [21] 200 OK (2 ms)
+[2023-11-18 18:13:39] Fuseki     INFO  [24] 200 OK (3 ms)
+[2023-11-18 18:13:39] Fuseki     INFO  [20] 200 OK (5 ms)
+[2023-11-18 18:14:33] Fuseki     INFO  [25] GET http://localhost:3030/Deliverable
+[2023-11-18 18:14:33] Fuseki     INFO  [25] 200 OK (60 ms)
+[2023-11-18 18:14:33] Fuseki     INFO  [26] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Metadata
+[2023-11-18 18:14:33] Fuseki     INFO  [26] 204 No Content (5 ms)
+[2023-11-18 18:14:33] Fuseki     INFO  [27] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/datasheet-bundle
+[2023-11-18 18:14:33] Fuseki     INFO  [27] 204 No Content (5 ms)
+[2023-11-18 18:14:33] Fuseki     INFO  [28] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/individuals
+[2023-11-18 18:14:34] Fuseki     INFO  [28] 204 No Content (6 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [29] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/properties
+[2023-11-18 18:14:34] Fuseki     INFO  [29] 204 No Content (6 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [30] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/DataType
+[2023-11-18 18:14:34] Fuseki     INFO  [30] 204 No Content (3 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [31] DELETE http://localhost:3030/Deliverable?graph=http://purl.org/dc/elements/1.1
+[2023-11-18 18:14:34] Fuseki     INFO  [31] 204 No Content (3 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [32] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Interface
+[2023-11-18 18:14:34] Fuseki     INFO  [32] 204 No Content (2 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [33] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Concept
+[2023-11-18 18:14:34] Fuseki     INFO  [33] 204 No Content (6 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [34] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/StateMachine
+[2023-11-18 18:14:34] Fuseki     INFO  [34] 204 No Content (1 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [35] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/datasheet
+[2023-11-18 18:14:34] Fuseki     INFO  [35] 204 No Content (1 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [36] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Package
+[2023-11-18 18:14:34] Fuseki     INFO  [36] 204 No Content (1 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [37] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle
+[2023-11-18 18:14:34] Fuseki     INFO  [37] 204 No Content (1 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [38] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Component
+[2023-11-18 18:14:34] Fuseki     INFO  [38] 204 No Content (1 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [39] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/classes
+[2023-11-18 18:14:34] Fuseki     INFO  [39] 204 No Content (2 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [40] DELETE http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Activity
+[2023-11-18 18:14:34] Fuseki     INFO  [40] 204 No Content (1 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [41] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/individuals
+[2023-11-18 18:14:34] Fuseki     INFO  [41] Body: Content-Length=13251, Content-Type=text/turtle, Charset=null => Turtle : Count=180 Triples=180 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [41] 201 Created (6 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [42] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/properties
+[2023-11-18 18:14:34] Fuseki     INFO  [42] Body: Content-Length=17093, Content-Type=text/turtle, Charset=null => Turtle : Count=208 Triples=208 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [42] 201 Created (12 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [43] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle/classes
+[2023-11-18 18:14:34] Fuseki     INFO  [43] Body: Content-Length=16685, Content-Type=text/turtle, Charset=null => Turtle : Count=221 Triples=221 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [43] 201 Created (6 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [44] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/datasheet
+[2023-11-18 18:14:34] Fuseki     INFO  [44] Body: Content-Length=4594, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=30 Triples=30 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [44] 201 Created (5 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [45] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Component
+[2023-11-18 18:14:34] Fuseki     INFO  [45] Body: Content-Length=1579, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=7 Triples=7 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [45] 201 Created (3 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [46] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Concept
+[2023-11-18 18:14:34] Fuseki     INFO  [46] Body: Content-Length=66195, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=602 Triples=602 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [46] 201 Created (23 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [47] POST http://localhost:3030/Deliverable?graph=http://purl.org/dc/elements/1.1
+[2023-11-18 18:14:34] Fuseki     INFO  [47] Body: Content-Length=3542, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=22 Triples=22 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [47] 201 Created (3 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [48] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/description/bundle
+[2023-11-18 18:14:34] Fuseki     INFO  [48] Body: Content-Length=1973, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=10 Triples=10 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [48] 201 Created (4 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [49] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/DataType
+[2023-11-18 18:14:34] Fuseki     INFO  [49] Body: Content-Length=8744, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=54 Triples=54 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [49] 201 Created (5 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [50] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Metadata
+[2023-11-18 18:14:34] Fuseki     INFO  [50] Body: Content-Length=5615, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=35 Triples=35 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [50] 201 Created (8 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [51] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Package
+[2023-11-18 18:14:34] Fuseki     INFO  [51] Body: Content-Length=1606, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=7 Triples=7 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [51] 201 Created (4 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [52] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Activity
+[2023-11-18 18:14:34] Fuseki     INFO  [52] Body: Content-Length=8709, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=54 Triples=54 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [52] 201 Created (7 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [53] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/datasheet-bundle
+[2023-11-18 18:14:34] Fuseki     INFO  [53] Body: Content-Length=6031, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=87 Triples=87 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [53] 201 Created (5 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [54] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/StateMachine
+[2023-11-18 18:14:34] Fuseki     INFO  [54] Body: Content-Length=5687, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=35 Triples=35 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [54] 201 Created (6 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [55] POST http://localhost:3030/Deliverable?graph=http://example.com/eds-oml/vocabulary/Interface
+[2023-11-18 18:14:34] Fuseki     INFO  [55] Body: Content-Length=8171, Content-Type=application/rdf+xml, Charset=null => RDF/XML : Count=62 Triples=62 Quads=0
+[2023-11-18 18:14:34] Fuseki     INFO  [55] 201 Created (7 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [56] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20DISTINCT%20%20?dataType%0AWHERE%0A%20%20%7B%20?dataType%20%20a%20%20%3Chttp://example.com/eds-oml/vocabulary/DataType%23DataType%3E%20%7D%0A
+[2023-11-18 18:14:34] Fuseki     INFO  [56] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT DISTINCT  ?dataType WHERE   { ?dataType  a  <http://example.com/eds-oml/vocabulary/DataType#DataType> } 
+[2023-11-18 18:14:34] Fuseki     INFO  [57] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?dataType%20?package%0AWHERE%0A%20%20%7B%20?dataType%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/DataType%23DataType%3E%20.%0A%20%20%20%20?package%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Package%23Package%3E%20.%0A%20%20%20%20?dataType%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23definesPackage%3E%20%20?package%0A%20%20%7D%0A
+[2023-11-18 18:14:34] Fuseki     INFO  [58] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?device%20?metadata%0AWHERE%0A%20%20%7B%20?device%20%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Concept%23Device%3E%20.%0A%20%20%20%20?metadata%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Metadata%23Metadata%3E%20.%0A%20%20%20%20?device%20%20%20%3Chttp://example.com/eds-oml/relationship/hasMetadata%3E%20%20?metadata%0A%20%20%7D%0A
+[2023-11-18 18:14:34] Fuseki     INFO  [57] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?dataType ?package WHERE   { ?dataType  a                    <http://example.com/eds-oml/vocabulary/DataType#DataType> .     ?package  a                     <http://example.com/eds-oml/vocabulary/Package#Package> .     ?dataType  <http://example.com/eds-oml/vocabulary/Relations#definesPackage>  ?package   } 
+[2023-11-18 18:14:34] Fuseki     INFO  [58] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?device ?metadata WHERE   { ?device   a                     <http://example.com/eds-oml/vocabulary/Concept#Device> .     ?metadata  a                    <http://example.com/eds-oml/vocabulary/Metadata#Metadata> .     ?device   <http://example.com/eds-oml/relationship/hasMetadata>  ?metadata   } 
+[2023-11-18 18:14:34] Fuseki     INFO  [59] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?component%20?interface%0AWHERE%0A%20%20%7B%20?component%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Component%23Component%3E%20.%0A%20%20%20%20?interface%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Interface%23Interface%3E%20.%0A%20%20%20%20?component%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23referencesInterface%3E%20%20?interface%0A%20%20%7D%0A
+[2023-11-18 18:14:34] Fuseki     INFO  [59] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?component ?interface WHERE   { ?component  a                   <http://example.com/eds-oml/vocabulary/Component#Component> .     ?interface  a                   <http://example.com/eds-oml/vocabulary/Interface#Interface> .     ?component  <http://example.com/eds-oml/vocabulary/Relations#referencesInterface>  ?interface   } 
+[2023-11-18 18:14:34] Fuseki     INFO  [60] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?device%20?metadata%0AWHERE%0A%20%20%7B%20?device%20%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Concept%23Device%3E%20.%0A%20%20%20%20?metadata%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Metadata%23Metadata%3E%20.%0A%20%20%20%20?device%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23containsMetadata%3E%20%20?metadata%0A%20%20%7D%0A
+[2023-11-18 18:14:34] Fuseki     INFO  [60] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?device ?metadata WHERE   { ?device   a                     <http://example.com/eds-oml/vocabulary/Concept#Device> .     ?metadata  a                    <http://example.com/eds-oml/vocabulary/Metadata#Metadata> .     ?device   <http://example.com/eds-oml/vocabulary/Relations#containsMetadata>  ?metadata   } 
+[2023-11-18 18:14:34] Fuseki     INFO  [62] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?activity%20?component%0AWHERE%0A%20%20%7B%20?activity%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Activity%23Activity%3E%20.%0A%20%20%20%20?component%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Component%23Component%3E%20.%0A%20%20%20%20?activity%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23containsComponent%3E%20%20?component%0A%20%20%7D%0A
+[2023-11-18 18:14:34] Fuseki     INFO  [61] GET http://localhost:3030/Deliverable/sparql?query=PREFIX%20%20structure:%20%3Chttp://example.com/eds-oml/vocabulary/structure%23%3E%0A%0ASELECT%20%20?stateMachine%20?component%0AWHERE%0A%20%20%7B%20?stateMachine%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/StateMachine%23StateMachine%3E%20.%0A%20%20%20%20?component%20%20a%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Component%23Component%3E%20.%0A%20%20%20%20?stateMachine%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Chttp://example.com/eds-oml/vocabulary/Relations%23definedByComponent%3E%20%20?component%0A%20%20%7D%0A
+[2023-11-18 18:14:34] Fuseki     INFO  [62] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?activity ?component WHERE   { ?activity  a                    <http://example.com/eds-oml/vocabulary/Activity#Activity> .     ?component  a                   <http://example.com/eds-oml/vocabulary/Component#Component> .     ?activity  <http://example.com/eds-oml/vocabulary/Relations#containsComponent>  ?component   } 
+[2023-11-18 18:14:34] Fuseki     INFO  [61] Query = PREFIX  structure: <http://example.com/eds-oml/vocabulary/structure#>  SELECT  ?stateMachine ?component WHERE   { ?stateMachine               a                     <http://example.com/eds-oml/vocabulary/StateMachine#StateMachine> .     ?component  a                   <http://example.com/eds-oml/vocabulary/Component#Component> .     ?stateMachine               <http://example.com/eds-oml/vocabulary/Relations#definedByComponent>  ?component   } 
+[2023-11-18 18:14:34] Fuseki     INFO  [57] 200 OK (2 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [56] 200 OK (2 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [58] 200 OK (2 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [59] 200 OK (2 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [60] 200 OK (2 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [61] 200 OK (1 ms)
+[2023-11-18 18:14:34] Fuseki     INFO  [62] 200 OK (2 ms)

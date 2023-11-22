@@ -1,0 +1,75 @@
+@dc:description "A description of the elements of a specific datasheet"
+description <http://example.com/eds-oml/description/main#> as main {
+	
+	uses <http://purl.org/dc/elements/1.1/> as dc
+	
+	uses <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+	
+	uses <http://example.com/eds-oml/vocabulary/Component#> as component
+    
+    uses <http://example.com/eds-oml/vocabulary/Package#> as package
+    
+    uses <http://example.com/eds-oml/vocabulary/Metadata#> as metadata
+    
+    uses <http://example.com/eds-oml/vocabulary/Interface#> as interface
+    
+    uses <http://example.com/eds-oml/vocabulary/Activity#> as activity
+    
+    uses <http://example.com/eds-oml/vocabulary/StateMachine#> as stateMachine
+    
+    uses <http://example.com/eds-oml/vocabulary/DataType#> as dataType
+
+	uses <http://example.com/eds-oml/vocabulary/DataSheet#> as dataSheet
+
+	uses <http://example.com/eds-oml/vocabulary/Device#> as device
+	
+	uses <http://example.com/eds-oml/vocabulary/Field#> as field
+    
+    
+	instance datasheet : dataSheet:DataSheet
+	instance device : device:Device
+	instance package : package:Package
+	
+	instance metadata : metadata:Metadata
+	instance category : metadata:Category
+	
+	instance component : component:Component
+	
+	instance interface : interface:Interface
+	instance command : interface:Command
+	instance argumentInterface : interface:Argument
+	instance genericType : interface:GenericType
+	instance mapping : interface:Mapping
+	instance parameter : interface:Parameter
+	
+	instance field : field:Field
+	instance externalField : field:ExternalField
+	instance entries : field:Entries
+	
+	
+	instance activity : activity:Activity
+	instance argument : activity:Argument
+	instance body : activity:Body
+	
+	
+	
+	instance stateMachine : stateMachine:StateMachine
+	instance variable : stateMachine:Variable
+	
+	instance dataType : dataType:DataType
+	instance array : dataType:Array
+	instance container : dataType:Container
+	instance scalars : dataType:Scalar
+	instance ranges : dataType:Range
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

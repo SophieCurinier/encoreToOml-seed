@@ -3,5 +3,5 @@ vocabulary bundle <http://example.com/eds-oml/vocabulary/datasheet-bundle#> as d
 	
 	includes <http://purl.org/dc/elements/1.1/> as dc
 	
-	includes <http://example.com/eds-oml/vocabulary/Concept#>
+	includes <http://example.com/eds-oml/vocabulary/Aspects#>
 }

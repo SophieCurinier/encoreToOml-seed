@@ -2,12 +2,14 @@ vocabulary <http://example.com/eds-oml/vocabulary/DataType#> as DataType {
 
     extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
     
-    extends <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+
+    extends <http://example.com/eds-oml/vocabulary/Field#> as field
     
         // Datatype Element
     
     @rdfs:comment "Describes the syntax and semantics of units of data that flow through interfaces"
-    concept DataType < concepts:NamedEntityType
+    concept DataType < aspects:NamedEntityType
     
     scalar DataTypeValue [
     	oneOf "Array", "Binary", "Boolean", "Container", "Enumerated", "Float", "Integer", "String", "SubRange"
@@ -24,5 +26,21 @@ vocabulary <http://example.com/eds-oml/vocabulary/DataType#> as DataType {
     
     concept Scalar < DataType
     
-    concept Range < concepts:IdentifiedThing
+    concept Range < aspects:IdentifiedThing
+
+    @rdfs:comment " Scalar Data Types can be limited by Ranges"
+    relation entity RangeLimitsScalar [
+    	from Range
+    	to Scalar
+    	forward limitsScalar
+    	reverse isLimitedByRange
+    	functional
+    	inverse functional	
+    ]
+
+    @rdfs:comment "Containers are aggregate data types with named entries"
+    relation EntriesOnContainer[
+    	from field:Entries
+    	to Container
+    ]
 }
