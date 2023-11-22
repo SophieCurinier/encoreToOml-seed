@@ -9,7 +9,7 @@ description <http://example.com/eds-oml/description/main#> as main {
     
     uses <http://example.com/eds-oml/vocabulary/Package#> as package
     
-    uses <http://example.com/eds-oml/vocabulary/Metadata#> as metadata
+    uses <http://example.com/eds-oml/vocabulary/Metadata#> as metadata 
     
     uses <http://example.com/eds-oml/vocabulary/Interface#> as interface
     
