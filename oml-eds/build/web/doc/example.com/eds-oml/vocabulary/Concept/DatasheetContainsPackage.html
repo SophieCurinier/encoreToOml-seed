@@ -1,13 +1,12 @@
 <html>
    <head>
-      <title>Concept:DatasheetContainsPackage</title>
-	  <link rel="stylesheet" href="../../../../main.css">
+      <title>Concept:datasheetContainsPackage</title>
+      <link rel="stylesheet" href="../../../../main.css">
    </head>
    <body>
-         <h2><font size="-1">http://example.com/eds-oml/vocabulary/Concept#DatasheetContainsPackage</font><br>Class Concept:DatasheetContainsPackage</h2>
-         <img src="http://www.plantuml.com/plantuml/svg/Iyv9B2vMS4aiIIpEI4qjSSxFAqdCp2iEI4pEJanFLOYEnYMbbr6IcnCR2m00"/>
+         <h2><font size="-1">http://example.com/eds-oml/vocabulary/Concept#datasheetContainsPackage</font><br>Property Concept:datasheetContainsPackage</h2>
          <hr>
-         <h3>rdfs:comment</h3>
+         <h3>dc:type</h3>
 <dl>
    <dd>
         <table>
@@ -17,27 +16,7 @@
                <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
             </td>
             <td>
-              Relation between datasheet and package
-            </td>
-         </tr>
-
-      </tbody>
-</table>
-<p/>
-
-   </dd>
-</dl>
-<h3>dc:type</h3>
-<dl>
-   <dd>
-        <table>
-   <tbody>
-                    <tr>
-            <td valign="TOP">
-               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
-            </td>
-            <td>
-              <a href="http://opencaesar.io/oml#RelationEntity">http://opencaesar.io/oml#RelationEntity</a>
+              <a href="http://opencaesar.io/oml#forwardRelation">http://opencaesar.io/oml#forwardRelation</a>
             </td>
          </tr>
 
@@ -57,7 +36,23 @@
                <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
             </td>
             <td>
-              <a href="http://www.w3.org/2002/07/owl#Class">owl:Class</a>
+              <a href="http://www.w3.org/2002/07/owl#FunctionalProperty">owl:FunctionalProperty</a>
+            </td>
+         </tr>
+         <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="http://www.w3.org/2002/07/owl#InverseFunctionalProperty">owl:InverseFunctionalProperty</a>
+            </td>
+         </tr>
+         <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a>
             </td>
          </tr>
 
@@ -67,7 +62,7 @@
 
    </dd>
 </dl>
-<h3>rdfs:subClassOf</h3>
+<h3>rdfs:domain</h3>
 <dl>
    <dd>
         <table>
@@ -77,7 +72,67 @@
                <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
             </td>
             <td>
-              <a href="DatasheetContainsPackage.html">Concept:DatasheetContainsPackage</a>
+              <a href="DataSheet.html">Concept:DataSheet</a>
+            </td>
+         </tr>
+
+      </tbody>
+</table>
+<p/>
+
+   </dd>
+</dl>
+<h3>rdfs:range</h3>
+<dl>
+   <dd>
+        <table>
+   <tbody>
+                    <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="../Package/Package.html">Package:Package</a>
+            </td>
+         </tr>
+
+      </tbody>
+</table>
+<p/>
+
+   </dd>
+</dl>
+<h3>rdfs:subPropertyOf</h3>
+<dl>
+   <dd>
+        <table>
+   <tbody>
+                    <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="datasheetContainsPackage.html">Concept:datasheetContainsPackage</a>
+            </td>
+         </tr>
+
+      </tbody>
+</table>
+<p/>
+
+   </dd>
+</dl>
+<h3>owl:inverseOf</h3>
+<dl>
+   <dd>
+        <table>
+   <tbody>
+                    <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="isPackageOfDatasheet.html">Concept:isPackageOfDatasheet</a>
             </td>
          </tr>
 
@@ -88,8 +143,5 @@
    </dd>
 </dl>
 
-         
-         
-         
    </body>
 </html>

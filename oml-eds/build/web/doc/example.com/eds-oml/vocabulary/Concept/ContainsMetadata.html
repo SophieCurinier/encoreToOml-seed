@@ -1,13 +1,12 @@
 <html>
    <head>
-      <title>Concept:ContainsMetadata</title>
-	  <link rel="stylesheet" href="../../../../main.css">
+      <title>Concept:containsMetadata</title>
+      <link rel="stylesheet" href="../../../../main.css">
    </head>
    <body>
-         <h2><font size="-1">http://example.com/eds-oml/vocabulary/Concept#ContainsMetadata</font><br>Class Concept:ContainsMetadata</h2>
-         <img src="http://www.plantuml.com/plantuml/svg/Iyv9B2vMSCxFAqdCp2lsJIr9J4aiILI8ZaONqiieoSs9ZGK0"/>
+         <h2><font size="-1">http://example.com/eds-oml/vocabulary/Concept#containsMetadata</font><br>Property Concept:containsMetadata</h2>
          <hr>
-         <h3>rdfs:comment</h3>
+         <h3>dc:type</h3>
 <dl>
    <dd>
         <table>
@@ -17,27 +16,7 @@
                <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
             </td>
             <td>
-              Relation between metadata and device
-            </td>
-         </tr>
-
-      </tbody>
-</table>
-<p/>
-
-   </dd>
-</dl>
-<h3>dc:type</h3>
-<dl>
-   <dd>
-        <table>
-   <tbody>
-                    <tr>
-            <td valign="TOP">
-               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
-            </td>
-            <td>
-              <a href="http://opencaesar.io/oml#RelationEntity">http://opencaesar.io/oml#RelationEntity</a>
+              <a href="http://opencaesar.io/oml#forwardRelation">http://opencaesar.io/oml#forwardRelation</a>
             </td>
          </tr>
 
@@ -57,7 +36,23 @@
                <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
             </td>
             <td>
-              <a href="http://www.w3.org/2002/07/owl#Class">owl:Class</a>
+              <a href="http://www.w3.org/2002/07/owl#FunctionalProperty">owl:FunctionalProperty</a>
+            </td>
+         </tr>
+         <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="http://www.w3.org/2002/07/owl#InverseFunctionalProperty">owl:InverseFunctionalProperty</a>
+            </td>
+         </tr>
+         <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="http://www.w3.org/2002/07/owl#ObjectProperty">owl:ObjectProperty</a>
             </td>
          </tr>
 
@@ -67,7 +62,7 @@
 
    </dd>
 </dl>
-<h3>rdfs:subClassOf</h3>
+<h3>rdfs:domain</h3>
 <dl>
    <dd>
         <table>
@@ -77,7 +72,67 @@
                <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
             </td>
             <td>
-              <a href="ContainsMetadata.html">Concept:ContainsMetadata</a>
+              <a href="Device.html">Concept:Device</a>
+            </td>
+         </tr>
+
+      </tbody>
+</table>
+<p/>
+
+   </dd>
+</dl>
+<h3>rdfs:range</h3>
+<dl>
+   <dd>
+        <table>
+   <tbody>
+                    <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="../Metadata/Metadata.html">Metadata:Metadata</a>
+            </td>
+         </tr>
+
+      </tbody>
+</table>
+<p/>
+
+   </dd>
+</dl>
+<h3>rdfs:subPropertyOf</h3>
+<dl>
+   <dd>
+        <table>
+   <tbody>
+                    <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="containsMetadata.html">Concept:containsMetadata</a>
+            </td>
+         </tr>
+
+      </tbody>
+</table>
+<p/>
+
+   </dd>
+</dl>
+<h3>owl:inverseOf</h3>
+<dl>
+   <dd>
+        <table>
+   <tbody>
+                    <tr>
+            <td valign="TOP">
+               <img border="0" src="https://help.eclipse.org/latest/topic/org.eclipse.jdt.doc.user/images/org.eclipse.jdt.ui/obj16/methdef_obj.svg" width="16" height="16">
+            </td>
+            <td>
+              <a href="hasDevice.html">Concept:hasDevice</a>
             </td>
          </tr>
 
@@ -88,8 +143,5 @@
    </dd>
 </dl>
 
-         
-         
-         
    </body>
 </html>

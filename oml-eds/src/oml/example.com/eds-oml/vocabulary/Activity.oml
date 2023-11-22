@@ -28,13 +28,18 @@ vocabulary <http://example.com/eds-oml/vocabulary/Activity#> as Activity {
 		range BodyElements
 	]
     
-    relation ActivityContainsBody[
+    relation entity ActivityContainsBody[
     	from Activity
     	to Body
+    	forward containsBody
+    	reverse containedBy
+    	functional
     ]
     
-    relation ArgumentOnActivity[
+    relation entity ArgumentOnActivity[
     	from Argument
     	to Activity
+    	forward onActivity
+    	functional
     ]
 }

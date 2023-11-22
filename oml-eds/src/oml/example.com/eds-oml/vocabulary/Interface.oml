@@ -35,9 +35,10 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
     
     concept Argument < field:ExternalField
     
-    relation ArgumentOnCommand[
+    relation entity ArgumentOnCommand[
     	from Argument
     	to Command
+    	forward onCommand
     ]
     
     @rdfs:comment "Specifies a generic type to be used by the interface"
@@ -45,9 +46,10 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
     
     concept Mapping < field:Field
     
-    relation MappingOnGenericType[
+    relation entity MappingOnGenericType[
     	from Mapping
     	to GenericType
+    	forward onGenericType
     ]
     
     @rdfs:comment "Identifies one existing interface definition"
@@ -55,14 +57,16 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
     
     concept Parameter < field:ExternalField
     
-    relation ParameterOnInterface[
+    relation entity ParameterOnInterface[
     	from Parameter
     	to Interface
+    	forward onInterface
     ]
     
-    relation CommandOnInterface[
+    relation entity CommandOnInterface[
     	from Command
     	to Interface
+    	forward commandOnInterface
     ]
 
     @rdfs:comment "Interfaces reference datatypes"

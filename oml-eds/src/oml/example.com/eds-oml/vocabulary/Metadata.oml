@@ -22,8 +22,9 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
     	range MetadataValue
     ]
     
-    relation CategoryOfMetadata[
+    relation entity CategoryOfMetadata[
     	from Category
     	to Metadata
+    	forward ofMetadata
     ]
 }

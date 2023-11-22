@@ -26,41 +26,94 @@ description <http://example.com/eds-oml/description/main#> as main {
 	uses <http://example.com/eds-oml/vocabulary/Field#> as field
     
     
-	instance datasheet : dataSheet:DataSheet
-	instance device : device:Device
-	instance package : package:Package
+	instance datasheet : dataSheet:DataSheet[
+		dataSheet:datasheetContainsDevice device
+		dataSheet:datasheetContainsPackage package
+	]
+	instance device : device:Device[
+		dataSheet:isDeviceOfDatasheet datasheet
+		device:containsMetadata metadata
+	]
+	instance package : package:Package[
+		dataSheet:isPackageOfDatasheet datasheet
+		package:containsComponent component
+		package:declaresInterface interface
+		package:definesDataType dataType
+	]
 	
-	instance metadata : metadata:Metadata
-	instance category : metadata:Category
+	instance metadata : metadata:Metadata[
+		device:hasDevice device
+	]
+	instance category : metadata:Category[
+		metadata:ofMetadata metadata
+	]
 	
-	instance component : component:Component
+	instance component : component:Component[
+		component:containsActivity activity
+		component:referencesInterface interface
+		package:isContainedByPackage package
+	]
 	
-	instance interface : interface:Interface
-	instance command : interface:Command
-	instance argumentInterface : interface:Argument
+	instance interface : interface:Interface[
+		component:isInterfaceReferencedBy component
+		package:isDeclaredByPackage package
+		interface:referencesDataType dataType
+	]
+	instance command : interface:Command[
+		interface:commandOnInterface interface
+	]
+	instance argumentInterface : interface:Argument[
+		interface:onCommand command
+	]
 	instance genericType : interface:GenericType
-	instance mapping : interface:Mapping
-	instance parameter : interface:Parameter
+	instance mapping : interface:Mapping[
+		interface:onGenericType genericType
+	]
+	instance parameter : interface:Parameter[
+		interface:onInterface interface
+	]
 	
 	instance field : field:Field
 	instance externalField : field:ExternalField
 	instance entries : field:Entries
 	
 	
-	instance activity : activity:Activity
-	instance argument : activity:Argument
+	instance activity : activity:Activity[
+		component:isContainedByComponent component
+		activity:containsBody body
+		stateMachine:isControledByStateMachine stateMachine
+	]
+	instance argument : activity:Argument[
+		activity:onActivity activity
+	]
 	instance body : activity:Body
 	
 	
 	
-	instance stateMachine : stateMachine:StateMachine
-	instance variable : stateMachine:Variable
+	instance stateMachine : stateMachine:StateMachine[
+		stateMachine:controlsActivity activity
+		stateMachine:isStateMachineOf variable
+	]
 	
-	instance dataType : dataType:DataType
+	instance variable : stateMachine:Variable[
+		stateMachine:isVariableOf stateMachine
+	]
+	
+	instance dataType : dataType:DataType[
+		package:isDefinedByPackage package
+		interface:isDataTypeReferencedBy interface
+	]
 	instance array : dataType:Array
 	instance container : dataType:Container
-	instance scalars : dataType:Scalar
-	instance ranges : dataType:Range
+	instance scalars : dataType:Scalar[
+		dataType:isLimitedByRange ranges
+	]
+	instance ranges : dataType:Range[
+		dataType:limitsScalar scalars
+	]
+	
+
+
 	
 	
 	
