@@ -1,0 +1,9 @@
+PREFIX structure: <http://example.com/eds-oml/vocabulary/structure#>
+
+SELECT ?dataType ?package
+WHERE {
+  ?dataType a <http://example.com/eds-oml/vocabulary/DataType#DataType>.
+  ?package a <http://example.com/eds-oml/vocabulary/Package#Package>.
+  ?dataType <http://example.com/eds-oml/vocabulary/Relations#definesPackage> ?package.
+}
+

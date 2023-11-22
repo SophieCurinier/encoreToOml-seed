@@ -6,6 +6,6 @@ description bundle <http://example.com/eds-oml/description/bundle#> as ^bundle {
     // The description bundle "uses" the vocabulary bundle world closure axioms
     uses <http://example.com/eds-oml/vocabulary/datasheet-bundle#>
 
-    // The description bundle "includes" the restaurant description 
+    // The description bundle "includes" the datasheet description 
     includes <http://example.com/eds-oml/description/datasheet#>
 }

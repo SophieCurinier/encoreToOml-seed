@@ -1,0 +1,12 @@
+description <http://example.com/eds-oml/description/powerManagement#> as powerManagement {
+
+    uses <http://example.com/eds-oml/vocabulary/Datasheet#> as datasheet
+    uses <http://example.com/eds-oml/vocabulary/Relations#> as relations
+    uses <http://example.com/eds-oml/vocabulary/Concept#> as concepts
+
+    // Instance of DataSheet
+    instance powerManagement : concepts:Datasheet
+
+    // Additional instances and relations can be defined here as needed
+    // For example, instances of Device, Package, Metadata, etc., related to this DataSheet
+}
