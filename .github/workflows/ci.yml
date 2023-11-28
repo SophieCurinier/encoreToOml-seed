@@ -42,7 +42,7 @@ jobs:
     - name: Generate Docs
       run: ./gradlew generateDocs
     - name: Verify content
-      run: ls build/web
+      run: ls build/web/doc
     - name: Set up Python 3
       uses: actions/setup-python@v4
       with: 
@@ -53,6 +53,8 @@ jobs:
       run: python -m nbconvert --execute --to notebook --no-input src/ipynb/index.ipynb --output-dir='build/web' 
     - name: Convert Notebook to HTML
       run: python -m nbconvert --to html --no-input build/web/index.ipynb
+    - name: Verify content
+      run: ls build/web/doc
     - name: Publish
       uses: actions/upload-pages-artifact@v1
       with:
