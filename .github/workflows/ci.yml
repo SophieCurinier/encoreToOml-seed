@@ -15,6 +15,7 @@ jobs:
     steps:
     - name: Directory setup
       run: ls .
+    - name: Directory setup
       run: cd ./oml-eds
     - name: Checkout
       uses: actions/checkout@v3
