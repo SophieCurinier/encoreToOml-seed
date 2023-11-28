@@ -33,6 +33,8 @@ jobs:
       run: ./gradlew build
     - name: Query
       run: ./gradlew owlQuery
+    - name: Verify build
+      run: ls .
     - name: Upload
       if: ${{ always() }}
       uses: actions/upload-artifact@v3
@@ -44,7 +46,7 @@ jobs:
     - name: Set up Python 3
       uses: actions/setup-python@v4
       with: 
-        python-version: '3.10'
+        python-version: '3.11'
     - name: Install Requirements
       run: pip install -r src/ipynb/requirements.txt
     - name: Run Notebook
@@ -54,8 +56,8 @@ jobs:
     - name: Publish
       uses: actions/upload-pages-artifact@v1
       with:
-        path: build/web
-      
+        path: build/web  
+  
   deploy:
     needs: build
     permissions:
