@@ -38,7 +38,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: build
-        path: build/
+        path: ./build/
     - name: Generate Docs
       run: ./gradlew generateDocs
     - name: Verify content
@@ -60,7 +60,7 @@ jobs:
     - name: Publish
       uses: actions/upload-pages-artifact@v1
       with:
-        path: build/web
+        path: ./build/web
   
   deploy:
     needs: build
