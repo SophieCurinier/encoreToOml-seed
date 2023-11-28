@@ -2,7 +2,7 @@ name: CI/CD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "jupyter-report" ]
   pull_request:
     branches: [ "main" ]
 
@@ -26,15 +26,15 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Verify content
-      run: ls
+      run: ls build/
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Build
       run: ./gradlew build
     - name: Query
       run: ./gradlew owlQuery
-    - name: Verify build
-      run: ls .
+    - name: Verify content
+      run: ls build/results
     - name: Upload
       if: ${{ always() }}
       uses: actions/upload-artifact@v3
@@ -43,6 +43,8 @@ jobs:
         path: build/
     - name: Generate Docs
       run: ./gradlew generateDocs
+    - name: Verify content
+      run: ls build/
     - name: Set up Python 3
       uses: actions/setup-python@v4
       with: 
