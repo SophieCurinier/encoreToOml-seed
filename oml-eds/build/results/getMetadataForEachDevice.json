@@ -1,9 +1,0 @@
-{ "head": {
-    "vars": [ "device" , "metadata" ]
-  } ,
-  "results": {
-    "bindings": [
-      
-    ]
-  }
-}
