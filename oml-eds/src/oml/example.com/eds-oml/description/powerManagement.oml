@@ -114,6 +114,7 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 	instance off : stateMachine:Variable[
 		stateMachine:isVariableOf lightTransition
 	]
+		 
 
 	
 }

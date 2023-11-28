@@ -4,27 +4,72 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
     
     extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
     
+    extends <http://www.w3.org/2001/XMLSchema#> as xsd
+    
     
     // Metadata Element
     
     @rdfs:comment "Used for configuration management information"
-    concept Metadata < aspects:IdentifiedThing
+    concept Metadata
     
     @rdfs:comment"Specify a categorization or grouping of metadata"
     concept Category < aspects:NamedEntityType
     
-    scalar MetadataValue [
-    	oneOf "FloatValue", "DataValue", "IntegerValue", "StringValue" 
+    
+    concept MetadataValueType
+    
+    relation MetadataType[
+    	from Metadata
+    	to MetadataValueType
     ]
     
-    scalar property MetadataValueSet [
-    	domain Metadata
-    	range MetadataValue
+    concept IntegerMetadataValueType < MetadataValueType [
+    	restricts IntegerMetadataValue to min 0
     ]
+    
+    scalar property IntegerMetadataValue[
+    	domain IntegerMetadataValueType
+    	range xsd:integer
+    	functional
+    ]
+    
+    concept FloatMetadataValueType < MetadataValueType [
+    	restricts FloatMetadataValue to min 0
+    ]
+    
+    scalar property FloatMetadataValue[
+    	domain FloatMetadataValueType
+    	range xsd:float
+    	functional
+    ]
+    
+    concept StringMetadataValueType < MetadataValueType [
+    	restricts StringMetadataValue to min 0
+    ]
+    
+    scalar property StringMetadataValue[
+    	domain StringMetadataValueType
+    	range xsd:string
+    	functional
+    ]
+    
+    
     
     relation entity CategoryOfMetadata[
     	from Category
     	to Metadata
     	forward ofMetadata
     ]
+    
+    relation entity CategoryOfCategory[
+    	from Category
+    	to Category
+    	forward subCategory
+    ]
+    
+    relation CategoryToMetadataValue[
+    	from Category
+    	to MetadataValueType
+    ]
+    
 }
