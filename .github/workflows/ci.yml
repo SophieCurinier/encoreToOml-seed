@@ -20,10 +20,12 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
+    - name: Navigate to oml-eds directory
+      run: cd oml-eds
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Build
-      run: ./omls-eds/gradlew build
+      run: ./gradlew build
     - name: Upload
       if: ${{ always() }}
       uses: actions/upload-artifact@v3
