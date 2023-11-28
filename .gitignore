@@ -2,3 +2,17 @@
 oml-eds/.gradle/
 oml-eds/build/
 oml-eds/.fuseki/
+
+# Gradle files
+oml-eds/.gradle
+oml-eds/build
+
+# MacOS files
+oml-eds/.DS_Store
+
+# Fuseki output directory
+oml-eds/.fuseki
+
+#Jupyter
+oml-eds/__pycache__/
+*.py[cod]
