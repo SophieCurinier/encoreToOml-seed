@@ -30,7 +30,7 @@ jobs:
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Build
-      run: ./oml-eds/gradlew build
+      run: ./gradlew build
     - name: Upload
       if: ${{ always() }}
       uses: actions/upload-artifact@v3
