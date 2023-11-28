@@ -21,9 +21,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Directory setup
-      run: ls .
-    - name: Directory setup
       run: cd ./oml-eds
+    - name: Verify content
+      run: ls .
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Build
