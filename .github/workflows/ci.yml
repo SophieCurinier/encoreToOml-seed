@@ -58,7 +58,7 @@ jobs:
     - name: Publish
       uses: actions/upload-pages-artifact@v1
       with:
-        path: build/web
+        path: build/web/doc
   
   deploy:
     needs: build
