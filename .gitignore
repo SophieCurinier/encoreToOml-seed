@@ -1,1 +1,4 @@
 /.metadata/
+oml-eds/.gradle/
+oml-eds/.fuseki/
+oml-eds/build/
