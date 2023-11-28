@@ -14,7 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Directory setup
-      run: cd oml-eds
+      run: ls .
+      run: cd ./oml-eds
     - name: Checkout
       uses: actions/checkout@v3
     - name: Setup JDK
