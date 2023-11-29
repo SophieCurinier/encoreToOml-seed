@@ -1,0 +1,29 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dataSheet: <http://example.com/eds-oml/vocabulary/DataSheet#>
+PREFIX device: <http://example.com/eds-oml/vocabulary/Device#>
+PREFIX metadata: <http://example.com/eds-oml/vocabulary/Metadata#>
+PREFIX package: <http://example.com/eds-oml/vocabulary/Package#>
+PREFIX component: <http://example.com/eds-oml/vocabulary/Component#>
+PREFIX interface: <http://example.com/eds-oml/vocabulary/Interface#>
+
+SELECT ?lamp ?interfaceInstance ?metadataInstance
+WHERE {
+  # Find instances of the lamp
+  ?lamp a device:Device .
+
+  # Get metadata associated with the lamp
+  OPTIONAL {
+    ?metadataInstance a metadata:Metadata ;
+                     device:hasDevice ?lamp .
+  }
+
+  # Get interfaces associated with the lamp
+  OPTIONAL {
+    ?componentInstance a component:Component ;
+                       component:referencesInterface ?interfaceInstance ;
+                       package:isContainedByPackage ?packageInstance .
+    ?packageInstance a package:Package ;
+                     dataSheet:isPackageOfDatasheet ?datasheetInstance .
+    ?datasheetInstance dataSheet:datasheetContainsDevice ?lamp .
+  }
+}
