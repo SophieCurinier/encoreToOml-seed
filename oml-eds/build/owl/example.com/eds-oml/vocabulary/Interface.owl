@@ -31,46 +31,13 @@
     
 
 
-    <!-- http://example.com/eds-oml/vocabulary/Interface#ArgumentOnCommand -->
+    <!-- http://example.com/eds-oml/vocabulary/Interface#commandOnInterface -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#ArgumentOnCommand">
-        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Argument"/>
-        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Command"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://example.com/eds-oml/vocabulary/Interface#CommandOnInterface -->
-
-
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#CommandOnInterface">
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#commandOnInterface">
         <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Command"/>
         <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://example.com/eds-oml/vocabulary/Interface#MappingOnGenericType -->
-
-
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#MappingOnGenericType">
-        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Mapping"/>
-        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#GenericType"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface -->
-
-
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface">
-        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Parameter"/>
-        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -85,6 +52,39 @@
         <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/DataType#DataType"/>
         <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#reverseRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#onCommand -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#onCommand">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Argument"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Command"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#onGenericType -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#onGenericType">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Mapping"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#GenericType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#onInterface -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Interface#onInterface">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Parameter"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#Interface"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
     </owl:ObjectProperty>
     
 
@@ -161,6 +161,15 @@
     
 
 
+    <!-- http://example.com/eds-oml/vocabulary/Interface#ArgumentOnCommand -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#ArgumentOnCommand">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/eds-oml/vocabulary/Interface#BaseInterface -->
 
 
@@ -178,6 +187,15 @@
     <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#Command">
         <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#CommandOnInterface -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#CommandOnInterface">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -236,12 +254,30 @@
     
 
 
+    <!-- http://example.com/eds-oml/vocabulary/Interface#MappingOnGenericType -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#MappingOnGenericType">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/eds-oml/vocabulary/Interface#Parameter -->
 
 
     <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#Parameter">
         <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Field#ExternalField"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface">
+        <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
     </owl:Class>
     
 
@@ -263,6 +299,63 @@
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#t">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>commandOnInterface derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#CommandOnInterface"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#commandOnInterface"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <rdfs:label>referencesDataType derivation</rdfs:label>
@@ -313,6 +406,177 @@
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#referencesDataType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>onCommand derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#ArgumentOnCommand"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#onCommand"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>onGenericType derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#MappingOnGenericType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#onGenericType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>onInterface derivation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasSource"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://opencaesar.io/oml#hasTarget"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://example.com/eds-oml/vocabulary/Interface#onInterface"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
                     </rdf:Description>

@@ -1,81 +1,80 @@
 vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
-	
+
 	extends <http://www.w3.org/2001/XMLSchema#> as xsd
 
-    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
-    
-    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 
-    extends <http://example.com/eds-oml/vocabulary/DataType#> as dataType
+	extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
 
-    extends <http://example.com/eds-oml/vocabulary/Field#> as field
-    
-    @rdfs:comment "Defines connections and subnetwork interfaces"
-    concept Interface < aspects:NamedEntityType[
-    	restricts abstract to true
-    	// restricts level to min 3
-    	restricts level to max 4
-    	
-    ]
-    
-    @rdfs:comment "If true, indicates the interface may not be used directly by a component"
-    scalar property abstract [
-    	domain Interface
-    	range xsd:boolean
-    	functional
-    ]
-    
-    @rdfs:comment "Indicates the system level at which it operates"  
-    scalar property level [
-    	domain Interface
-    	range xsd:float
-    ]
-    
-    concept Command < aspects:NamedEntityType
-    
-    concept Argument < field:ExternalField
-    
-    relation entity ArgumentOnCommand[
-    	from Argument
-    	to Command
-    	forward onCommand
-    ]
-    
-    @rdfs:comment "Specifies a generic type to be used by the interface"
-    concept GenericType < aspects:NamedEntityType
-    
-    concept Mapping < field:Field
-    
-    relation entity MappingOnGenericType[
-    	from Mapping
-    	to GenericType
-    	forward onGenericType
-    ]
-    
-    @rdfs:comment "Identifies one existing interface definition"
-    concept BaseInterface < aspects:NamedEntityType
-    
-    concept Parameter < field:ExternalField
-    
-    relation entity ParameterOnInterface[
-    	from Parameter
-    	to Interface
-    	forward onInterface
-    ]
-    
-    relation entity CommandOnInterface[
-    	from Command
-    	to Interface
-    	forward commandOnInterface
-    ]
+	extends <http://example.com/eds-oml/vocabulary/DataType#> as dataType
 
-    @rdfs:comment "Interfaces reference datatypes"
-    relation entity InterfaceReferencesDataType [
-    	from Interface
-    	to dataType:DataType
-    	forward referencesDataType
-    	reverse isDataTypeReferencedBy
-    	functional
-    	inverse functional	
-    ]
+	extends <http://example.com/eds-oml/vocabulary/Field#> as field
+
+	@rdfs:comment "Defines connections and subnetwork interfaces"
+	concept Interface < aspects:NamedEntityType [
+		restricts abstract to true
+		// restricts level to min 3
+		restricts level to max 4
+	]
+
+	@rdfs:comment "If true, indicates the interface may not be used directly by a component"
+	scalar property abstract [
+		domain Interface
+		range xsd:boolean
+		functional
+	]
+
+	@rdfs:comment "Indicates the system level at which it operates"
+	scalar property level [
+		domain Interface
+		range xsd:float
+	]
+
+	concept Command < aspects:NamedEntityType
+
+	concept Argument < field:ExternalField
+
+	relation entity ArgumentOnCommand [
+		from Argument
+		to Command
+		forward onCommand
+	]
+
+	@rdfs:comment "Specifies a generic type to be used by the interface"
+	concept GenericType < aspects:NamedEntityType
+
+	concept Mapping < field:Field
+
+	relation entity MappingOnGenericType [
+		from Mapping
+		to GenericType
+		forward onGenericType
+	]
+
+	@rdfs:comment "Identifies one existing interface definition"
+	concept BaseInterface < aspects:NamedEntityType
+
+	concept Parameter < field:ExternalField
+
+	relation entity ParameterOnInterface [
+		from Parameter
+		to Interface
+		forward onInterface
+	]
+
+	relation entity CommandOnInterface [
+		from Command
+		to Interface
+		forward commandOnInterface
+	]
+
+	@rdfs:comment "Interfaces reference datatypes"
+	relation entity InterfaceReferencesDataType [
+		from Interface
+		to dataType:DataType
+		forward referencesDataType
+		reverse isDataTypeReferencedBy
+		functional
+		inverse functional
+	]
 }

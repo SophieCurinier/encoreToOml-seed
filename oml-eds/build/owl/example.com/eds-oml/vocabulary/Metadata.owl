@@ -18,55 +18,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- http://example.com/eds-oml/vocabulary/Metadata#MetadataValue -->
-
-
-    <rdfs:Datatype rdf:about="http://example.com/eds-oml/vocabulary/Metadata#MetadataValue">
-        <owl:equivalentClass>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>DataValue</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>FloatValue</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>IntegerValue</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first>StringValue</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </owl:equivalentClass>
-    </rdfs:Datatype>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -76,12 +27,49 @@
     
 
 
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#CategoryOfCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Metadata#CategoryOfCategory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Category"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Category"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://example.com/eds-oml/vocabulary/Metadata#CategoryOfMetadata -->
 
 
     <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Metadata#CategoryOfMetadata">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Category"/>
         <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Metadata"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#CategoryToMetadataValue -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Metadata#CategoryToMetadataValue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Category"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#MetadataType -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Metadata#MetadataType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Metadata"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
     </owl:ObjectProperty>
     
@@ -99,12 +87,34 @@
     
 
 
-    <!-- http://example.com/eds-oml/vocabulary/Metadata#MetadataValueSet -->
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#FloatMetadataValue -->
 
 
-    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueSet">
-        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Metadata"/>
-        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#MetadataValue"/>
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Metadata#FloatMetadataValue">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#FloatMetadataValueType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValue">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValueType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#StringMetadataValue -->
+
+
+    <owl:DatatypeProperty rdf:about="http://example.com/eds-oml/vocabulary/Metadata#StringMetadataValue">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#StringMetadataValueType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#scalarProperty"/>
     </owl:DatatypeProperty>
     
@@ -133,13 +143,63 @@
     
 
 
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#FloatMetadataValueType -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Metadata#FloatMetadataValueType">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#FloatMetadataValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValueType -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValueType">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/eds-oml/vocabulary/Metadata#Metadata -->
 
 
     <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Metadata#Metadata">
-        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Aspects#IdentifiedThing"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
         <rdfs:comment>Used for configuration management information</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Metadata#StringMetadataValueType -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Metadata#StringMetadataValueType">
+        <rdfs:subClassOf rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
 </rdf:RDF>
 

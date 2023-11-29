@@ -9,6 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:Aspects="http://example.com/eds-oml/vocabulary/Aspects#">
     <owl:Ontology rdf:about="http://example.com/eds-oml/vocabulary/Aspects">
+        <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/Activity"/>
+        <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/Metadata"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
         <dc:description>A vocabulary about the aspects of the model</dc:description>
         <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>

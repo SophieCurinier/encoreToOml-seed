@@ -1,16 +1,15 @@
 vocabulary <http://example.com/eds-oml/vocabulary/Field#> as Field {
 
-    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
-    
-    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 
-    // Field Element
-    
-    @rdfs:comment "Permits the definition of parameter, arguments, or container entries that are a subrange, encoding, or array of the referenced type"
-    concept Field < aspects:NamedEntityType
-   
-    @rdfs:comment "Used in cases in which the value of the field may appear on an interface"
-    concept ExternalField < Field
+	extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
 
-    concept Entries < ExternalField
+	// Field Element
+	@rdfs:comment "Permits the definition of parameter, arguments, or container entries that are a subrange, encoding, or array of the referenced type"
+	concept Field < aspects:NamedEntityType
+
+	@rdfs:comment "Used in cases in which the value of the field may appear on an interface"
+	concept ExternalField < Field
+
+	concept Entries < ExternalField
 }

@@ -14,6 +14,60 @@
         <dc:description>A vocabulary bundle for closed-world reasoning about electronic datasheet</dc:description>
         <dc:type rdf:resource="http://opencaesar.io/oml#VocabularyBundle"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Activity#Argument -->
+
+
+    <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#Argument">
+        <owl:disjointWith rdf:resource="http://example.com/eds-oml/vocabulary/Field#ExternalField"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#Activity"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#ActivityContainsBody"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#ArgumentOnActivity"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#Body"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Field#Field"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#Category"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#Metadata"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#FloatMetadataValueType"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValueType"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#StringMetadataValueType"/>
+        </owl:members>
+    </rdf:Description>
 </rdf:RDF>
 
 

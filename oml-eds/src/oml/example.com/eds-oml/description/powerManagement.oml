@@ -2,119 +2,154 @@
 description <http://example.com/eds-oml/description/powerManagement#> as powerManagement {
 
 	uses <http://purl.org/dc/elements/1.1/> as dc
-	
+
 	uses <http://example.com/eds-oml/vocabulary/Component#> as component
-    
-    uses <http://example.com/eds-oml/vocabulary/Package#> as package
-    
-    uses <http://example.com/eds-oml/vocabulary/Metadata#> as metadata 
-    
-    uses <http://example.com/eds-oml/vocabulary/Interface#> as interface
-    
-    uses <http://example.com/eds-oml/vocabulary/Activity#> as activity
-    
-    uses <http://example.com/eds-oml/vocabulary/StateMachine#> as stateMachine
-    
-    uses <http://example.com/eds-oml/vocabulary/DataType#> as dataType
+
+	uses <http://example.com/eds-oml/vocabulary/Package#> as package
+
+	uses <http://example.com/eds-oml/vocabulary/Metadata#> as metadata
+
+	uses <http://example.com/eds-oml/vocabulary/Interface#> as interface
+
+	uses <http://example.com/eds-oml/vocabulary/Activity#> as activity
+
+	uses <http://example.com/eds-oml/vocabulary/StateMachine#> as stateMachine
+
+	uses <http://example.com/eds-oml/vocabulary/DataType#> as dataType
 
 	uses <http://example.com/eds-oml/vocabulary/DataSheet#> as dataSheet
 
 	uses <http://example.com/eds-oml/vocabulary/Device#> as device
-	
+
 	uses <http://example.com/eds-oml/vocabulary/Field#> as field
-    
-    
-	instance lampDatasheet : dataSheet:DataSheet[
+
+	instance lampDatasheet : dataSheet:DataSheet [
 		dataSheet:datasheetContainsDevice lamp
 		dataSheet:datasheetContainsPackage box
 	]
-	instance lamp : device:Device[
-		dataSheet:isDeviceOfDatasheet lampDatasheet
-		device:containsMetadata luminosity
-		device:containsMetadata consumption
-		device:containsMetadata dimensions	
+
+	instance lamp : device:Device [
+		// dataSheet:isDeviceOfDatasheet lampDatasheet
+		device:DeviceContainsMetadatas MetadataSet
 	]
-	
-	instance box : package:Package[
+
+	instance box : package:Package [
 		dataSheet:isPackageOfDatasheet lampDatasheet
 		package:containsComponent LED
 		package:containsComponent baseLamp
 		package:containsComponent lampShade
 		package:declaresInterface switch
 	]
-	
-	instance luminosity : metadata:Metadata[
-		device:hasDevice lamp
+
+	instance MetadataSet : metadata:MetadataSet [
+		metadata:CategoryOfMetadata ElectricalFeature
+		metadata:CategoryOfMetadata PhysicalFeature
 	]
-	instance consumption : metadata:Metadata[
-		device:hasDevice lamp
+
+	instance Power : metadata:Metadata [
 	]
-	instance dimensions : metadata:Metadata[
-		device:hasDevice lamp
+
+	instance Intensity : metadata:Metadata [
 	]
-	instance smooth : metadata:Category[
-		metadata:ofMetadata luminosity
+
+	instance Voltage : metadata:Metadata [
 	]
-	instance intense : metadata:Category[
-		metadata:ofMetadata luminosity
+
+	instance Size : metadata:Metadata [
 	]
-	
-	instance LED : component:Component[
+
+	instance Weight : metadata:Metadata [
+		metadata:MetadataType Float
+	]
+
+	instance BulbMaterial : metadata:Metadata [
+	]
+
+	instance BaseMaterial : metadata:Metadata [
+	]
+
+	instance ElectricalFeature : metadata:Category [
+		metadata:ElementOfCategory Intensity
+		metadata:ElementOfCategory Voltage
+		metadata:ElementOfCategory Power
+	]
+
+	instance PhysicalFeature : metadata:Category [
+		metadata:CategoryOfCategory Materials
+		metadata:CategoryOfCategory Dimensions
+	]
+
+	instance Materials : metadata:Category [
+		metadata:ElementOfCategory BaseMaterial
+		metadata:ElementOfCategory BulbMaterial
+	]
+
+	instance Dimensions : metadata:Category [
+		metadata:ElementOfCategory Size
+		metadata:ElementOfCategory Weight
+	]
+
+	instance Float : metadata:FloatMetadataValueType [
+	]
+
+	instance LED : component:Component [
 		component:containsActivity turnOn
 		component:referencesInterface switch
 		package:isContainedByPackage box
 	]
-	
-	instance baseLamp : component:Component[
+
+	instance baseLamp : component:Component [
 		component:containsActivity turnOn
 		component:referencesInterface switch
 		package:isContainedByPackage box
 	]
-	instance lampShade : component:Component[
+
+	instance lampShade : component:Component [
 		component:containsActivity turnOn
 		component:referencesInterface switch
 		package:isContainedByPackage box
 	]
-	
-	instance switch : interface:Interface[
+
+	instance switch : interface:Interface [
 		component:isInterfaceReferencedBy LED
 		package:isDeclaredByPackage box
 	]
-	instance command : interface:Command[
+
+	instance command : interface:Command [
 		interface:commandOnInterface switch
 	]
-	instance argumentInterface : interface:Argument[
+
+	instance argumentInterface : interface:Argument [
 		interface:onCommand command
 	]
+
 	instance genericType : interface:GenericType
-	instance mapping : interface:Mapping[
+
+	instance mapping : interface:Mapping [
 		interface:onGenericType genericType
 	]
-	
+
 	instance field : field:Field
+
 	instance externalField : field:ExternalField
+
 	instance entries : field:Entries
-	
-	
-	instance turnOn : activity:Activity[
+
+	instance turnOn : activity:Activity [
 		component:isContainedByComponent LED
 		stateMachine:isControledByStateMachine lightTransition
 	]
-	
-	
-	instance lightTransition : stateMachine:StateMachine[
+
+	instance lightTransition : stateMachine:StateMachine [
 		stateMachine:controlsActivity turnOn
 		stateMachine:isStateMachineOf on
 	]
 
-	
-	instance on : stateMachine:Variable[
+	instance on : stateMachine:Variable [
 		stateMachine:isVariableOf lightTransition
 	]
-	instance off : stateMachine:Variable[
-		stateMachine:isVariableOf lightTransition
-	]
-		 
 
-	
+	instance off : stateMachine:Variable [
+		stateMachine:isVariableOf lightTransition
+	]
 }

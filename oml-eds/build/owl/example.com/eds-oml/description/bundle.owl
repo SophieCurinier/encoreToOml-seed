@@ -10,6 +10,7 @@
      xmlns:bundle="http://example.com/eds-oml/description/bundle#">
     <owl:Ontology rdf:about="http://example.com/eds-oml/description/bundle">
         <owl:imports rdf:resource="http://example.com/eds-oml/description/main"/>
+        <owl:imports rdf:resource="http://example.com/eds-oml/description/powerManagement"/>
         <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/datasheet-bundle"/>
         <owl:imports rdf:resource="http://purl.org/dc/elements/1.1"/>
         <dc:description>A description bundle for closed-world reasoning about an electronic datasheet</dc:description>
@@ -34,6 +35,20 @@
 
 
     <rdf:Description rdf:about="http://example.com/eds-oml/description/main#interface">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://example.com/eds-oml/vocabulary/Interface#abstract"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdf:type>
+    </rdf:Description>
+    
+
+
+    <!-- http://example.com/eds-oml/description/powerManagement#switch -->
+
+
+    <rdf:Description rdf:about="http://example.com/eds-oml/description/powerManagement#switch">
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://example.com/eds-oml/vocabulary/Interface#abstract"/>
