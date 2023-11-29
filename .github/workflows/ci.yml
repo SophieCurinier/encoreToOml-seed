@@ -31,8 +31,6 @@ jobs:
       run: ./gradlew build
     - name: Query
       run: ./gradlew owlQuery
-    - name: Verify content
-      run: ls build/results
     - name: Upload
       if: ${{ always() }}
       uses: actions/upload-artifact@v3
@@ -41,22 +39,20 @@ jobs:
         path: oml-eds/build/
     - name: Generate Docs
       run: ./gradlew generateDocs
-    - name: Verify content
-      run: ls build/web/doc
     - name: Set up Python 3
       uses: actions/setup-python@v4
       with: 
         python-version: '3.10'
     - name: Install Requirements
       run: pip install -r src/ipynb/requirements.txt
+    - name: Run Jupyter Notebook
+      uses: jupyter/nbconvert-action@v7
+      with:
+        notebook_file: src/ipynb/index.ipynb
     - name: Run Notebook
       run: python -m nbconvert --execute --to notebook --no-input src/ipynb/index.ipynb --output-dir='build/web' 
-    - name: Verify content
-      run: ls build/web
     - name: Convert Notebook to HTML
       run: python -m nbconvert --to html --no-input build/web/index.ipynb
-    - name: Verify content
-      run: ls build/web
     - name: Publish
       uses: actions/upload-pages-artifact@v1
       with:
