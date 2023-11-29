@@ -47,25 +47,31 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 	]
 
 	instance Power : metadata:Metadata [
+		metadata:MetadataType FloatMetadata
 	]
 
 	instance Intensity : metadata:Metadata [
+		metadata:MetadataType FloatMetadata
 	]
 
 	instance Voltage : metadata:Metadata [
+		metadata:MetadataType FloatMetadata
 	]
 
 	instance Size : metadata:Metadata [
+		metadata:MetadataType FloatMetadata
 	]
 
 	instance Weight : metadata:Metadata [
-		metadata:MetadataType Float
+		metadata:MetadataType FloatMetadata
 	]
 
 	instance BulbMaterial : metadata:Metadata [
+		metadata:MetadataType StringMetadata
 	]
 
 	instance BaseMaterial : metadata:Metadata [
+		metadata:MetadataType StringMetadata
 	]
 
 	instance ElectricalFeature : metadata:Category [
@@ -89,7 +95,10 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 		metadata:ElementOfCategory Weight
 	]
 
-	instance Float : metadata:FloatMetadataValueType [
+	instance FloatMetadata : metadata:FloatMetadataValueType [
+	]
+	
+	instance StringMetadata : metadata:StringMetadataValueType [
 	]
 
 	instance LED : component:Component [

@@ -71,8 +71,5 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 		to Metadata
 	]
 
-	scalar property Unity [
-		domain MetadataValueType
-		range xsd:string
-	]
+
 }
