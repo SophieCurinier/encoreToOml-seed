@@ -6,6 +6,10 @@
 <http://example.com/eds-oml/vocabulary/StateMachine#StateMachine>
         rdf:type  owl:Class .
 
+<http://example.com/eds-oml/vocabulary/Package#PackageDefinesDataTypes>
+        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#PackageDefinesDataTypes> .
+
 <http://example.com/eds-oml/vocabulary/Interface#ArgumentOnCommand>
         rdf:type  owl:Class .
 
@@ -15,15 +19,27 @@
         owl:inverseOf       <http://example.com/eds-oml/vocabulary/DataType#limitsScalar> .
 
 <http://example.com/eds-oml/vocabulary/Metadata#CategoryOfMetadata>
-        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdf:type            owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Metadata#CategoryOfMetadata> .
 
 <http://example.com/eds-oml/vocabulary/DataSheet#DatasheetContainsDevice>
-        rdf:type  owl:Class .
+        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/DataSheet#DatasheetContainsDevice> .
 
 <http://example.com/eds-oml/vocabulary/Interface#level>
         rdf:type            owl:DatatypeProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Interface#level> .
+
+<http://example.com/eds-oml/vocabulary/Component#ComponentContainsDataTypeSet>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Component#ComponentContainsDataTypeSet> .
+
+<http://example.com/eds-oml/vocabulary/Metadata#Element>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Metadata#Element> .
+
+<http://example.com/eds-oml/vocabulary/Component#Implementation>
+        rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Metadata#Category>
         rdf:type  owl:Class .
@@ -35,6 +51,10 @@
 <http://example.com/eds-oml/vocabulary/Interface#CommandOnInterface>
         rdf:type  owl:Class .
 
+<http://example.com/eds-oml/vocabulary/Component#ComponentContainsDeclaredInterfaceSet>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Component#ComponentContainsDeclaredInterfaceSet> .
+
 <http://example.com/eds-oml/vocabulary/Activity#ArgumentOnActivity>
         rdf:type  owl:Class .
 
@@ -45,6 +65,9 @@
         rdf:type            owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Interface#onInterface> .
 
+<http://example.com/eds-oml/vocabulary/Interface#DeclaredInterfaceSet>
+        rdf:type  owl:Class .
+
 <http://example.com/eds-oml/vocabulary/Interface#BaseInterface>
         rdf:type  owl:Class .
 
@@ -54,6 +77,10 @@
 <http://example.com/eds-oml/vocabulary/StateMachine#defaultEntryState>
         rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/StateMachine#defaultEntryState> .
+
+<http://example.com/eds-oml/vocabulary/Metadata#ElementOfCategory>
+        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Metadata#ElementOfCategory> .
 
 <http://example.com/eds-oml/vocabulary/Component#containsActivity>
         rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
@@ -68,15 +95,6 @@
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/DataType#limitsScalar> ;
         owl:inverseOf       <http://example.com/eds-oml/vocabulary/DataType#isLimitedByRange> .
 
-<http://example.com/eds-oml/vocabulary/Package#isContainedByPackage>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#isContainedByPackage> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/Package#containsComponent> .
-
-<http://example.com/eds-oml/vocabulary/Metadata#CategoryToMetadataValue>
-        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Metadata#CategoryToMetadataValue> .
-
 <http://example.com/eds-oml/vocabulary/Activity#Activity>
         rdf:type  owl:Class .
 
@@ -86,19 +104,18 @@
 <http://example.com/eds-oml/vocabulary/Package#Package>
         rdf:type  owl:Class .
 
+<http://example.com/eds-oml/vocabulary/Package#PackageContainsComponents>
+        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#PackageContainsComponents> .
+
 <http://example.com/eds-oml/vocabulary/Field#Field>
         rdf:type  owl:Class .
-
-<http://example.com/eds-oml/vocabulary/Device#hasDevice>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Device#hasDevice> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/Device#containsMetadata> .
 
 <http://example.com/eds-oml/description/bundle/properties>
         rdf:type         owl:Ontology ;
         rdfs:comment     "Generated by Owl Reason 2.6.0" ;
         owl:imports      <http://example.com/eds-oml/description/bundle> ;
-        owl:versionInfo  "1701213386" .
+        owl:versionInfo  "1701280409" .
 
 <http://example.com/eds-oml/vocabulary/DataType#DataType>
         rdf:type  owl:Class .
@@ -109,9 +126,6 @@
 <http://example.com/eds-oml/vocabulary/Interface#commandOnInterface>
         rdf:type            owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Interface#commandOnInterface> .
-
-<http://example.com/eds-oml/vocabulary/Package#PackageContainsComponent>
-        rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Component#referencesInterface>
         rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
@@ -127,20 +141,15 @@
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/StateMachine#controlsActivity> ;
         owl:inverseOf       <http://example.com/eds-oml/vocabulary/StateMachine#isControledByStateMachine> .
 
-<http://example.com/eds-oml/vocabulary/Aspects#hasId>
-        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Aspects#hasId> .
-
 <http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValue>
         rdf:type            owl:DatatypeProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValue> .
 
 owl:Nothing  rdf:type  owl:Class .
 
-<http://example.com/eds-oml/vocabulary/Device#containsMetadata>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Device#containsMetadata> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/Device#hasDevice> .
+<http://example.com/eds-oml/vocabulary/Aspects#hasId>
+        rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Aspects#hasId> .
 
 <http://example.com/eds-oml/vocabulary/DataSheet#DataSheet>
         rdf:type  owl:Class .
@@ -149,26 +158,30 @@ owl:Nothing  rdf:type  owl:Class .
         rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Aspects#name> .
 
-<http://example.com/eds-oml/vocabulary/Package#isDefinedByPackage>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#isDefinedByPackage> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/Package#definesDataType> .
-
 <http://example.com/eds-oml/vocabulary/Activity#BodyElementsSet>
         rdf:type            owl:DatatypeProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Activity#BodyElementsSet> .
 
+<http://example.com/eds-oml/vocabulary/Component#ComponentContainsProvidedInterfaceSet>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Component#ComponentContainsProvidedInterfaceSet> .
+
 <http://example.com/eds-oml/vocabulary/Interface#MappingOnGenericType>
+        rdf:type  owl:Class .
+
+<http://example.com/eds-oml/vocabulary/Interface#ProvidedInterfaceSet>
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Aspects#shortDescription>
         rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Aspects#shortDescription> .
 
-<http://example.com/eds-oml/vocabulary/Package#containsComponent>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#containsComponent> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/Package#isContainedByPackage> .
+<http://example.com/eds-oml/vocabulary/Metadata#MetadataSet>
+        rdf:type  owl:Class .
+
+<http://example.com/eds-oml/vocabulary/Device#DeviceContainsMetadatas>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Device#DeviceContainsMetadatas> .
 
 <http://example.com/eds-oml/vocabulary/DataType#Container>
         rdf:type  owl:Class .
@@ -178,6 +191,10 @@ owl:Nothing  rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/DataType#RangeLimitsScalar>
         rdf:type  owl:Class .
+
+<http://example.com/eds-oml/vocabulary/Package#PackageDeclaresInterfaces>
+        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#PackageDeclaresInterfaces> .
 
 <http://example.com/eds-oml/vocabulary/Metadata#StringMetadataValue>
         rdf:type            owl:DatatypeProperty ;
@@ -189,9 +206,6 @@ owl:Nothing  rdf:type  owl:Class .
 <http://example.com/eds-oml/vocabulary/Metadata#MetadataType>
         rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Metadata#MetadataType> .
-
-<http://example.com/eds-oml/vocabulary/Package#PackageDeclaresInterface>
-        rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Aspects#longDescription>
         rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
@@ -226,15 +240,18 @@ owl:Thing  rdf:type  owl:Class .
 <http://example.com/eds-oml/vocabulary/Field#Entries>
         rdf:type  owl:Class .
 
+<http://example.com/eds-oml/vocabulary/Component#ComponentContainsRequiredInterfaceSet>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Component#ComponentContainsRequiredInterfaceSet> .
+
+<http://example.com/eds-oml/vocabulary/Component#Element>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Component#Element> .
+
 <http://example.com/eds-oml/vocabulary/StateMachine#isVariableOf>
         rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/StateMachine#isVariableOf> ;
         owl:inverseOf       <http://example.com/eds-oml/vocabulary/StateMachine#isStateMachineOf> .
-
-<http://example.com/eds-oml/vocabulary/Package#isDeclaredByPackage>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#isDeclaredByPackage> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/Package#declaresInterface> .
 
 <http://example.com/eds-oml/vocabulary/StateMachine#isStateMachineOf>
         rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
@@ -249,14 +266,11 @@ owl:Thing  rdf:type  owl:Class .
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Component#isContainedByComponent> ;
         owl:inverseOf       <http://example.com/eds-oml/vocabulary/Component#containsActivity> .
 
-owl:topDataProperty  rdf:type  owl:DatatypeProperty .
-
 owl:topObjectProperty
         rdf:type       owl:SymmetricProperty , owl:TransitiveProperty , owl:ObjectProperty ;
         owl:inverseOf  owl:topObjectProperty .
 
-<http://example.com/eds-oml/vocabulary/Package#PackageDefinesDataType>
-        rdf:type  owl:Class .
+owl:topDataProperty  rdf:type  owl:DatatypeProperty .
 
 <http://example.com/eds-oml/vocabulary/Activity#onActivity>
         rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
@@ -275,11 +289,6 @@ owl:topObjectProperty
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Interface#isDataTypeReferencedBy> ;
         owl:inverseOf       <http://example.com/eds-oml/vocabulary/Interface#referencesDataType> .
 
-<http://example.com/eds-oml/vocabulary/DataSheet#datasheetContainsDevice>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/DataSheet#datasheetContainsDevice> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/DataSheet#isDeviceOfDatasheet> .
-
 <http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface>
         rdf:type  owl:Class .
 
@@ -288,15 +297,8 @@ owl:topObjectProperty
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Component#definesComponent> ;
         owl:inverseOf       <http://example.com/eds-oml/vocabulary/Component#definedByStateMachine> .
 
-<http://example.com/eds-oml/vocabulary/DataSheet#isDeviceOfDatasheet>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/DataSheet#isDeviceOfDatasheet> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/DataSheet#datasheetContainsDevice> .
-
-<http://example.com/eds-oml/vocabulary/Package#definesDataType>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#definesDataType> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/Package#isDefinedByPackage> .
+<http://example.com/eds-oml/vocabulary/DataType#DataTypeSet>
+        rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Device#Device>
         rdf:type  owl:Class .
@@ -304,25 +306,16 @@ owl:topObjectProperty
 <http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType>
         rdf:type  owl:Class .
 
-<http://example.com/eds-oml/vocabulary/DataSheet#datasheetContainsPackage>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/DataSheet#datasheetContainsPackage> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/DataSheet#isPackageOfDatasheet> .
-
 <http://example.com/eds-oml/vocabulary/Interface#abstract>
         rdf:type            owl:FunctionalProperty , owl:DatatypeProperty ;
         rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Interface#abstract> .
-
-<http://example.com/eds-oml/vocabulary/Package#declaresInterface>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Package#declaresInterface> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/Package#isDeclaredByPackage> .
 
 <http://example.com/eds-oml/vocabulary/Interface#Parameter>
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/DataSheet#DatasheetContainsPackage>
-        rdf:type  owl:Class .
+        rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/DataSheet#DatasheetContainsPackage> .
 
 <http://example.com/eds-oml/vocabulary/Component#definedByStateMachine>
         rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
@@ -332,13 +325,12 @@ owl:topObjectProperty
 <http://example.com/eds-oml/vocabulary/Interface#GenericType>
         rdf:type  owl:Class .
 
+<http://example.com/eds-oml/vocabulary/Component#ComponentContainsImplementation>
+        rdf:type            owl:ObjectProperty ;
+        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/Component#ComponentContainsImplementation> .
+
 <http://opencaesar.io/oml#hasSource>
         rdf:type  owl:ObjectProperty .
-
-<http://example.com/eds-oml/vocabulary/DataSheet#isPackageOfDatasheet>
-        rdf:type            owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty ;
-        rdfs:subPropertyOf  <http://example.com/eds-oml/vocabulary/DataSheet#isPackageOfDatasheet> ;
-        owl:inverseOf       <http://example.com/eds-oml/vocabulary/DataSheet#datasheetContainsPackage> .
 
 <http://example.com/eds-oml/vocabulary/Metadata#CategoryOfCategory>
         rdf:type            owl:FunctionalProperty , owl:ObjectProperty ;
@@ -348,6 +340,9 @@ owl:topObjectProperty
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Component#ComponentDefinedByStateMachine>
+        rdf:type  owl:Class .
+
+<http://example.com/eds-oml/vocabulary/Interface#RequiredInterfaceSet>
         rdf:type  owl:Class .
 
 <http://opencaesar.io/oml#hasTarget>
@@ -364,7 +359,7 @@ owl:topObjectProperty
 <http://example.com/eds-oml/vocabulary/DataType#Range>
         rdf:type  owl:Class .
 
-<http://example.com/eds-oml/vocabulary/Device#DeviceContainsMetadata>
+<http://example.com/eds-oml/vocabulary/Component#ComponentSet>
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Activity#Body>

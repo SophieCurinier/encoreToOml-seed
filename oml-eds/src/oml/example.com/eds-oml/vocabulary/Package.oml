@@ -13,35 +13,26 @@ vocabulary <http://example.com/eds-oml/vocabulary/Package#> as Package {
 	// Package Element
 	@rdfs:comment "Packages describe a related set of components, data types, and interfaces"
 	concept Package < aspects:NamedEntityType
-
+	
+	
 	@rdfs:comment "A Package contains Components that specify a behavioural mapping between those interfaces"
-	relation entity PackageContainsComponent [
+	relation PackageContainsComponents [
 		from Package
-		to component:Component
-		forward containsComponent
-		reverse isContainedByPackage
+		to component:ComponentSet
 		functional
-		inverse functional
 	]
 
-	@rdfs:comment "A Package declarse Interfaces referencing data types"
-	relation entity PackageDeclaresInterface [
+	@rdfs:comment "A Package declares Interfaces referencing data types"
+	relation PackageDeclaresInterfaces [
 		from Package
-		to interface:Interface
-		forward declaresInterface
-		reverse isDeclaredByPackage
+		to interface:DeclaredInterfaceSet
 		functional
-		inverse functional
 	]
 
 	@rdfs:comment "A Package defines a variety of Data Types"
-	relation entity PackageDefinesDataType [
+	relation PackageDefinesDataTypes [
 		from Package
-		to dataType:DataType
-		forward definesDataType
-		reverse isDefinedByPackage
+		to dataType:DataTypeSet
 		functional
-		inverse functional
 	]
-// TO DO
 }

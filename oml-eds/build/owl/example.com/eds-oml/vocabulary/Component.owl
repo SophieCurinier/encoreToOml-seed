@@ -13,6 +13,7 @@
     <owl:Ontology rdf:about="http://example.com/eds-oml/vocabulary/Component">
         <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/Activity"/>
         <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/Aspects"/>
+        <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/DataType"/>
         <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/Interface"/>
         <owl:imports rdf:resource="http://example.com/eds-oml/vocabulary/StateMachine"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#Vocabulary"/>
@@ -29,6 +30,72 @@
      -->
 
 
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsDataTypeSet -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentContainsDataTypeSet">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/DataType#DataTypeSet"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsDeclaredInterfaceSet -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentContainsDeclaredInterfaceSet">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#DeclaredInterfaceSet"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsImplementation -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentContainsImplementation">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Component#Implementation"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsProvidedInterfaceSet -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentContainsProvidedInterfaceSet">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#ProvidedInterfaceSet"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsRequiredInterfaceSet -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentContainsRequiredInterfaceSet">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#RequiredInterfaceSet"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#Element -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#Element">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#ComponentSet"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
     
 
 
@@ -162,6 +229,24 @@
     <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentReferencesInterface">
         <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
         <rdfs:comment>Components specify a behavioural mapping between the interfaces</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentSet -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentSet">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#Implementation -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Component#Implementation">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 

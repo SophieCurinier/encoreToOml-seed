@@ -24,7 +24,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 	]
 
 	concept IntegerMetadataValueType < MetadataValueType [
-		restricts IntegerMetadataValue to min 0
+		// restricts IntegerMetadataValue to min 0
 	]
 
 	scalar property IntegerMetadataValue [
@@ -33,7 +33,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 	]
 
 	concept FloatMetadataValueType < MetadataValueType [
-		restricts FloatMetadataValue to min 0
+		// restricts FloatMetadataValue to min 0
 	]
 
 	scalar property FloatMetadataValue [
@@ -70,6 +70,4 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 		from MetadataSet
 		to Metadata
 	]
-
-
 }

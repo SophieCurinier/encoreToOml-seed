@@ -16,6 +16,12 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 		// restricts level to min 3
 		restricts level to max 4
 	]
+	
+	concept DeclaredInterfaceSet
+	
+	concept ProvidedInterfaceSet
+	
+	concept RequiredInterfaceSet
 
 	@rdfs:comment "If true, indicates the interface may not be used directly by a component"
 	scalar property abstract [

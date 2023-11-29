@@ -14,6 +14,8 @@ vocabulary <http://example.com/eds-oml/vocabulary/DataType#> as DataType {
 		oneOf "Array", "Binary", "Boolean", "Container", "Enumerated", "Float", "Integer", "String", "SubRange"
 	]
 
+	concept DataTypeSet
+	
 	scalar property DataTypeSetType [
 		domain DataType
 		range DataTypeValue

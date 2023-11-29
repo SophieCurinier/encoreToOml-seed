@@ -214,6 +214,15 @@
     
 
 
+    <!-- http://example.com/eds-oml/vocabulary/DataType#DataTypeSet -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/DataType#DataTypeSet">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/eds-oml/vocabulary/DataType#Range -->
 
 

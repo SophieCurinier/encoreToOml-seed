@@ -12,22 +12,16 @@ vocabulary <http://example.com/eds-oml/vocabulary/DataSheet#> as DataSheet {
 	concept DataSheet < aspects:IdentifiedThing
 
 	@rdfs:comment "A DeviceDatasheet contains all known information about a particular device or class of devices"
-	relation entity DatasheetContainsDevice [
+	relation DatasheetContainsDevice [
 		from DataSheet
 		to device:Device
-		forward datasheetContainsDevice
-		reverse isDeviceOfDatasheet
 		functional
-		inverse functional
 	]
 
 	@rdfs:comment "DataSheet may reference one or more Package Files that capture an independently managed subset of that data"
-	relation entity DatasheetContainsPackage [
+	relation DatasheetContainsPackage [
 		from DataSheet
 		to package:Package
-		forward datasheetContainsPackage
-		reverse isPackageOfDatasheet
 		functional
-		inverse functional
 	]
 }

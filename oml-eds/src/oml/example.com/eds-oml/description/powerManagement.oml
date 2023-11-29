@@ -23,24 +23,48 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 
 	uses <http://example.com/eds-oml/vocabulary/Field#> as field
 
-	instance lampDatasheet : dataSheet:DataSheet [
-		dataSheet:datasheetContainsDevice lamp
-		dataSheet:datasheetContainsPackage box
+	instance LampDatasheet : dataSheet:DataSheet [
+		dataSheet:DatasheetContainsDevice Lamp
+		dataSheet:DatasheetContainsPackage Package
 	]
 
-	instance lamp : device:Device [
-		// dataSheet:isDeviceOfDatasheet lampDatasheet
+	instance Lamp : device:Device [
 		device:DeviceContainsMetadatas MetadataSet
 	]
 
-	instance box : package:Package [
-		dataSheet:isPackageOfDatasheet lampDatasheet
-		package:containsComponent LED
-		package:containsComponent baseLamp
-		package:containsComponent lampShade
-		package:declaresInterface switch
+	instance Package : package:Package [
+		package:PackageContainsComponents ComponentSet
+		package:PackageDeclaresInterfaces DeclaredInterfaceSet
+		package:PackageDefinesDataTypes DataTypeSet
+		//package:declaresInterface switch
+	]
+	
+	instance DeclaredInterfaceSet : interface:DeclaredInterfaceSet
+	
+	instance DataTypeSet : dataType:DataTypeSet
+	
+	// ------------- Component -------------------- //
+	
+	instance ComponentSet : component:ComponentSet[
+		component:Element LED
+		component:Element BaseLamp
+		component:Element LampShade
+	]
+	
+	instance LED : component:Component [
+
 	]
 
+	instance BaseLamp : component:Component [
+
+	]
+
+	instance LampShade : component:Component [
+
+	]
+	
+	// ------------- Metadata -------------------- //
+	
 	instance MetadataSet : metadata:MetadataSet [
 		metadata:CategoryOfMetadata ElectricalFeature
 		metadata:CategoryOfMetadata PhysicalFeature
@@ -67,11 +91,11 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 	]
 
 	instance BulbMaterial : metadata:Metadata [
-		metadata:MetadataType StringMetadata
+		// metadata:MetadataType StringMetadata
 	]
 
 	instance BaseMaterial : metadata:Metadata [
-		metadata:MetadataType StringMetadata
+		// metadata:MetadataType StringMetadata
 	]
 
 	instance ElectricalFeature : metadata:Category [
@@ -97,27 +121,13 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 
 	instance FloatMetadata : metadata:FloatMetadataValueType [
 	]
-	
+
 	instance StringMetadata : metadata:StringMetadataValueType [
 	]
+	
+	
 
-	instance LED : component:Component [
-		component:containsActivity turnOn
-		component:referencesInterface switch
-		package:isContainedByPackage box
-	]
-
-	instance baseLamp : component:Component [
-		component:containsActivity turnOn
-		component:referencesInterface switch
-		package:isContainedByPackage box
-	]
-
-	instance lampShade : component:Component [
-		component:containsActivity turnOn
-		component:referencesInterface switch
-		package:isContainedByPackage box
-	]
+	/*
 
 	instance switch : interface:Interface [
 		component:isInterfaceReferencedBy LED
@@ -160,5 +170,5 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 
 	instance off : stateMachine:Variable [
 		stateMachine:isVariableOf lightTransition
-	]
+	]*/
 }

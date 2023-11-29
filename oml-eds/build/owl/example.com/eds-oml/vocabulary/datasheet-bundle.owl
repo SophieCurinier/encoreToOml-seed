@@ -57,6 +57,7 @@
             <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Field#Field"/>
             <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#Category"/>
             <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#Metadata"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#MetadataSet"/>
             <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#MetadataValueType"/>
         </owl:members>
     </rdf:Description>

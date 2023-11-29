@@ -200,6 +200,15 @@
     
 
 
+    <!-- http://example.com/eds-oml/vocabulary/Interface#DeclaredInterfaceSet -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#DeclaredInterfaceSet">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/eds-oml/vocabulary/Interface#GenericType -->
 
 
@@ -278,6 +287,24 @@
 
     <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#ParameterOnInterface">
         <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#ProvidedInterfaceSet -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#ProvidedInterfaceSet">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Interface#RequiredInterfaceSet -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/Interface#RequiredInterfaceSet">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 

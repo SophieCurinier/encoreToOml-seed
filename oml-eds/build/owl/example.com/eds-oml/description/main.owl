@@ -8,7 +8,6 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:main="http://example.com/eds-oml/description/main#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:Device="http://example.com/eds-oml/vocabulary/Device#"
      xmlns:Package="http://example.com/eds-oml/vocabulary/Package#"
      xmlns:Activity="http://example.com/eds-oml/vocabulary/Activity#"
      xmlns:DataType="http://example.com/eds-oml/vocabulary/DataType#"
@@ -128,20 +127,6 @@
 
 
     <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/DataType#limitsScalar"/>
-    
-
-
-    <!-- http://example.com/eds-oml/vocabulary/Device#containsMetadata -->
-
-
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Device#containsMetadata"/>
-    
-
-
-    <!-- http://example.com/eds-oml/vocabulary/Device#hasDevice -->
-
-
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Device#hasDevice"/>
     
 
 
@@ -387,7 +372,6 @@
     <owl:NamedIndividual rdf:about="http://example.com/eds-oml/description/main#device">
         <rdf:type rdf:resource="http://example.com/eds-oml/vocabulary/Device#Device"/>
         <DataSheet:isDeviceOfDatasheet rdf:resource="http://example.com/eds-oml/description/main#datasheet"/>
-        <Device:containsMetadata rdf:resource="http://example.com/eds-oml/description/main#metadata"/>
     </owl:NamedIndividual>
     
 
@@ -455,7 +439,6 @@
 
     <owl:NamedIndividual rdf:about="http://example.com/eds-oml/description/main#metadata">
         <rdf:type rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Metadata"/>
-        <Device:hasDevice rdf:resource="http://example.com/eds-oml/description/main#device"/>
     </owl:NamedIndividual>
     
 
