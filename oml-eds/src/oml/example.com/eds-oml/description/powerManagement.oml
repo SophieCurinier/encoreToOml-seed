@@ -34,12 +34,12 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 
 	instance Package : package:Package [
 		package:PackageContainsComponents ComponentSet
-		package:PackageDeclaresInterfaces DeclaredInterfaceSet
+		package:PackageDeclaresInterfaces InterfaceSet
 		package:PackageDefinesDataTypes DataTypeSet
 		//package:declaresInterface switch
 	]
 	
-	instance DeclaredInterfaceSet : interface:DeclaredInterfaceSet
+	instance InterfaceSet : interface:InterfaceSet
 	
 	instance DataTypeSet : dataType:DataTypeSet
 	

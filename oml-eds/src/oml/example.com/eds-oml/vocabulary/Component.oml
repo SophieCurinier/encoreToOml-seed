@@ -49,18 +49,18 @@ vocabulary <http://example.com/eds-oml/vocabulary/Component#> as Component {
 		inverse functional
 	]
 	
-	relation ComponentContainsRequiredInterfaceSet[
+	relation ComponentRequiredInterfaceSet[
 		from Component
-		to interface:RequiredInterfaceSet
+		to interface:InterfaceSet
 	]
 	
-	relation ComponentContainsDeclaredInterfaceSet[
+	relation ComponentDeclaredInterfaceSet[
 		from Component
-		to interface:DeclaredInterfaceSet
+		to interface:InterfaceSet
 	]
-	relation ComponentContainsProvidedInterfaceSet[
+	relation ComponentProvidedInterfaceSet[
 		from Component
-		to interface:ProvidedInterfaceSet
+		to interface:InterfaceSet
 	]
 	
 	relation ComponentContainsDataTypeSet[

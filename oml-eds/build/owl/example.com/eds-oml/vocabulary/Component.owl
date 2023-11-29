@@ -44,17 +44,6 @@
     
 
 
-    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsDeclaredInterfaceSet -->
-
-
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentContainsDeclaredInterfaceSet">
-        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
-        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#DeclaredInterfaceSet"/>
-        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsImplementation -->
 
 
@@ -66,23 +55,34 @@
     
 
 
-    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsProvidedInterfaceSet -->
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentDeclaredInterfaceSet -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentContainsProvidedInterfaceSet">
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentDeclaredInterfaceSet">
         <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
-        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#ProvidedInterfaceSet"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#InterfaceSet"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentContainsRequiredInterfaceSet -->
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentProvidedInterfaceSet -->
 
 
-    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentContainsRequiredInterfaceSet">
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentProvidedInterfaceSet">
         <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
-        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#RequiredInterfaceSet"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#InterfaceSet"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/Component#ComponentRequiredInterfaceSet -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Component#ComponentRequiredInterfaceSet">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Component#Component"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#InterfaceSet"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
     </owl:ObjectProperty>
     

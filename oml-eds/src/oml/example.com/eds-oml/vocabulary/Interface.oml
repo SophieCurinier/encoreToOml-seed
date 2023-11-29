@@ -17,11 +17,90 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 		restricts level to max 4
 	]
 	
-	concept DeclaredInterfaceSet
+	concept InterfaceSet < aspects:NamedEntityType
 	
-	concept ProvidedInterfaceSet
+	relation Element[
+		from InterfaceSet
+		to Interface
+	]
 	
-	concept RequiredInterfaceSet
+	// Base Interface // 
+	
+	@rdfs:comment "Identifies one existing interface definition"
+	concept BaseInterfaceSet
+	
+	relation BaseInterfaceSetInterface[
+		from BaseInterfaceSet
+		to Interface
+	]
+	
+	relation InterfaceBaseInterfaceSet[
+		from Interface
+		to BaseInterfaceSet
+		functional
+	]
+	
+	
+	// Generic Type //
+	
+	concept GenericTypeSet
+	
+	@rdfs:comment "Specifies a generic type to be used by the interface"
+	concept GenericType < aspects:NamedEntityType
+	
+	relation GenericTypeElement[
+		from GenericTypeSet
+		to GenericType
+	]
+	
+	relation InterfaceGenericTypeSet[
+		from Interface
+		to GenericTypeSet
+		functional
+	]
+	
+	// Parameter //
+	
+	concept ParameterSet
+	
+	concept Parameter < field:ExternalField
+	
+	relation ParameterElement[
+		from ParameterSet
+		to Parameter
+	]
+	
+	relation InterfaceParameterSet[
+		from Interface
+		to ParameterSet
+		functional
+	]
+	
+	// Command //
+	
+	concept CommandSet
+	
+	concept Command < aspects:NamedEntityType
+	
+	relation CommandElement[
+		from CommandSet
+		to Command
+	]
+	
+	relation InterfaceCommandSet[
+		from Interface
+		to CommandSet
+		functional
+	]
+	
+	// Argument //
+	
+	concept Argument < field:ExternalField
+
+	relation ArgumentOnCommand [
+		from Command
+		to Argument
+	]
 
 	@rdfs:comment "If true, indicates the interface may not be used directly by a component"
 	scalar property abstract [
@@ -36,43 +115,15 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 		range xsd:float
 	]
 
-	concept Command < aspects:NamedEntityType
-
-	concept Argument < field:ExternalField
-
-	relation entity ArgumentOnCommand [
-		from Argument
-		to Command
-		forward onCommand
-	]
-
-	@rdfs:comment "Specifies a generic type to be used by the interface"
-	concept GenericType < aspects:NamedEntityType
 
 	concept Mapping < field:Field
 
-	relation entity MappingOnGenericType [
-		from Mapping
-		to GenericType
-		forward onGenericType
+	relation MappingOnGenericType [
+		from GenericType
+		to Mapping
 	]
 
-	@rdfs:comment "Identifies one existing interface definition"
-	concept BaseInterface < aspects:NamedEntityType
 
-	concept Parameter < field:ExternalField
-
-	relation entity ParameterOnInterface [
-		from Parameter
-		to Interface
-		forward onInterface
-	]
-
-	relation entity CommandOnInterface [
-		from Command
-		to Interface
-		forward commandOnInterface
-	]
 
 	@rdfs:comment "Interfaces reference datatypes"
 	relation entity InterfaceReferencesDataType [

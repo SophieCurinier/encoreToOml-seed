@@ -180,15 +180,6 @@
     
 
 
-    <!-- http://example.com/eds-oml/description/powerManagement#DeclaredInterfaceSet -->
-
-
-    <owl:NamedIndividual rdf:about="http://example.com/eds-oml/description/powerManagement#DeclaredInterfaceSet">
-        <rdf:type rdf:resource="http://example.com/eds-oml/vocabulary/Interface#DeclaredInterfaceSet"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://example.com/eds-oml/description/powerManagement#Dimensions -->
 
 
@@ -227,6 +218,15 @@
     <owl:NamedIndividual rdf:about="http://example.com/eds-oml/description/powerManagement#Intensity">
         <rdf:type rdf:resource="http://example.com/eds-oml/vocabulary/Metadata#Metadata"/>
         <Metadata:MetadataType rdf:resource="http://example.com/eds-oml/description/powerManagement#FloatMetadata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.com/eds-oml/description/powerManagement#InterfaceSet -->
+
+
+    <owl:NamedIndividual rdf:about="http://example.com/eds-oml/description/powerManagement#InterfaceSet">
+        <rdf:type rdf:resource="http://example.com/eds-oml/vocabulary/Interface#InterfaceSet"/>
     </owl:NamedIndividual>
     
 
@@ -298,7 +298,7 @@
     <owl:NamedIndividual rdf:about="http://example.com/eds-oml/description/powerManagement#Package">
         <rdf:type rdf:resource="http://example.com/eds-oml/vocabulary/Package#Package"/>
         <Package:PackageContainsComponents rdf:resource="http://example.com/eds-oml/description/powerManagement#ComponentSet"/>
-        <Package:PackageDeclaresInterfaces rdf:resource="http://example.com/eds-oml/description/powerManagement#DeclaredInterfaceSet"/>
+        <Package:PackageDeclaresInterfaces rdf:resource="http://example.com/eds-oml/description/powerManagement#InterfaceSet"/>
         <Package:PackageDefinesDataTypes rdf:resource="http://example.com/eds-oml/description/powerManagement#DataTypeSet"/>
     </owl:NamedIndividual>
     

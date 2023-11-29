@@ -49,7 +49,7 @@
     <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/Package#PackageDeclaresInterfaces">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/Package#Package"/>
-        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#DeclaredInterfaceSet"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/Interface#InterfaceSet"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
         <rdfs:comment>A Package declares Interfaces referencing data types</rdfs:comment>
     </owl:ObjectProperty>
