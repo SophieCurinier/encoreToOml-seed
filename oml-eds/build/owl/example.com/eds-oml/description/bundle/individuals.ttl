@@ -53,7 +53,7 @@
         rdf:type  owl:DatatypeProperty .
 
 <http://example.com/eds-oml/vocabulary/Activity#ArgumentOnActivity>
-        rdf:type  owl:Class .
+        rdf:type  owl:ObjectProperty .
 
 <http://example.com/eds-oml/vocabulary/Interface#Argument>
         rdf:type  owl:Class .
@@ -79,9 +79,6 @@
 
 <http://example.com/eds-oml/vocabulary/Metadata#ElementOfCategory>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
-
-<http://example.com/eds-oml/vocabulary/Component#containsActivity>
-        rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://example.com/eds-oml/vocabulary/Activity#Argument>
         rdf:type  owl:Class .
@@ -123,10 +120,16 @@
 <http://example.com/eds-oml/vocabulary/Field#Field>
         rdf:type  owl:Class .
 
+<http://example.com/eds-oml/vocabulary/Component#ImplentationContainsActivitySet>
+        rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
+
 <http://example.com/eds-oml/vocabulary/Interface#BaseInterfaceSet>
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/DataType#DataType>
+        rdf:type  owl:Class .
+
+<http://example.com/eds-oml/vocabulary/Activity#ActivitySet>
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Interface#Interface>
@@ -137,6 +140,9 @@
         <http://example.com/eds-oml/vocabulary/Metadata#CategoryOfMetadata>
                 <http://example.com/eds-oml/description/powerManagement#ElectricalFeature> , <http://example.com/eds-oml/description/powerManagement#PhysicalFeature> ;
         owl:sameAs  <http://example.com/eds-oml/description/powerManagement#MetadataSet> .
+
+<http://example.com/eds-oml/vocabulary/StateMachine#Element>
+        rdf:type  owl:ObjectProperty .
 
 <http://example.com/eds-oml/description/powerManagement#Package>
         rdf:type    <http://example.com/eds-oml/vocabulary/Package#Package> , <http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType> , owl:Thing ;
@@ -156,9 +162,6 @@
         <http://example.com/eds-oml/vocabulary/Metadata#MetadataType>
                 <http://example.com/eds-oml/description/powerManagement#FloatMetadata> ;
         owl:sameAs  <http://example.com/eds-oml/description/powerManagement#Voltage> , <http://example.com/eds-oml/description/powerManagement#Intensity> , <http://example.com/eds-oml/description/powerManagement#Power> .
-
-<http://example.com/eds-oml/vocabulary/Component#referencesInterface>
-        rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://example.com/eds-oml/vocabulary/DataType#DataTypeSetType>
         rdf:type  owl:DatatypeProperty .
@@ -245,23 +248,23 @@ owl:Nothing  rdf:type  owl:Class .
 <http://example.com/eds-oml/vocabulary/Interface#CommandElement>
         rdf:type  owl:ObjectProperty .
 
+<http://example.com/eds-oml/vocabulary/StateMachine#VariableElement>
+        rdf:type  owl:ObjectProperty .
+
 <http://example.com/eds-oml/vocabulary/Aspects#longDescription>
         rdf:type  owl:FunctionalProperty , owl:DatatypeProperty .
 
 <http://example.com/eds-oml/vocabulary/Field#ExternalField>
         rdf:type  owl:Class .
 
+<http://example.com/eds-oml/vocabulary/Activity#ActivityContainsBody>
+        rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
+
 <http://example.com/eds-oml/description/powerManagement#Size>
         rdf:type    <http://example.com/eds-oml/vocabulary/Metadata#Metadata> , owl:Thing ;
         <http://example.com/eds-oml/vocabulary/Metadata#MetadataType>
                 <http://example.com/eds-oml/description/powerManagement#FloatMetadata> ;
         owl:sameAs  <http://example.com/eds-oml/description/powerManagement#Weight> , <http://example.com/eds-oml/description/powerManagement#BulbMaterial> , <http://example.com/eds-oml/description/powerManagement#BaseMaterial> , <http://example.com/eds-oml/description/powerManagement#Size> .
-
-<http://example.com/eds-oml/vocabulary/Activity#ActivityContainsBody>
-        rdf:type  owl:Class .
-
-<http://example.com/eds-oml/vocabulary/Activity#containsBody>
-        rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://example.com/eds-oml/description/powerManagement#Lamp>
         rdf:type    <http://example.com/eds-oml/vocabulary/Device#Device> , <http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType> , owl:Thing ;
@@ -278,13 +281,16 @@ owl:Nothing  rdf:type  owl:Class .
                 <http://example.com/eds-oml/description/powerManagement#FloatMetadata> ;
         owl:sameAs  <http://example.com/eds-oml/description/powerManagement#Weight> , <http://example.com/eds-oml/description/powerManagement#BulbMaterial> , <http://example.com/eds-oml/description/powerManagement#Size> , <http://example.com/eds-oml/description/powerManagement#BaseMaterial> .
 
-owl:Thing  rdf:type  owl:Class .
+<http://example.com/eds-oml/vocabulary/StateMachine#VariableSet>
+        rdf:type  owl:Class .
 
-<http://example.com/eds-oml/vocabulary/Activity#containedBy>
-        rdf:type  owl:InverseFunctionalProperty , owl:ObjectProperty .
+owl:Thing  rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Interface#referencesDataType>
         rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
+
+<http://example.com/eds-oml/vocabulary/StateMachine#StateMachineSet>
+        rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Field#Entries>
         rdf:type  owl:Class .
@@ -307,11 +313,8 @@ owl:Thing  rdf:type  owl:Class .
 <http://example.com/eds-oml/vocabulary/StateMachine#isStateMachineOf>
         rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
 
-<http://example.com/eds-oml/vocabulary/Component#ComponentReferencesInterface>
-        rdf:type  owl:Class .
-
-<http://example.com/eds-oml/vocabulary/Component#isContainedByComponent>
-        rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
+<http://example.com/eds-oml/vocabulary/Component#ImplentationContainsStateMachineSet>
+        rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://example.com/eds-oml/description/powerManagement#LampDatasheet>
         rdf:type    <http://example.com/eds-oml/vocabulary/DataSheet#DataSheet> , <http://example.com/eds-oml/vocabulary/Aspects#IdentifiedThing> , owl:Thing ;
@@ -332,9 +335,6 @@ owl:topDataProperty  rdf:type  owl:DatatypeProperty .
 <http://example.com/eds-oml/vocabulary/Interface#InterfaceCommandSet>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
 
-<http://example.com/eds-oml/vocabulary/Activity#onActivity>
-        rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
-
 <http://example.com/eds-oml/vocabulary/StateMachine#isControledByStateMachine>
         rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
 
@@ -345,7 +345,7 @@ owl:topDataProperty  rdf:type  owl:DatatypeProperty .
         rdf:type         owl:Ontology ;
         rdfs:comment     "Generated by Owl Reason 2.6.0" ;
         owl:imports      <http://example.com/eds-oml/description/bundle> ;
-        owl:versionInfo  "1701292876" .
+        owl:versionInfo  "1701295786" .
 
 <http://example.com/eds-oml/description/powerManagement#Voltage>
         rdf:type    <http://example.com/eds-oml/vocabulary/Metadata#Metadata> , owl:Thing ;
@@ -365,14 +365,14 @@ owl:topDataProperty  rdf:type  owl:DatatypeProperty .
 <http://example.com/eds-oml/vocabulary/Interface#GenericTypeElement>
         rdf:type  owl:ObjectProperty .
 
-<http://example.com/eds-oml/vocabulary/Component#definesComponent>
-        rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
-
 <http://example.com/eds-oml/vocabulary/DataType#DataTypeSet>
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Device#Device>
         rdf:type  owl:Class .
+
+<http://example.com/eds-oml/vocabulary/Component#ImplentationContainsVariableSet>
+        rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType>
         rdf:type  owl:Class .
@@ -385,9 +385,6 @@ owl:topDataProperty  rdf:type  owl:DatatypeProperty .
 
 <http://example.com/eds-oml/vocabulary/DataSheet#DatasheetContainsPackage>
         rdf:type  owl:FunctionalProperty , owl:ObjectProperty .
-
-<http://example.com/eds-oml/vocabulary/Component#definedByStateMachine>
-        rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
 
 <http://example.com/eds-oml/vocabulary/Interface#GenericType>
         rdf:type  owl:Class .
@@ -404,9 +401,6 @@ owl:topDataProperty  rdf:type  owl:DatatypeProperty .
 <http://example.com/eds-oml/vocabulary/Metadata#StringMetadataValueType>
         rdf:type  owl:Class .
 
-<http://example.com/eds-oml/vocabulary/Component#ComponentDefinedByStateMachine>
-        rdf:type  owl:Class .
-
 <http://example.com/eds-oml/description/powerManagement#LED>
         rdf:type    <http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType> , <http://example.com/eds-oml/vocabulary/Component#Component> , owl:Thing ;
         owl:sameAs  <http://example.com/eds-oml/description/powerManagement#LED> .
@@ -417,12 +411,8 @@ owl:topDataProperty  rdf:type  owl:DatatypeProperty .
 <http://example.com/eds-oml/vocabulary/Metadata#FloatMetadataValueType>
         rdf:type  owl:Class .
 
-<http://example.com/eds-oml/vocabulary/Component#isInterfaceReferencedBy>
-        rdf:type  owl:InverseFunctionalProperty , owl:FunctionalProperty , owl:ObjectProperty .
-
-<http://example.com/eds-oml/description/powerManagement#BaseLamp>
-        rdf:type    <http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType> , <http://example.com/eds-oml/vocabulary/Component#Component> , owl:Thing ;
-        owl:sameAs  <http://example.com/eds-oml/description/powerManagement#BaseLamp> .
+<http://example.com/eds-oml/vocabulary/Activity#Element>
+        rdf:type  owl:ObjectProperty .
 
 <http://example.com/eds-oml/vocabulary/DataType#Range>
         rdf:type  owl:Class .
@@ -433,25 +423,26 @@ owl:topDataProperty  rdf:type  owl:DatatypeProperty .
 <http://example.com/eds-oml/vocabulary/Activity#Body>
         rdf:type  owl:Class .
 
+<http://example.com/eds-oml/description/powerManagement#BaseLamp>
+        rdf:type    <http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType> , <http://example.com/eds-oml/vocabulary/Component#Component> , owl:Thing ;
+        owl:sameAs  <http://example.com/eds-oml/description/powerManagement#BaseLamp> .
+
+<http://example.com/eds-oml/vocabulary/Interface#InterfaceReferencesDataType>
+        rdf:type  owl:Class .
+
 <http://example.com/eds-oml/description/powerManagement#PhysicalFeature>
         rdf:type    <http://example.com/eds-oml/vocabulary/Metadata#Category> , <http://example.com/eds-oml/vocabulary/Aspects#NamedEntityType> , owl:Thing ;
         <http://example.com/eds-oml/vocabulary/Metadata#CategoryOfCategory>
                 <http://example.com/eds-oml/description/powerManagement#Dimensions> , <http://example.com/eds-oml/description/powerManagement#Materials> ;
         owl:sameAs  <http://example.com/eds-oml/description/powerManagement#PhysicalFeature> .
 
-<http://example.com/eds-oml/vocabulary/Interface#InterfaceReferencesDataType>
+<http://example.com/eds-oml/vocabulary/StateMachine#Variable>
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/Component#ComponentProvidedInterfaceSet>
         rdf:type  owl:ObjectProperty .
 
-<http://example.com/eds-oml/vocabulary/StateMachine#Variable>
-        rdf:type  owl:Class .
-
 <http://example.com/eds-oml/vocabulary/Metadata#IntegerMetadataValueType>
-        rdf:type  owl:Class .
-
-<http://example.com/eds-oml/vocabulary/Component#ComponentContainsActivity>
         rdf:type  owl:Class .
 
 <http://example.com/eds-oml/vocabulary/DataType#EntriesOnContainer>

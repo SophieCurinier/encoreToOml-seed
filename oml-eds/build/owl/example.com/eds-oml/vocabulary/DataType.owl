@@ -148,6 +148,20 @@
     
 
 
+    <!-- http://opencaesar.io/oml#hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://opencaesar.io/oml#hasSource"/>
+    
+
+
+    <!-- http://opencaesar.io/oml#hasTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://opencaesar.io/oml#hasTarget"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

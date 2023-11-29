@@ -51,8 +51,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#Activity"/>
-            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#ActivityContainsBody"/>
-            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#ArgumentOnActivity"/>
+            <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#ActivitySet"/>
             <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Activity#Body"/>
             <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Field#Field"/>
             <rdf:Description rdf:about="http://example.com/eds-oml/vocabulary/Metadata#Category"/>

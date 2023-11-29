@@ -80,6 +80,28 @@
     
 
 
+    <!-- http://example.com/eds-oml/vocabulary/StateMachine#Element -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/StateMachine#Element">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/StateMachine#StateMachineSet"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/StateMachine#StateMachine"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/StateMachine#VariableElement -->
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/eds-oml/vocabulary/StateMachine#VariableElement">
+        <rdfs:domain rdf:resource="http://example.com/eds-oml/vocabulary/StateMachine#VariableSet"/>
+        <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/StateMachine#Variable"/>
+        <dc:type rdf:resource="http://opencaesar.io/oml#UnreifiedRelation"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://example.com/eds-oml/vocabulary/StateMachine#controlsActivity -->
 
 
@@ -131,6 +153,20 @@
         <rdfs:range rdf:resource="http://example.com/eds-oml/vocabulary/StateMachine#StateMachine"/>
         <dc:type rdf:resource="http://opencaesar.io/oml#forwardRelation"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://opencaesar.io/oml#hasSource -->
+
+
+    <owl:ObjectProperty rdf:about="http://opencaesar.io/oml#hasSource"/>
+    
+
+
+    <!-- http://opencaesar.io/oml#hasTarget -->
+
+
+    <owl:ObjectProperty rdf:about="http://opencaesar.io/oml#hasTarget"/>
     
 
 
@@ -191,6 +227,15 @@
     
 
 
+    <!-- http://example.com/eds-oml/vocabulary/StateMachine#StateMachineSet -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/StateMachine#StateMachineSet">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
+    </owl:Class>
+    
+
+
     <!-- http://example.com/eds-oml/vocabulary/StateMachine#Variable -->
 
 
@@ -206,6 +251,15 @@
 
     <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/StateMachine#VariableOnStateMachine">
         <dc:type rdf:resource="http://opencaesar.io/oml#RelationEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.com/eds-oml/vocabulary/StateMachine#VariableSet -->
+
+
+    <owl:Class rdf:about="http://example.com/eds-oml/vocabulary/StateMachine#VariableSet">
+        <dc:type rdf:resource="http://opencaesar.io/oml#Concept"/>
     </owl:Class>
     
 
