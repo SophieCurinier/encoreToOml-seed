@@ -1,45 +1,41 @@
 vocabulary <http://example.com/eds-oml/vocabulary/Activity#> as Activity {
-	
 
-    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
-    
-    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 
-    extends <http://example.com/eds-oml/vocabulary/Field#> as field
-    
-    
+	extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+
+	extends <http://example.com/eds-oml/vocabulary/Field#> as field
+
 	// Activity Element
-    
-    concept Activity < aspects:NamedEntityType
-    
-    @rdfs:comment "Provide data values to be used by the activity"
-    concept Argument < field:Field
-    
-     @rdfs:comment"The body of the activity contains statements that refer the arguments above"
-    concept Body < aspects:IdentifiedThing
-    
-    scalar BodyElements[
-    	oneOf "SendParameterPrimitive", "SendCommandPrimitive", "Calibration",
-"MathOperation", "Assignment", "Conditional", "Iteration", "Call"
+	concept Activity < aspects:NamedEntityType
+
+	@rdfs:comment "Provide data values to be used by the activity"
+	concept Argument < field:Field
+
+	@rdfs:comment "The body of the activity contains statements that refer the arguments above"
+	concept Body < aspects:IdentifiedThing
+
+	scalar BodyElements [
+		oneOf "SendParameterPrimitive", "SendCommandPrimitive", "Calibration", "MathOperation", "Assignment", "Conditional", "Iteration", "Call"
 	]
 
-	scalar property BodyElementsSet[
+	scalar property BodyElementsSet [
 		domain Body
 		range BodyElements
 	]
-    
-    relation entity ActivityContainsBody[
-    	from Activity
-    	to Body
-    	forward containsBody
-    	reverse containedBy
-    	functional
-    ]
-    
-    relation entity ArgumentOnActivity[
-    	from Argument
-    	to Activity
-    	forward onActivity
-    	functional
-    ]
+
+	relation entity ActivityContainsBody [
+		from Activity
+		to Body
+		forward containsBody
+		reverse containedBy
+		functional
+	]
+
+	relation entity ArgumentOnActivity [
+		from Argument
+		to Activity
+		forward onActivity
+		functional
+	]
 }

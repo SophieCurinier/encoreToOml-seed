@@ -1,22 +1,17 @@
 vocabulary <http://example.com/eds-oml/vocabulary/Device#> as Device {
 
-    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
-    
-    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
 
-    extends <http://example.com/eds-oml/vocabulary/Metadata#> as metadata
+	extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
 
-    @rdfs:comment "A physical element of a system accessed through subnetwork-layer interfaces"
-    concept Device < aspects:NamedEntityType
+	extends <http://example.com/eds-oml/vocabulary/Metadata#> as metadata
 
-    @rdfs:comment "A device contains metadata that describes the structure of the data contained in the device"
-    relation entity DeviceContainsMetadata [
-        from Device
-        to metadata:Metadata
-        forward containsMetadata
-        reverse hasDevice
-        functional
-        inverse functional	
-    ]
+	@rdfs:comment "A physical element of a system accessed through subnetwork-layer interfaces"
+	concept Device < aspects:NamedEntityType
 
+	@rdfs:comment "A device contains metadata that describes the structure of the data contained in the device"
+	relation DeviceContainsMetadatas [
+		from Device
+		to metadata:MetadataSet
+	]
 }

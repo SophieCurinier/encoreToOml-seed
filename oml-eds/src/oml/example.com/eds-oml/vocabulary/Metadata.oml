@@ -1,30 +1,73 @@
 vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 
-    extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
-    
-    extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
-    
-    
-    // Metadata Element
-    
-    @rdfs:comment "Used for configuration management information"
-    concept Metadata < aspects:IdentifiedThing
-    
-    @rdfs:comment"Specify a categorization or grouping of metadata"
-    concept Category < aspects:NamedEntityType
-    
-    scalar MetadataValue [
-    	oneOf "FloatValue", "DataValue", "IntegerValue", "StringValue" 
-    ]
-    
-    scalar property MetadataValueSet [
-    	domain Metadata
-    	range MetadataValue
-    ]
-    
-    relation entity CategoryOfMetadata[
-    	from Category
-    	to Metadata
-    	forward ofMetadata
-    ]
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+
+	extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+
+	extends <http://www.w3.org/2001/XMLSchema#> as xsd
+
+	// Metadata Element
+	@rdfs:comment "Used for configuration management information"
+	concept Metadata
+
+	concept MetadataSet
+
+	@rdfs:comment "Specify a categorization or grouping of metadata"
+	concept Category < aspects:NamedEntityType
+
+	concept MetadataValueType
+
+	relation MetadataType [
+		from Metadata
+		to MetadataValueType
+		functional
+	]
+
+	concept IntegerMetadataValueType < MetadataValueType [
+		// restricts IntegerMetadataValue to min 0
+	]
+
+	scalar property IntegerMetadataValue [
+		domain IntegerMetadataValueType
+		range xsd:integer
+	]
+
+	concept FloatMetadataValueType < MetadataValueType [
+		// restricts FloatMetadataValue to min 0
+	]
+
+	scalar property FloatMetadataValue [
+		domain FloatMetadataValueType
+		range xsd:float
+	]
+
+	concept StringMetadataValueType < MetadataValueType [
+	]
+
+	scalar property StringMetadataValue [
+		domain StringMetadataValueType
+		range xsd:string
+	]
+
+	relation CategoryOfMetadata [
+		from MetadataSet
+		to Category
+	]
+
+	relation CategoryOfCategory [
+		from Category
+		to Category
+		functional
+	]
+
+	relation ElementOfCategory [
+		from Category
+		to Metadata
+		functional
+	]
+
+	relation Element [
+		from MetadataSet
+		to Metadata
+	]
 }
