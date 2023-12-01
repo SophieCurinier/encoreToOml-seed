@@ -1,5 +1,5 @@
 @dc:description "A description of the elements of a specific lamp system"
-description <http://example.com/eds-oml/description/powerManagement#> as powerManagement {
+description <http://example.com/eds-oml/description/lamp#> as lamp {
 
 	uses <http://purl.org/dc/elements/1.1/> as dc
 

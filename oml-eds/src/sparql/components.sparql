@@ -14,7 +14,7 @@ WHERE {
   # Fetch component
   ?component a component:Component .
   ?component aspects:hasId ?component_id .
-  OPTIONAL { ?component aspects:hasCanonicalName ?component_name . }
+  ?component aspects:hasCanonicalName ?component_name .
 
   # Fetch state machines defining the component
   OPTIONAL {
@@ -34,4 +34,4 @@ WHERE {
     ?interface aspects:hasId ?interface_id .
   }
 }
-ORDER BY ?component_set_id, ?component_id, ?state_machine_id, ?activity_id, ?interface_id
+ORDER BY ?component_set_id ?component_id ?state_machine_id ?activity_id ?interface_id
