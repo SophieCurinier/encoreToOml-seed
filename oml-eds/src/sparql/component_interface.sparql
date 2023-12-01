@@ -1,0 +1,38 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX aspects: <http://example.com/eds-oml/vocabulary/Aspects#>
+PREFIX component: <http://example.com/eds-oml/vocabulary/Component#>
+PREFIX interface: <http://example.com/eds-oml/vocabulary/Interface#>
+PREFIX metadata: <http://example.com/eds-oml/vocabulary/Metadata#>
+
+SELECT ?component_id ?component_name ?interface_required_id ?interface_required_name ?interface_declared_id ?interface_declared_name ?interface_provided_id ?interface_provided_name
+WHERE {
+    # Component and their details
+    ?component a component:Component .
+    ?component aspects:hasId ?component_id .
+    ?component aspects:hasCanonicalName ?component_name .
+
+    # Fetch required interface sets linked to the component
+    OPTIONAL {
+        ?component component:ComponentRequiredInterfaceSet ?interface_required_set .
+        ?interface_required_set interface:Element ?interface_required .
+        ?interface_required aspects:hasId ?interface_required_id .
+        ?interface_required aspects:hasCanonicalName ?interface_required_name .
+    }
+
+    # Fetch declared interface sets linked to the component
+    OPTIONAL {
+        ?component component:ComponentDeclaredInterfaceSet ?interface_declared_set .
+        ?interface_declared_set interface:Element ?interface_declared .
+        ?interface_declared aspects:hasId ?interface_declared_id .
+        ?interface_declared aspects:hasCanonicalName ?interface_declared_name .
+    }
+
+    #Fetch provided interface sets linked to the component
+    OPTIONAL {
+        ?component component:ComponentDeclaredInterfaceSet ?interface_provided_set .
+        ?interface_provided_set interface:Element ?interface_provided .
+        ?interface_provided aspects:hasId ?interface_provided_id .
+        ?interface_provided aspects:hasCanonicalName ?interface_provided_name .
+    }
+}
+ORDER BY ?component_id

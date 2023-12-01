@@ -1,7 +1,9 @@
 @dc:description "A description of the elements of a specific lamp system"
-description <http://example.com/eds-oml/description/powerManagement#> as powerManagement {
+description <http://example.com/eds-oml/description/lamp#> as lamp {
 
 	uses <http://purl.org/dc/elements/1.1/> as dc
+
+	uses <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
 
 	uses <http://example.com/eds-oml/vocabulary/Component#> as component
 
@@ -34,6 +36,14 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 	// ------------- Device -------------------- //
 	
 	instance Lamp : device:Device [
+		aspects:hasId "L.01"
+		aspects:hasCanonicalName "Lamp LED"
+		device:DeviceContainsMetadatas MetadataSet
+	]
+
+	instance Lamp2 : device:Device [
+		aspects:hasId "L.02"
+		aspects:hasCanonicalName "Lamp LED2"
 		device:DeviceContainsMetadatas MetadataSet
 	]
 	
@@ -53,23 +63,28 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 	// ------------- Component -------------------- //
 	
 	instance ComponentSet : component:ComponentSet[
+		aspects:hasId "CS.01"
+		aspects:hasCanonicalName "Lamp component set"
 		component:Element LED
 		component:Element BaseLamp
 		component:Element LampShade
 	]
 	
 	instance LED : component:Component [
+		aspects:hasId "C.01"
+		aspects:hasCanonicalName "LED"
 		component:ComponentContainsImplementation LEDImplementation
 		component:ComponentDeclaredInterfaceSet InterfaceSet
-
 	]
 
 	instance BaseLamp : component:Component [
-
+		aspects:hasId "C.02"
+		aspects:hasCanonicalName "Base lamp"
 	]
 
 	instance LampShade : component:Component [
-
+		aspects:hasId "C.03"
+		aspects:hasCanonicalName "Lamp shade"
 	]
 	
 	instance LEDImplementation : component:Implementation[
@@ -129,40 +144,58 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 	]
 
 	instance Power : metadata:Metadata [
+		aspects:hasId "M.01"
+		aspects:hasCanonicalName "Power"
 		metadata:MetadataType FloatMetadata
 	]
 
 	instance Intensity : metadata:Metadata [
+		aspects:hasId "M.02"
+		aspects:hasCanonicalName "Intensity"
 		metadata:MetadataType FloatMetadata
 	]
 
 	instance Voltage : metadata:Metadata [
+		aspects:hasId "M.03"
+		aspects:hasCanonicalName "Voltage"
 		metadata:MetadataType FloatMetadata
 	]
 
 	instance Size : metadata:Metadata [
+		aspects:hasId "M.04"
+		aspects:hasCanonicalName "Size"
 		metadata:MetadataType FloatMetadata
 	]
 
 	instance Weight : metadata:Metadata [
+		aspects:hasId "M.05"
+		aspects:hasCanonicalName "Weight"
 		metadata:MetadataType FloatMetadata
 	]
 
 	instance BulbMaterial : metadata:Metadata [
+		aspects:hasId "M.06"
+		aspects:hasCanonicalName "Bulb Material"
 		// metadata:MetadataType StringMetadata
 	]
 
 	instance BaseMaterial : metadata:Metadata [
+		aspects:hasId "M.07"
+		aspects:hasCanonicalName "Base Material" 
 		// metadata:MetadataType StringMetadata
 	]
 
 	instance ElectricalFeature : metadata:Category [
+		aspects:hasId "C.01"
+		aspects:hasCanonicalName "Electrical category"
 		metadata:ElementOfCategory Intensity
 		metadata:ElementOfCategory Voltage
 		metadata:ElementOfCategory Power
 	]
 
 	instance PhysicalFeature : metadata:Category [
+		aspects:hasId "C.02"
+		aspects:hasCanonicalName "Physical category"
 		metadata:CategoryOfCategory Materials
 		metadata:CategoryOfCategory Dimensions
 	]

@@ -1,0 +1,36 @@
+PREFIX interface: <http://example.com/eds-oml/vocabulary/Interface#>
+PREFIX aspects: <http://example.com/eds-oml/vocabulary/Aspects#>
+PREFIX field: <http://example.com/eds-oml/vocabulary/Field#>
+
+SELECT ?interfaceId ?interfaceName ?isAbstract ?level ?parameter ?command ?argument ?genericType
+WHERE {
+  # Select interfaces and their basic properties
+  ?intf a interface:Interface .
+  ?intf aspects:hasId ?interfaceId .
+  ?intf aspects:hasCanonicalName ?interfaceName .
+  OPTIONAL { ?intf interface:abstract ?isAbstract . }
+  OPTIONAL { ?intf interface:level ?level . }
+
+  # Get parameters associated with the interface
+  OPTIONAL {
+    ?intf interface:InterfaceParameterSet ?paramSet .
+    ?paramSet field:ParameterElement ?parameter .
+  }
+
+  # Get commands associated with the interface
+  OPTIONAL {
+    ?intf interface:InterfaceCommandSet ?cmdSet .
+    ?cmdSet interface:CommandElement ?command .
+  }
+
+  # Get arguments associated with commands
+  OPTIONAL {
+    ?command interface:ArgumentOnCommand ?argument .
+  }
+
+  # Get generic types associated with the interface
+  OPTIONAL {
+    ?intf interface:InterfaceGenericTypeSet ?genTypeSet .
+    ?genTypeSet interface:GenericTypeElement ?genericType .
+  }
+}

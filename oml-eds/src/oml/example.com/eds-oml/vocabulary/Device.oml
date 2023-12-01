@@ -7,7 +7,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Device#> as Device {
 	extends <http://example.com/eds-oml/vocabulary/Metadata#> as metadata
 
 	@rdfs:comment "A physical element of a system accessed through subnetwork-layer interfaces"
-	concept Device < aspects:NamedEntityType
+	concept Device < aspects:IdentifiedThing
 
 	@rdfs:comment "A device contains metadata that describes the structure of the data contained in the device"
 	relation DeviceContainsMetadatas [

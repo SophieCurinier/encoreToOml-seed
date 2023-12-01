@@ -11,13 +11,13 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 	extends <http://example.com/eds-oml/vocabulary/Field#> as field
 
 	@rdfs:comment "Defines connections and subnetwork interfaces"
-	concept Interface < aspects:NamedEntityType [
+	concept Interface < aspects:IdentifiedThing [
 		restricts abstract to true
 		// restricts level to min 3
 		restricts level to max 4
 	]
 	
-	concept InterfaceSet < aspects:NamedEntityType
+	concept InterfaceSet < aspects:IdentifiedThing
 	
 	relation Element[
 		from InterfaceSet
@@ -46,7 +46,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 	concept GenericTypeSet
 	
 	@rdfs:comment "Specifies a generic type to be used by the interface"
-	concept GenericType < aspects:NamedEntityType
+	concept GenericType < aspects:IdentifiedThing
 	
 	relation GenericTypeElement[
 		from GenericTypeSet
@@ -80,7 +80,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 	
 	concept CommandSet
 	
-	concept Command < aspects:NamedEntityType
+	concept Command < aspects:IdentifiedThing
 	
 	relation CommandElement[
 		from CommandSet

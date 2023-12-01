@@ -1,4 +1,5 @@
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX aspects: <http://example.com/eds-oml/vocabulary/Aspects#>
 PREFIX dataSheet: <http://example.com/eds-oml/vocabulary/DataSheet#>
 PREFIX device: <http://example.com/eds-oml/vocabulary/Device#>
 PREFIX metadata: <http://example.com/eds-oml/vocabulary/Metadata#>
@@ -6,24 +7,20 @@ PREFIX package: <http://example.com/eds-oml/vocabulary/Package#>
 PREFIX component: <http://example.com/eds-oml/vocabulary/Component#>
 PREFIX interface: <http://example.com/eds-oml/vocabulary/Interface#>
 
-SELECT ?lamp ?interfaceInstance ?metadataInstance
+SELECT ?device_id ?device_name ?metadata_id ?metadata_name
 WHERE {
-  # Find instances of the lamp
-  ?lamp a device:Device .
+  # Get device details
+  ?device a device:Device .
+  ?device aspects:hasId ?device_id .
+  ?device aspects:hasCanonicalName ?device_name .
 
-  # Get metadata associated with the lamp
+  # Get associated metadata set
   OPTIONAL {
-    ?metadataInstance a metadata:Metadata ;
-                     device:hasDevice ?lamp .
-  }
-
-  # Get interfaces associated with the lamp
-  OPTIONAL {
-    ?componentInstance a component:Component ;
-                       component:referencesInterface ?interfaceInstance ;
-                       package:isContainedByPackage ?packageInstance .
-    ?packageInstance a package:Package ;
-                     dataSheet:isPackageOfDatasheet ?datasheetInstance .
-    ?datasheetInstance dataSheet:datasheetContainsDevice ?lamp .
+    ?device device:DeviceContainsMetadatas ?metadataSet .
+    ?metadataSet metadata:CategoryOfMetadata ?categoryMetadata .
+    ?categoryMetadata metadata:ElementOfCategory ?metadata .
+    ?metadata aspects:hasId ?metadata_id .
+    ?metadata aspects:hasCanonicalName ?metadata_name .
   }
 }
+ORDER BY ?device_id ?metadata_id

@@ -7,7 +7,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Activity#> as Activity {
 	extends <http://example.com/eds-oml/vocabulary/Field#> as field
 
 	// Activity Element
-	concept Activity < aspects:NamedEntityType
+	concept Activity < aspects:IdentifiedThing
 
 	@rdfs:comment "Provide data values to be used by the activity"
 	concept Argument < field:Field

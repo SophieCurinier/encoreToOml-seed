@@ -13,9 +13,9 @@ vocabulary <http://example.com/eds-oml/vocabulary/Component#> as Component {
 	extends <http://example.com/eds-oml/vocabulary/DataType#> as dataType
 
 	@rdfs:comment "The class of component items"
-	concept Component < aspects:NamedEntityType
+	concept Component < aspects:IdentifiedThing
 
-	concept ComponentSet
+	concept ComponentSet < aspects:IdentifiedThing
 	
 	concept Implementation
 	

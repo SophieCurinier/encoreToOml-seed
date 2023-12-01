@@ -8,7 +8,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/DataType#> as DataType {
 
 	// Datatype Element
 	@rdfs:comment "Describes the syntax and semantics of units of data that flow through interfaces"
-	concept DataType < aspects:NamedEntityType
+	concept DataType < aspects:IdentifiedThing
 
 	scalar DataTypeValue [
 		oneOf "Array", "Binary", "Boolean", "Container", "Enumerated", "Float", "Integer", "String", "SubRange"
