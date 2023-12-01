@@ -13,42 +13,32 @@ vocabulary <http://example.com/eds-oml/vocabulary/Component#> as Component {
 	extends <http://example.com/eds-oml/vocabulary/DataType#> as dataType
 
 	@rdfs:comment "The class of component items"
-	concept Component < aspects:NamedEntityType
+	concept Component < aspects:IdentifiedThing
 
-	concept ComponentSet
+	concept ComponentSet < aspects:IdentifiedThing
 	
 	concept Implementation
 	
-	@rdfs:comment "Components are defined by a set of State Machines"
-	relation entity ComponentDefinedByStateMachine [
-		from Component
-		to stateMachine:StateMachine
-		forward definedByStateMachine
-		reverse definesComponent
+	relation ImplementationContainsStateMachineSet[
+		from Implementation
+		to stateMachine:StateMachineSet
 		functional
-		inverse functional
-	]
-
-	@rdfs:comment "Components contain of a set of Activities"
-	relation entity ComponentContainsActivity [
-		from Component
-		to activity:Activity
-		forward containsActivity
-		reverse isContainedByComponent
-		functional
-		inverse functional
-	]
-
-	@rdfs:comment "Components specify a behavioural mapping between the interfaces"
-	relation entity ComponentReferencesInterface [
-		from Component
-		to interface:Interface
-		forward referencesInterface
-		reverse isInterfaceReferencedBy
-		functional
-		inverse functional
 	]
 	
+	relation ImplementationContainsActivitySet[
+		from Implementation
+		to activity:ActivitySet
+		functional
+	]
+	
+	relation ImplementationContainsVariableSet[
+		from Implementation
+		to stateMachine:VariableSet
+		functional
+	]
+	
+
+	@rdfs:comment "Components specify a behavioural mapping between the interfaces"
 	relation ComponentRequiredInterfaceSet[
 		from Component
 		to interface:InterfaceSet
@@ -79,5 +69,4 @@ vocabulary <http://example.com/eds-oml/vocabulary/Component#> as Component {
 	]
 	
 	
-// TO DO
 }

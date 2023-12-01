@@ -8,12 +8,12 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 
 	// Metadata Element
 	@rdfs:comment "Used for configuration management information"
-	concept Metadata
+	concept Metadata < aspects:IdentifiedThing
 
-	concept MetadataSet
+	concept MetadataSet < aspects:IdentifiedThing
 
 	@rdfs:comment "Specify a categorization or grouping of metadata"
-	concept Category < aspects:NamedEntityType
+	concept Category < aspects:IdentifiedThing
 
 	concept MetadataValueType
 
@@ -63,7 +63,6 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 	relation ElementOfCategory [
 		from Category
 		to Metadata
-		functional
 	]
 
 	relation Element [

@@ -7,13 +7,20 @@ vocabulary <http://example.com/eds-oml/vocabulary/Activity#> as Activity {
 	extends <http://example.com/eds-oml/vocabulary/Field#> as field
 
 	// Activity Element
-	concept Activity < aspects:NamedEntityType
+	concept Activity < aspects:IdentifiedThing
 
 	@rdfs:comment "Provide data values to be used by the activity"
 	concept Argument < field:Field
 
+	concept ActivitySet
+	
+	relation Element[
+		from ActivitySet
+		to Activity
+	]
+	
 	@rdfs:comment "The body of the activity contains statements that refer the arguments above"
-	concept Body < aspects:IdentifiedThing
+	concept Body
 
 	scalar BodyElements [
 		oneOf "SendParameterPrimitive", "SendCommandPrimitive", "Calibration", "MathOperation", "Assignment", "Conditional", "Iteration", "Call"
@@ -24,18 +31,14 @@ vocabulary <http://example.com/eds-oml/vocabulary/Activity#> as Activity {
 		range BodyElements
 	]
 
-	relation entity ActivityContainsBody [
+	relation ActivityContainsBody [
 		from Activity
 		to Body
-		forward containsBody
-		reverse containedBy
 		functional
 	]
 
-	relation entity ArgumentOnActivity [
-		from Argument
-		to Activity
-		forward onActivity
-		functional
+	relation ArgumentOnActivity [
+		from Activity
+		to Argument
 	]
 }
