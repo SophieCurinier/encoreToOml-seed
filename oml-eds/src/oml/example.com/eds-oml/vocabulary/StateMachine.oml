@@ -9,7 +9,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/StateMachine#> as StateMachine
 	extends <http://example.com/eds-oml/vocabulary/Field#> as field
 
 	@rdfs:comment "Responds to event and schedules the execution of activities"
-	concept StateMachine < aspects:NamedEntityType
+	concept StateMachine < aspects:IdentifiedThing
 
 	scalar property defaultEntryState [
 		domain StateMachine

@@ -6,7 +6,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Field#> as Field {
 
 	// Field Element
 	@rdfs:comment "Permits the definition of parameter, arguments, or container entries that are a subrange, encoding, or array of the referenced type"
-	concept Field < aspects:NamedEntityType
+	concept Field < aspects:IdentifiedThing
 
 	@rdfs:comment "Used in cases in which the value of the field may appear on an interface"
 	concept ExternalField < Field

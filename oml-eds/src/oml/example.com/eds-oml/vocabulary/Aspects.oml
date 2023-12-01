@@ -16,31 +16,22 @@ vocabulary <http://example.com/eds-oml/vocabulary/Aspects#> as Aspects {
 		key hasId
 	]
 
-	aspect NamedEntityType [
-		key name
-		key shortDescription
-		key longDescription
-	]
-
-	@rdfs:comment "The name of a namedEntitype"
-	scalar property name [
-		domain NamedEntityType
+	@rdfs:comment "The has canonical name property"
+	scalar property hasCanonicalName [
+		domain IdentifiedThing
 		range xsd:string
-		functional
 	]
 
 	@rdfs:comment "The short description of a namedEntitype"
 	scalar property shortDescription [
-		domain NamedEntityType
+		domain IdentifiedThing
 		range xsd:string
-		functional
 	]
 
 	@rdfs:comment "The long description of a namedEntitype"
 	scalar property longDescription [
-		domain NamedEntityType
+		domain IdentifiedThing
 		range xsd:string
-		functional
 	]
 
 	@rdfs:comment "The id property of an identified thing"

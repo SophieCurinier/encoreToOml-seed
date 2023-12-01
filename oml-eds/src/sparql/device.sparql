@@ -1,0 +1,38 @@
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX aspects: <http://example.com/eds-oml/vocabulary/Aspects#>
+PREFIX dataSheet: <http://example.com/eds-oml/vocabulary/DataSheet#>
+PREFIX device: <http://example.com/eds-oml/vocabulary/Device#>
+PREFIX comp: <http://example.com/eds-oml/vocabulary/Component#>
+PREFIX interface: <http://example.com/eds-oml/vocabulary/Interface#>
+PREFIX metadata: <http://example.com/eds-oml/vocabulary/Metadata#>
+PREFIX aspects: <http://example.com/eds-oml/vocabulary/Aspects#>
+
+SELECT ?device_id ?device_name ?component_id ?component_name ?interface_id ?interface_name ?metadata_id ?metadata_name
+WHERE {
+    # Devices and their details
+    ?dev a device:Device .
+    ?dev aspects:hasId ?device_id .
+    ?dev aspects:hasCanonicalName ?device_name .
+    
+    # Components associated with devices
+    OPTIONAL {
+        ?comp a comp:Component .
+        ?comp aspects:hasId ?component_id .
+        ?comp aspects:hasCanonicalName ?component_name .
+    }
+
+    # Interfaces related to devices
+    OPTIONAL {
+        ?intf a interface:Interface .
+        ?intf aspects:hasId ?interface_id .
+        ?intf aspects:hasCanonicalName ?interface_name .
+    }
+
+    # Metadata associated with devices
+    OPTIONAL {
+        ?meta a metadata:Metadata .
+        ?meta aspects:hasId ?metadata_id .
+        ?meta aspects:hasCanonicalName ?metadata_name .
+    }
+}
+ORDER BY ?device_id ?component_id ?interface_id ?metadata_id

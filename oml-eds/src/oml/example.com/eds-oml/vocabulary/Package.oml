@@ -12,7 +12,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Package#> as Package {
 
 	// Package Element
 	@rdfs:comment "Packages describe a related set of components, data types, and interfaces"
-	concept Package < aspects:NamedEntityType
+	concept Package < aspects:IdentifiedThing
 	
 	
 	@rdfs:comment "A Package contains Components that specify a behavioural mapping between those interfaces"

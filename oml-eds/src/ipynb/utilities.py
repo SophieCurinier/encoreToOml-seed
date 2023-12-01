@@ -122,13 +122,13 @@ function drawTree(data, containerID, root_name, unique=true, _width=960, _height
 		var idToNode = [];
 		var root = getOrCreateNode("-1",root_name,idToNode);
 		root.parent = "null";
-		var columns = [ "lamp" , "interfaceInstance" , "metadataInstance" ];
+		var columns = [ "device_id" , "device_name" , "metadata_id" , "metadata_name" ];
 		data.forEach(row => {
 			var parent_id = "-1";
-			for (let i = 0; i < columns.length; i++) {
-				if (row[columns[i]]) {
-					var childId = (!unique ? parent_id+"." : "") +row[columns[i]];
-					addNode(parent_id, childId, row[columns[i]]+" "+row[columns[i]], idToNode);
+			for (let i = 0; i < columns.length/2; i++) {
+				if (row[columns[2*i]]) {
+					var childId = (!unique ? parent_id+"." : "") +row[columns[2*i]];
+					addNode(parent_id, childId, row[columns[2*i]]+" "+row[columns[2*i+1]], idToNode);
 					parent_id = childId;
 				}
 			}
