@@ -75,7 +75,7 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']"/>
         <target xmi:type="oml:Description" href="src/oml/example.com/eds-oml/description/main.oml#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9XLH8I5CEe6Jx9YFaUuFtQ" name="lamp Viewer" repPath="#_9XJ50I5CEe6Jx9YFaUuFtQ" changeId="1701470053819">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9XLH8I5CEe6Jx9YFaUuFtQ" name="lamp Viewer" repPath="#_9XJ50I5CEe6Jx9YFaUuFtQ" changeId="1701472323944">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']"/>
         <target xmi:type="oml:Description" href="src/oml/example.com/eds-oml/description/lamp.oml#/"/>
       </ownedRepresentationDescriptors>
@@ -2725,7 +2725,7 @@
             <styles xmi:type="notation:FilteringStyle" xmi:id="_d5HXo47cEe6kMJUnV_viEw"/>
           </children>
           <styles xmi:type="notation:ShapeStyle" xmi:id="_d5GwkY7cEe6kMJUnV_viEw" fontName=".AppleSystemUIFont" fontHeight="12"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d5Gwko7cEe6kMJUnV_viEw" x="2676" y="1198" width="353" height="43"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d5Gwko7cEe6kMJUnV_viEw" x="2676" y="1188" width="353" height="53"/>
         </children>
         <children xmi:type="notation:Node" xmi:id="_d5HXpI7cEe6kMJUnV_viEw" type="2003" element="_d5DtQ47cEe6kMJUnV_viEw">
           <children xmi:type="notation:Node" xmi:id="_d5HXp47cEe6kMJUnV_viEw" type="5007"/>
@@ -3140,7 +3140,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_d5H-so7cEe6kMJUnV_viEw" fontName=".AppleSystemUIFont" fontHeight="12"/>
           <styles xmi:type="notation:StringValueStyle" xmi:id="_tvtVlY7fEe6kMJUnV_viEw" name="junctionPoints" stringValue="()"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_d5H-s47cEe6kMJUnV_viEw" points="[0, 0, 0, 77]$[0, -77, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d5IlwI7cEe6kMJUnV_viEw" id="(0.6666666666666666,0.0)"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d5IlwI7cEe6kMJUnV_viEw" id="(0.6666666666666666,0.19607843137254902)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_d5IlwY7cEe6kMJUnV_viEw" id="(0.5,1.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_fZRi0I7cEe6kMJUnV_viEw" type="4001" element="_fZPuMI7cEe6kMJUnV_viEw" source="_d5GwkI7cEe6kMJUnV_viEw" target="_M3-AQI7bEe6kMJUnV_viEw">
@@ -3157,7 +3157,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_fZRi0o7cEe6kMJUnV_viEw" fontName=".AppleSystemUIFont" fontHeight="12"/>
           <styles xmi:type="notation:StringValueStyle" xmi:id="_tvtVkY7fEe6kMJUnV_viEw" name="junctionPoints" stringValue="()"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fZRi047cEe6kMJUnV_viEw" points="[0, 0, 567, 102]$[0, -15, 567, 87]$[-567, -15, 0, 87]$[-567, -102, 0, 0]"/>
-          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fZRi2o7cEe6kMJUnV_viEw" id="(0.3333333333333333,0.0)"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fZRi2o7cEe6kMJUnV_viEw" id="(0.3333333333333333,0.19607843137254902)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fZRi247cEe6kMJUnV_viEw" id="(0.5,1.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_m4PKoJCQEe6HCZvZzvXGVw" type="4001" element="_m3AblpCQEe6HCZvZzvXGVw" source="_d5HXpI7cEe6kMJUnV_viEw" target="_-2roQI8FEe6kMJUnV_viEw">

@@ -227,7 +227,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 		aspects:hasId "I.02"
 		aspects:hasCanonicalName "Wireless switch"
 	]
-
+	
 	instance BluetoothSwitch : interface:Interface [
 		aspects:hasId "I.03"
 		aspects:hasCanonicalName "Bluetooth switch"
@@ -258,6 +258,15 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	
 	instance InteruptorOn : interface:Argument
 	instance InteruptorOff : interface:Argument
+	
+	instance ParameterSet : interface:ParameterSet[
+		interface:ParameterElement WifiPassword
+		interface:ParameterElement SerieNumber
+		
+	]
+	
+	instance WifiPassword : interface:Parameter
+	instance SerieNumber : interface:Parameter
 	
 	
 
