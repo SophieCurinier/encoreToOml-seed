@@ -1,35 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="_aU07wIjtEe6Os5y4qAPKEA" selectedViews="_lFqBEIjtEe6Os5y4qAPKEA" version="15.1.0.202211301600">
-  <semanticResources>.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi</semanticResources>
-  <semanticResources>platform:/plugin/org.eclipse.pde.spy.preferences/fragment.e4xmi</semanticResources>
-  <semanticResources>.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup</semanticResources>
-  <semanticResources>build/oml/purl.org/dc/elements/1.1.oml</semanticResources>
-  <semanticResources>build/oml/www.w3.org/1999/02/22-rdf-syntax-ns.oml</semanticResources>
-  <semanticResources>build/oml/www.w3.org/2000/01/rdf-schema.oml</semanticResources>
-  <semanticResources>build/oml/www.w3.org/2001/XMLSchema.oml</semanticResources>
-  <semanticResources>build/oml/www.w3.org/2002/07/owl.oml</semanticResources>
-  <semanticResources>build/oml/www.w3.org/2003/11/swrlb.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/description/bundle.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/description/main.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/DataSheet.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/Aspects.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/Device.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/Metadata.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/Package.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/Component.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/StateMachine.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/Field.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/Activity.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/Interface.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/DataType.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/description/powerManagement.oml</semanticResources>
-  <semanticResources>src/oml/example.com/eds-oml/vocabulary/datasheet-bundle.oml</semanticResources>
-  <ownedViews xmi:type="viewpoint:DView" uid="_lFqBEIjtEe6Os5y4qAPKEA">
-    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']"/>
-  </ownedViews>
-</viewpoint:DAnalysis>
-=======
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:oml="http://opencaesar.io/oml" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_rczOEI43Ee6r368z1TKMiA" selectedViews="_vGJ6YI43Ee6r368z1TKMiA _1tN4gI44Ee6r368z1TKMiA" version="15.1.0.202211301600">
     <semanticResources>.gradle/7.4.2/dependencies-accessors/gc.properties</semanticResources>
@@ -59,7 +28,7 @@
     <semanticResources>src/oml/example.com/eds-oml/vocabulary/Activity.oml</semanticResources>
     <semanticResources>src/oml/example.com/eds-oml/vocabulary/Interface.oml</semanticResources>
     <semanticResources>src/oml/example.com/eds-oml/vocabulary/DataType.oml</semanticResources>
-    <semanticResources>src/oml/example.com/eds-oml/description/powerManagement.oml</semanticResources>
+    <semanticResources>src/oml/example.com/eds-oml/description/lamp.oml</semanticResources>
     <semanticResources>src/oml/example.com/eds-oml/vocabulary/datasheet-bundle.oml</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_vGJ6YI43Ee6r368z1TKMiA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Vocabularies']"/>
@@ -106,9 +75,9 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']"/>
         <target xmi:type="oml:Description" href="src/oml/example.com/eds-oml/description/main.oml#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9XLH8I5CEe6Jx9YFaUuFtQ" name="PowerManagement Viewer" repPath="#_9XJ50I5CEe6Jx9YFaUuFtQ" changeId="1701297323650">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_9XLH8I5CEe6Jx9YFaUuFtQ" name="lamp Viewer" repPath="#_9XJ50I5CEe6Jx9YFaUuFtQ" changeId="1701297323650">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']"/>
-        <target xmi:type="oml:Description" href="src/oml/example.com/eds-oml/description/powerManagement.oml#/"/>
+        <target xmi:type="oml:Description" href="src/oml/example.com/eds-oml/description/lamp.oml#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
@@ -3949,8 +3918,8 @@
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_9XiUbI5CEe6Jx9YFaUuFtQ"/>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_M3zBQo7bEe6kMJUnV_viEw" name="«package:Package»&#xA;          Package" tooltipText="«package:Package»&#xA;          Package" outgoingEdges="_ZTGHko8EEe6kMJUnV_viEw _ZTGHl48EEe6kMJUnV_viEw _ZTGHnI8EEe6kMJUnV_viEw" incomingEdges="_fZPuMI7cEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Package"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Package"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Package"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Package"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3960,8 +3929,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_d5DtQI7cEe6kMJUnV_viEw" name="«dataSheet:DataSheet»&#xA;        LampDatasheet" tooltipText="«dataSheet:DataSheet»&#xA;        LampDatasheet" outgoingEdges="_d5GJjI7cEe6kMJUnV_viEw _fZPuMI7cEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#LampDatasheet"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#LampDatasheet"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#LampDatasheet"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#LampDatasheet"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3971,8 +3940,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_d5DtQ47cEe6kMJUnV_viEw" name="«device:Device»&#xA;           Lamp" tooltipText="«device:Device»&#xA;           Lamp" outgoingEdges="_-2rBZI8FEe6kMJUnV_viEw" incomingEdges="_d5GJjI7cEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Lamp"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Lamp"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Lamp"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Lamp"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -3982,8 +3951,8 @@
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_d5GJjI7cEe6kMJUnV_viEw" name="dataSheet:DatasheetContainsDevice" sourceNode="_d5DtQI7cEe6kMJUnV_viEw" targetNode="_d5DtQ47cEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.0/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.0/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.0/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.0/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_d5GJjY7cEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_d5GJjo7cEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -3991,8 +3960,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fZPuMI7cEe6kMJUnV_viEw" name="dataSheet:DatasheetContainsPackage" sourceNode="_d5DtQI7cEe6kMJUnV_viEw" targetNode="_M3zBQo7bEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.0/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.0/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.0/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.0/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fZQUsI7cEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fZQUsY7cEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4000,32 +3969,32 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ZTE5eI8EEe6kMJUnV_viEw" name="«dataType:DataTypeSet»&#xA;           DataTypeSet" tooltipText="«dataType:DataTypeSet»&#xA;           DataTypeSet" incomingEdges="_ZTGHnI8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#DataTypeSet"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#DataTypeSet"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#DataTypeSet"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#DataTypeSet"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_aohpco8EEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ZTFggY8EEe6kMJUnV_viEw" name="«component:ComponentSet»&#xA;            ComponentSet" tooltipText="«component:ComponentSet»&#xA;            ComponentSet" outgoingEdges="_mtFLWI8FEe6kMJUnV_viEw _mtFLXY8FEe6kMJUnV_viEw _mtFyEo8FEe6kMJUnV_viEw" incomingEdges="_ZTGHko8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#ComponentSet"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#ComponentSet"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#ComponentSet"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#ComponentSet"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_aohpeY8EEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_ZTFghY8EEe6kMJUnV_viEw" name="«interface:InterfaceSet»&#xA;            InterfaceSet" tooltipText="«interface:InterfaceSet»&#xA;            InterfaceSet" incomingEdges="_ZTGHl48EEe6kMJUnV_viEw _teiQ4I8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#InterfaceSet"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#InterfaceSet"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#InterfaceSet"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#InterfaceSet"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_aohpfo8EEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZTGHko8EEe6kMJUnV_viEw" name="package:PackageContainsComponents" sourceNode="_M3zBQo7bEe6kMJUnV_viEw" targetNode="_ZTFggY8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.2/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.2/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.2/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.2/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ZTGHk48EEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ZTGHlI8EEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4033,8 +4002,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZTGHl48EEe6kMJUnV_viEw" name="package:PackageDeclaresInterfaces" sourceNode="_M3zBQo7bEe6kMJUnV_viEw" targetNode="_ZTFghY8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.2/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.2/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.2/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.2/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ZTGHmI8EEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ZTGHmY8EEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4042,8 +4011,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_ZTGHnI8EEe6kMJUnV_viEw" name="package:PackageDefinesDataTypes" sourceNode="_M3zBQo7bEe6kMJUnV_viEw" targetNode="_ZTE5eI8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.2/@ownedPropertyValues.2"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.2/@ownedPropertyValues.2"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.2/@ownedPropertyValues.2"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.2/@ownedPropertyValues.2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_ZTGHnY8EEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_ZTGHno8EEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4051,64 +4020,64 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_aoiQgY8EEe6kMJUnV_viEw" name="«component:Component»&#xA;            LampShade" tooltipText="«component:Component»&#xA;            LampShade" incomingEdges="_mtFyEo8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#LampShade"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#LampShade"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#LampShade"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#LampShade"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_aoiQgo8EEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_aoiQkI8EEe6kMJUnV_viEw" name="«component:Component»&#xA;                  LED" tooltipText="«component:Component»&#xA;                  LED" outgoingEdges="_mtFyF48FEe6kMJUnV_viEw _teiQ4I8FEe6kMJUnV_viEw" incomingEdges="_mtFLWI8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#LED"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#LED"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#LED"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#LED"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_aoiQkY8EEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_aoiQn48EEe6kMJUnV_viEw" name="«component:Component»&#xA;             BaseLamp" tooltipText="«component:Component»&#xA;             BaseLamp" incomingEdges="_mtFLXY8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#BaseLamp"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#BaseLamp"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#BaseLamp"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#BaseLamp"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_aoi3kI8EEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_jho_Wo8EEe6kMJUnV_viEw" name="«stateMachine:StateMachineSet»&#xA;               StateMachineSet" tooltipText="«stateMachine:StateMachineSet»&#xA;               StateMachineSet" outgoingEdges="_amMcXI8GEe6kMJUnV_viEw" incomingEdges="_mtFyIY8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#StateMachineSet"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#StateMachineSet"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#StateMachineSet"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#StateMachineSet"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_jhpmQI8EEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_BjgQbo8FEe6kMJUnV_viEw" name="«stateMachine:VariableSet»&#xA;               VariableSet" tooltipText="«stateMachine:VariableSet»&#xA;               VariableSet" outgoingEdges="_t7ZW3I8GEe6kMJUnV_viEw" incomingEdges="_mtFyHI8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#VariableSet"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#VariableSet"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#VariableSet"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#VariableSet"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_BjgQb48FEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_BjgQcY8FEe6kMJUnV_viEw" name="«component:Implementation»&#xA;         LEDImplementation" tooltipText="«component:Implementation»&#xA;         LEDImplementation" outgoingEdges="_mtFyHI8FEe6kMJUnV_viEw _mtFyIY8FEe6kMJUnV_viEw _mtFyJo8FEe6kMJUnV_viEw" incomingEdges="_mtFyF48FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#LEDImplementation"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#LEDImplementation"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#LEDImplementation"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#LEDImplementation"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_BjgQco8FEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_e20Ze48FEe6kMJUnV_viEw" name="«activity:ActivitySet»&#xA;           ActivitySet" tooltipText="«activity:ActivitySet»&#xA;           ActivitySet" outgoingEdges="_4Ih48I8GEe6kMJUnV_viEw" incomingEdges="_mtFyJo8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#ActivitySet"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#ActivitySet"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#ActivitySet"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#ActivitySet"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_e20ZfI8FEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtFLWI8FEe6kMJUnV_viEw" name="component:Element" sourceNode="_ZTFggY8EEe6kMJUnV_viEw" targetNode="_aoiQkI8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.4/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.4/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.4/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.4/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtFLWY8FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtFLWo8FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4116,8 +4085,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtFLXY8FEe6kMJUnV_viEw" name="component:Element" sourceNode="_ZTFggY8EEe6kMJUnV_viEw" targetNode="_aoiQn48EEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.4/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.4/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.4/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.4/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtFLXo8FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtFLX48FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4125,8 +4094,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtFyEo8FEe6kMJUnV_viEw" name="component:Element" sourceNode="_ZTFggY8EEe6kMJUnV_viEw" targetNode="_aoiQgY8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.4/@ownedPropertyValues.2"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.4/@ownedPropertyValues.2"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.4/@ownedPropertyValues.2"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.4/@ownedPropertyValues.2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtFyE48FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtFyFI8FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4134,8 +4103,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtFyF48FEe6kMJUnV_viEw" name="component:ComponentContainsImplementation" sourceNode="_aoiQkI8EEe6kMJUnV_viEw" targetNode="_BjgQcY8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.5/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.5/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.5/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.5/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtFyGI8FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtFyGY8FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4143,8 +4112,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtFyHI8FEe6kMJUnV_viEw" name="component:ImplementationContainsVariableSet" sourceNode="_BjgQcY8FEe6kMJUnV_viEw" targetNode="_BjgQbo8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.8/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.8/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.8/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.8/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtFyHY8FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtFyHo8FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4152,8 +4121,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtFyIY8FEe6kMJUnV_viEw" name="component:ImplementationContainsStateMachineSet" sourceNode="_BjgQcY8FEe6kMJUnV_viEw" targetNode="_jho_Wo8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.8/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.8/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.8/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.8/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtFyIo8FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtFyI48FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4161,8 +4130,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_mtFyJo8FEe6kMJUnV_viEw" name="component:ImplementationContainsActivitySet" sourceNode="_BjgQcY8FEe6kMJUnV_viEw" targetNode="_e20Ze48FEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.8/@ownedPropertyValues.2"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.8/@ownedPropertyValues.2"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.8/@ownedPropertyValues.2"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.8/@ownedPropertyValues.2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_mtFyJ48FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_mtFyKI8FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4170,8 +4139,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_teiQ4I8FEe6kMJUnV_viEw" name="component:ComponentDeclaredInterfaceSet" sourceNode="_aoiQkI8EEe6kMJUnV_viEw" targetNode="_ZTFghY8EEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.5/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.5/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.5/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.5/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_teiQ4Y8FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_teiQ4o8FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4179,16 +4148,16 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_-2qaPI8FEe6kMJUnV_viEw" name="«metadata:MetadataSet»&#xA;           MetadataSet" tooltipText="«metadata:MetadataSet»&#xA;           MetadataSet" outgoingEdges="__9HPcI8GEe6kMJUnV_viEw __9HPdY8GEe6kMJUnV_viEw" incomingEdges="_-2rBZI8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#MetadataSet"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#MetadataSet"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#MetadataSet"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#MetadataSet"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMKsg48GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_-2rBZI8FEe6kMJUnV_viEw" name="device:DeviceContainsMetadatas" sourceNode="_d5DtQ47cEe6kMJUnV_viEw" targetNode="_-2qaPI8FEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.1/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.1/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.1/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.1/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_-2rBZY8FEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_-2rBZo8FEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4196,119 +4165,119 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMKsiY8GEe6kMJUnV_viEw" name="«metadata:Category»&#xA;          Materials" tooltipText="«metadata:Category»&#xA;          Materials" outgoingEdges="__9HPrI8GEe6kMJUnV_viEw __9HPsY8GEe6kMJUnV_viEw" incomingEdges="__9HPoo8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Materials"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Materials"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Materials"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Materials"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMKsio8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMKsjI8GEe6kMJUnV_viEw" name="«metadata:Metadata»&#xA;          Intensity" tooltipText="«metadata:Metadata»&#xA;          Intensity" outgoingEdges="__9HPf48GEe6kMJUnV_viEw" incomingEdges="__9HPk48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Intensity"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Intensity"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Intensity"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Intensity"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMKsjY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMKsj48GEe6kMJUnV_viEw" name="«metadata:FloatMetadataValueType»&#xA;                    FloatMetadata" tooltipText="«metadata:FloatMetadataValueType»&#xA;                    FloatMetadata" incomingEdges="__9HPeo8GEe6kMJUnV_viEw __9HPf48GEe6kMJUnV_viEw __9HPhI8GEe6kMJUnV_viEw __9HPiY8GEe6kMJUnV_viEw __9HPjo8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#FloatMetadata"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#FloatMetadata"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#FloatMetadata"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#FloatMetadata"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMKskI8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMKsko8GEe6kMJUnV_viEw" name="«metadata:Category»&#xA;         Dimensions" tooltipText="«metadata:Category»&#xA;         Dimensions" outgoingEdges="__9HPto8GEe6kMJUnV_viEw __9HPu48GEe6kMJUnV_viEw" incomingEdges="__9HPp48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Dimensions"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Dimensions"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Dimensions"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Dimensions"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMKsk48GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMKslY8GEe6kMJUnV_viEw" name="«metadata:Category»&#xA;  ElectricalFeature" tooltipText="«metadata:Category»&#xA;  ElectricalFeature" outgoingEdges="__9HPk48GEe6kMJUnV_viEw __9HPmI8GEe6kMJUnV_viEw __9HPnY8GEe6kMJUnV_viEw" incomingEdges="__9HPcI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#ElectricalFeature"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#ElectricalFeature"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#ElectricalFeature"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#ElectricalFeature"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMKslo8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMKsmI8GEe6kMJUnV_viEw" name="«metadata:Metadata»&#xA;             Weight" tooltipText="«metadata:Metadata»&#xA;             Weight" outgoingEdges="__9HPjo8GEe6kMJUnV_viEw" incomingEdges="__9HPu48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Weight"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Weight"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Weight"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Weight"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMKsmY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMKsm48GEe6kMJUnV_viEw" name="«metadata:Metadata»&#xA;              Power" tooltipText="«metadata:Metadata»&#xA;              Power" outgoingEdges="__9HPeo8GEe6kMJUnV_viEw" incomingEdges="__9HPnY8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Power"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Power"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Power"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Power"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMLTkI8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMLTko8GEe6kMJUnV_viEw" name="«metadata:Metadata»&#xA;            Voltage" tooltipText="«metadata:Metadata»&#xA;            Voltage" outgoingEdges="__9HPhI8GEe6kMJUnV_viEw" incomingEdges="__9HPmI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Voltage"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Voltage"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Voltage"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Voltage"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMLTk48GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMLTlY8GEe6kMJUnV_viEw" name="«metadata:Metadata»&#xA;               Size" tooltipText="«metadata:Metadata»&#xA;               Size" outgoingEdges="__9HPiY8GEe6kMJUnV_viEw" incomingEdges="__9HPto8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Size"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Size"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Size"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Size"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMLTlo8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMLTmI8GEe6kMJUnV_viEw" name="«metadata:Metadata»&#xA;       BulbMaterial" tooltipText="«metadata:Metadata»&#xA;       BulbMaterial" incomingEdges="__9HPsY8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#BulbMaterial"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#BulbMaterial"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#BulbMaterial"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#BulbMaterial"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMLTmY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMLTm48GEe6kMJUnV_viEw" name="«metadata:Category»&#xA;    PhysicalFeature" tooltipText="«metadata:Category»&#xA;    PhysicalFeature" outgoingEdges="__9HPoo8GEe6kMJUnV_viEw __9HPp48GEe6kMJUnV_viEw" incomingEdges="__9HPdY8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#PhysicalFeature"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#PhysicalFeature"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#PhysicalFeature"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#PhysicalFeature"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMLTnI8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMLTno8GEe6kMJUnV_viEw" name="«metadata:StringMetadataValueType»&#xA;                    StringMetadata" tooltipText="«metadata:StringMetadataValueType»&#xA;                    StringMetadata">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#StringMetadata"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#StringMetadata"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#StringMetadata"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#StringMetadata"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMLTn48GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_HMLToY8GEe6kMJUnV_viEw" name="«metadata:Metadata»&#xA;       BaseMaterial" tooltipText="«metadata:Metadata»&#xA;       BaseMaterial" incomingEdges="__9HPrI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#BaseMaterial"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#BaseMaterial"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#BaseMaterial"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#BaseMaterial"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_HMLToo8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_amLOPI8GEe6kMJUnV_viEw" name="«stateMachine:StateMachine»&#xA;               StateMachine" tooltipText="«stateMachine:StateMachine»&#xA;               StateMachine" incomingEdges="_amMcXI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#StateMachine"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#StateMachine"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#StateMachine"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#StateMachine"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_amLOPY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="_gu78II8GEe6kMJUnV_viEw" name="stateMachine:defaultEntryState = &quot;EntryState&quot;" tooltipText="stateMachine:defaultEntryState = &quot;EntryState&quot;">
-        <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.10/@ownedPropertyValues.0"/>
-        <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.10/@ownedPropertyValues.0"/>
+        <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.10/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.10/@ownedPropertyValues.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="_gu78IY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
         </ownedStyle>
@@ -4316,8 +4285,8 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_amMcXI8GEe6kMJUnV_viEw" name="stateMachine:Element" sourceNode="_jho_Wo8EEe6kMJUnV_viEw" targetNode="_amLOPI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.9/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.9/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.9/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.9/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_amMcXY8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_amMcXo8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4325,16 +4294,16 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_lmeS7I8GEe6kMJUnV_viEw" name="«stateMachine:Variable»&#xA;               Variable" tooltipText="«stateMachine:Variable»&#xA;               Variable" incomingEdges="_t7ZW3I8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Variable"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Variable"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Variable"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Variable"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_lmeS7Y8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_t7ZW3I8GEe6kMJUnV_viEw" name="stateMachine:VariableElement" sourceNode="_BjgQbo8FEe6kMJUnV_viEw" targetNode="_lmeS7I8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.11/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.11/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.11/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.11/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_t7ZW3Y8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_t7ZW3o8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4342,16 +4311,16 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_268EbI8GEe6kMJUnV_viEw" name="«activity:Activity»&#xA;           Activity" tooltipText="«activity:Activity»&#xA;           Activity" outgoingEdges="_73RbpI8GEe6kMJUnV_viEw _Ck3VQI8HEe6kMJUnV_viEw" incomingEdges="_4Ih48I8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Activity"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Activity"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Activity"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Activity"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_268EbY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_4Ih48I8GEe6kMJUnV_viEw" name="activity:Element" sourceNode="_e20Ze48FEe6kMJUnV_viEw" targetNode="_268EbI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.13/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.13/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.13/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.13/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_4Ih48Y8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_4Ih48o8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4359,16 +4328,16 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="_73Q0Vo8GEe6kMJUnV_viEw" name="«activity:Argument»&#xA;           Argument" tooltipText="«activity:Argument»&#xA;           Argument" incomingEdges="_73RbpI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Argument"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Argument"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Argument"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Argument"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_73Q0V48GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_73RbpI8GEe6kMJUnV_viEw" name="activity:ArgumentOnActivity" sourceNode="_268EbI8GEe6kMJUnV_viEw" targetNode="_73Q0Vo8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.14/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.14/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.14/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.14/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_73RbpY8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_73Rbpo8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4376,15 +4345,15 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNodeList" uid="__9GBao8GEe6kMJUnV_viEw" name="«activity:Body»&#xA;           Body" tooltipText="«activity:Body»&#xA;           Body" incomingEdges="_Ck3VQI8HEe6kMJUnV_viEw">
-      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Body"/>
-      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/powerManagement.oml#Body"/>
+      <target xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Body"/>
+      <semanticElements xmi:type="oml:ConceptInstance" href="src/oml/example.com/eds-oml/description/lamp.oml#Body"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="__9GBa48GEe6kMJUnV_viEw" labelSize="12" showIcon="false" iconPath="/io.opencaesar.rosetta.sirius.viewpoint/icons/i-icon.png" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="255,255,255">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" uid="__9GBbY8GEe6kMJUnV_viEw" name="activity:BodyElementsSet = &quot;Calibration&quot;" tooltipText="activity:BodyElementsSet = &quot;Calibration&quot;">
-        <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.16/@ownedPropertyValues.0"/>
-        <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.16/@ownedPropertyValues.0"/>
+        <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.16/@ownedPropertyValues.0"/>
+        <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.16/@ownedPropertyValues.0"/>
         <ownedStyle xmi:type="diagram:Square" uid="__9GBbo8GEe6kMJUnV_viEw" labelSize="12" showIcon="false" labelAlignment="LEFT" labelPosition="node">
           <description xmi:type="style:SquareDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@containerMappings[name='ConceptInstance']/@subNodeMappings[name='Property%20Values']/@style"/>
         </ownedStyle>
@@ -4392,8 +4361,8 @@
       </ownedElements>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPcI8GEe6kMJUnV_viEw" name="metadata:CategoryOfMetadata" sourceNode="_-2qaPI8FEe6kMJUnV_viEw" targetNode="_HMKslY8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.18/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.18/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.18/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.18/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPcY8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPco8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4401,8 +4370,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPdY8GEe6kMJUnV_viEw" name="metadata:CategoryOfMetadata" sourceNode="_-2qaPI8FEe6kMJUnV_viEw" targetNode="_HMLTm48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.18/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.18/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.18/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.18/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPdo8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPd48GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4410,8 +4379,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPeo8GEe6kMJUnV_viEw" name="metadata:MetadataType" sourceNode="_HMKsm48GEe6kMJUnV_viEw" targetNode="_HMKsj48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.19/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.19/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.19/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.19/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPe48GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPfI8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4419,8 +4388,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPf48GEe6kMJUnV_viEw" name="metadata:MetadataType" sourceNode="_HMKsjI8GEe6kMJUnV_viEw" targetNode="_HMKsj48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.20/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.20/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.20/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.20/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPgI8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPgY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4428,8 +4397,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPhI8GEe6kMJUnV_viEw" name="metadata:MetadataType" sourceNode="_HMLTko8GEe6kMJUnV_viEw" targetNode="_HMKsj48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.21/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.21/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.21/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.21/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPhY8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPho8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4437,8 +4406,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPiY8GEe6kMJUnV_viEw" name="metadata:MetadataType" sourceNode="_HMLTlY8GEe6kMJUnV_viEw" targetNode="_HMKsj48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.22/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.22/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.22/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.22/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPio8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPi48GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4446,8 +4415,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPjo8GEe6kMJUnV_viEw" name="metadata:MetadataType" sourceNode="_HMKsmI8GEe6kMJUnV_viEw" targetNode="_HMKsj48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.23/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.23/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.23/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.23/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPj48GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPkI8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4455,8 +4424,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPk48GEe6kMJUnV_viEw" name="metadata:ElementOfCategory" sourceNode="_HMKslY8GEe6kMJUnV_viEw" targetNode="_HMKsjI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.26/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.26/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.26/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.26/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPlI8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPlY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4464,8 +4433,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPmI8GEe6kMJUnV_viEw" name="metadata:ElementOfCategory" sourceNode="_HMKslY8GEe6kMJUnV_viEw" targetNode="_HMLTko8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.26/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.26/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.26/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.26/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPmY8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPmo8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4473,8 +4442,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPnY8GEe6kMJUnV_viEw" name="metadata:ElementOfCategory" sourceNode="_HMKslY8GEe6kMJUnV_viEw" targetNode="_HMKsm48GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.26/@ownedPropertyValues.2"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.26/@ownedPropertyValues.2"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.26/@ownedPropertyValues.2"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.26/@ownedPropertyValues.2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPno8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPn48GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4482,8 +4451,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPoo8GEe6kMJUnV_viEw" name="metadata:CategoryOfCategory" sourceNode="_HMLTm48GEe6kMJUnV_viEw" targetNode="_HMKsiY8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.27/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.27/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.27/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.27/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPo48GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPpI8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4491,8 +4460,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPp48GEe6kMJUnV_viEw" name="metadata:CategoryOfCategory" sourceNode="_HMLTm48GEe6kMJUnV_viEw" targetNode="_HMKsko8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.27/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.27/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.27/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.27/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPqI8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPqY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4500,8 +4469,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPrI8GEe6kMJUnV_viEw" name="metadata:ElementOfCategory" sourceNode="_HMKsiY8GEe6kMJUnV_viEw" targetNode="_HMLToY8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.28/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.28/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.28/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.28/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPrY8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPro8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4509,8 +4478,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPsY8GEe6kMJUnV_viEw" name="metadata:ElementOfCategory" sourceNode="_HMKsiY8GEe6kMJUnV_viEw" targetNode="_HMLTmI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.28/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.28/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.28/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.28/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPso8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPs48GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4518,8 +4487,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPto8GEe6kMJUnV_viEw" name="metadata:ElementOfCategory" sourceNode="_HMKsko8GEe6kMJUnV_viEw" targetNode="_HMLTlY8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.29/@ownedPropertyValues.0"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.29/@ownedPropertyValues.0"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.29/@ownedPropertyValues.0"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.29/@ownedPropertyValues.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPt48GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPuI8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4527,8 +4496,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="__9HPu48GEe6kMJUnV_viEw" name="metadata:ElementOfCategory" sourceNode="_HMKsko8GEe6kMJUnV_viEw" targetNode="_HMKsmI8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.29/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.29/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.29/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.29/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="__9HPvI8GEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="__9HPvY8GEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4536,8 +4505,8 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_Ck3VQI8HEe6kMJUnV_viEw" name="activity:ActivityContainsBody" sourceNode="_268EbI8GEe6kMJUnV_viEw" targetNode="__9GBao8GEe6kMJUnV_viEw">
-      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.14/@ownedPropertyValues.1"/>
-      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/powerManagement.oml#//@ownedStatements.14/@ownedPropertyValues.1"/>
+      <target xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.14/@ownedPropertyValues.1"/>
+      <semanticElements xmi:type="oml:PropertyValueAssertion" href="src/oml/example.com/eds-oml/description/lamp.oml#//@ownedStatements.14/@ownedPropertyValues.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_Ck3VQY8HEe6kMJUnV_viEw" size="2" routingStyle="manhattan" strokeColor="209,209,209">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer/@edgeMappings[name='LinkAssertion']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_Ck3VQo8HEe6kMJUnV_viEw" labelSize="12" showIcon="false"/>
@@ -4547,7 +4516,7 @@
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_9XKg4I5CEe6Jx9YFaUuFtQ"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/io.opencaesar.rosetta.sirius.viewpoint/description/oml.odesign#//@ownedViewpoints[name='Descriptions']/@ownedRepresentations[name='Description%20Diagram']/@defaultLayer"/>
-    <target xmi:type="oml:Description" href="src/oml/example.com/eds-oml/description/powerManagement.oml#/"/>
+    <target xmi:type="oml:Description" href="src/oml/example.com/eds-oml/description/lamp.oml#/"/>
   </diagram:DSemanticDiagram>
   <diagram:DSemanticDiagram uid="_o_pukI7ZEe6kMJUnV_viEw">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_o_y4gI7ZEe6kMJUnV_viEw" source="GMF_DIAGRAMS">
@@ -6535,4 +6504,3 @@
     <target xmi:type="oml:Vocabulary" href="src/oml/example.com/eds-oml/vocabulary/DataType.oml#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>
->>>>>>> main
