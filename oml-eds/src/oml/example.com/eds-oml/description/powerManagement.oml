@@ -29,6 +29,11 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 	]
 
 	instance Lamp : device:Device [
+<<<<<<< Updated upstream:oml-eds/src/oml/example.com/eds-oml/description/powerManagement.oml
+=======
+		aspects:hasId "L.01"
+		aspects:hasCanonicalName "Lamp LED"
+>>>>>>> Stashed changes:oml-eds/src/oml/example.com/eds-oml/description/lamp.oml
 		device:DeviceContainsMetadatas MetadataSet
 	]
 
@@ -52,7 +57,15 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 	]
 	
 	instance LED : component:Component [
+<<<<<<< Updated upstream:oml-eds/src/oml/example.com/eds-oml/description/powerManagement.oml
 
+=======
+		aspects:hasId "C.01"
+		aspects:hasCanonicalName "LED"
+		component:ComponentRequiredInterfaceSet switchSet
+		component:ComponentDeclaredInterfaceSet wifiSwitchSet
+		component:ComponentProvidedInterfaceSet bluetoothSwitchSet
+>>>>>>> Stashed changes:oml-eds/src/oml/example.com/eds-oml/description/lamp.oml
 	]
 
 	instance BaseLamp : component:Component [
@@ -124,28 +137,40 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 
 	instance StringMetadata : metadata:StringMetadataValueType [
 	]
-	
-	
 
-	/*
+	// ------------- Interface ------------------- //
+
+	instance switchSet : interface:InterfaceSet [
+		interface:Element switch
+	]
+
+	instance wifiSwitchSet : interface:InterfaceSet [
+		interface:Element wifiSwitch
+	]
+
+	instance bluetoothSwitchSet : interface:InterfaceSet [
+		interface:Element bluetoothSwitch
+	]
 
 	instance switch : interface:Interface [
 		component:isInterfaceReferencedBy LED
-		package:isDeclaredByPackage box
+		aspects:hasId "I.01"
+		aspects:hasCanonicalName "Switch"
+	]
+
+	instance wifiSwitch : interface:Interface [
+		aspects:hasId "I.02"
+		aspects:hasCanonicalName "Wireless switch"
+	]
+
+	instance bluetoothSwitch : interface:Interface [
+		aspects:hasId "I.03"
+		aspects:hasCanonicalName "Bluetooth switch"
 	]
 
 	instance command : interface:Command [
-		interface:commandOnInterface switch
-	]
-
-	instance argumentInterface : interface:Argument [
-		interface:onCommand command
-	]
-
-	instance genericType : interface:GenericType
-
-	instance mapping : interface:Mapping [
-		interface:onGenericType genericType
+		aspects:hasId "CM.01"
+		aspects:hasCanonicalName "Command" 
 	]
 
 	instance field : field:Field
@@ -170,5 +195,5 @@ description <http://example.com/eds-oml/description/powerManagement#> as powerMa
 
 	instance off : stateMachine:Variable [
 		stateMachine:isVariableOf lightTransition
-	]*/
+	]
 }
