@@ -11,6 +11,14 @@ vocabulary <http://example.com/eds-oml/vocabulary/StateMachine#> as StateMachine
 	@rdfs:comment "Responds to event and schedules the execution of activities"
 	concept StateMachine < aspects:IdentifiedThing
 
+	concept StateMachineSet
+	
+	relation Element[
+		from StateMachineSet
+		to StateMachine
+	]
+	
+	
 	scalar property defaultEntryState [
 		domain StateMachine
 		range State
@@ -18,19 +26,19 @@ vocabulary <http://example.com/eds-oml/vocabulary/StateMachine#> as StateMachine
 	]
 
 	concept Variable < field:Field
+	
+	concept VariableSet
+	
+	relation VariableElement[
+		from VariableSet
+		to Variable
+	]
 
 	scalar State [
 		oneOf "EntryState", "ExitState", "State", "Transition"
 	]
 
-	relation entity VariableOnStateMachine [
-		from Variable
-		to StateMachine
-		forward isVariableOf
-		reverse isStateMachineOf
-		functional
-		inverse functional
-	]
+
 
 	@rdfs:comment "State Machine controls the execution of a set of Activities "
 	relation entity StateMachineControlsActivity [

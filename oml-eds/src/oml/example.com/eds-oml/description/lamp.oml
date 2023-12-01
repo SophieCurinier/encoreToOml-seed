@@ -25,11 +25,16 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 
 	uses <http://example.com/eds-oml/vocabulary/Field#> as field
 
+
+	// ------------- DataSheet -------------------- //
+	
 	instance LampDatasheet : dataSheet:DataSheet [
 		dataSheet:DatasheetContainsDevice Lamp
 		dataSheet:DatasheetContainsPackage Package
 	]
 
+	// ------------- Device -------------------- //
+	
 	instance Lamp : device:Device [
 		aspects:hasId "L.01"
 		aspects:hasCanonicalName "Lamp LED"
@@ -41,15 +46,17 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 		aspects:hasCanonicalName "Lamp LED2"
 		device:DeviceContainsMetadatas MetadataSet
 	]
-
+	
+	// ------------- Package -------------------- //
+	
 	instance Package : package:Package [
 		package:PackageContainsComponents ComponentSet
 		package:PackageDeclaresInterfaces InterfaceSet
 		package:PackageDefinesDataTypes DataTypeSet
-		//package:declaresInterface switch
 	]
 	
-	instance InterfaceSet : interface:InterfaceSet
+	
+	// ------------- DataType -------------------- //	
 	
 	instance DataTypeSet : dataType:DataTypeSet
 	
@@ -66,6 +73,8 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	instance LED : component:Component [
 		aspects:hasId "C.01"
 		aspects:hasCanonicalName "LED"
+		component:ComponentContainsImplementation LEDImplementation
+		component:ComponentDeclaredInterfaceSet InterfaceSet
 	]
 
 	instance BaseLamp : component:Component [
@@ -77,6 +86,55 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 		aspects:hasId "C.03"
 		aspects:hasCanonicalName "Lamp shade"
 	]
+	
+	instance LEDImplementation : component:Implementation[
+		component:ImplementationContainsVariableSet VariableSet
+		component:ImplementationContainsStateMachineSet StateMachineSet
+		component:ImplementationContainsActivitySet ActivitySet
+		
+	]
+	
+	// ------------- State Machine -------------------- //
+	
+	instance StateMachineSet : stateMachine:StateMachineSet[
+		stateMachine:Element StateMachine
+	]
+	
+	instance StateMachine : stateMachine:StateMachine[
+		stateMachine:defaultEntryState "EntryState"
+	]
+	
+	instance VariableSet : stateMachine:VariableSet[
+		stateMachine:VariableElement Variable
+	]
+	
+	instance Variable : stateMachine:Variable[
+	]
+	
+	// ------------- Activity -------------------- //
+	
+	instance ActivitySet : activity:ActivitySet[
+		activity:Element Activity
+	]
+	
+	instance Activity : activity:Activity[
+		activity:ArgumentOnActivity Argument
+		activity:ActivityContainsBody Body
+	]
+	
+	instance Argument : activity:Argument
+	
+	instance Body : activity:Body[
+		activity:BodyElementsSet "Calibration"
+	]
+	
+	// ------------- Interface -------------------- //
+	
+	instance InterfaceSet : interface:InterfaceSet[
+		//interface:Element Interface
+	]
+	
+	
 	
 	// ------------- Metadata -------------------- //
 	
@@ -160,48 +218,4 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	
 	
 
-	/*
-
-	instance switch : interface:Interface [
-		component:isInterfaceReferencedBy LED
-		package:isDeclaredByPackage box
-	]
-
-	instance command : interface:Command [
-		interface:commandOnInterface switch
-	]
-
-	instance argumentInterface : interface:Argument [
-		interface:onCommand command
-	]
-
-	instance genericType : interface:GenericType
-
-	instance mapping : interface:Mapping [
-		interface:onGenericType genericType
-	]
-
-	instance field : field:Field
-
-	instance externalField : field:ExternalField
-
-	instance entries : field:Entries
-
-	instance turnOn : activity:Activity [
-		component:isContainedByComponent LED
-		stateMachine:isControledByStateMachine lightTransition
-	]
-
-	instance lightTransition : stateMachine:StateMachine [
-		stateMachine:controlsActivity turnOn
-		stateMachine:isStateMachineOf on
-	]
-
-	instance on : stateMachine:Variable [
-		stateMachine:isVariableOf lightTransition
-	]
-
-	instance off : stateMachine:Variable [
-		stateMachine:isVariableOf lightTransition
-	]*/
 }
