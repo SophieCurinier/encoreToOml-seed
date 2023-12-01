@@ -15,36 +15,42 @@ vocabulary <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata {
 	@rdfs:comment "Specify a categorization or grouping of metadata"
 	concept Category < aspects:IdentifiedThing
 
-	concept MetadataValueType
-
-	relation MetadataType [
+	relation FloatType [
 		from Metadata
-		to MetadataValueType
+		to FloatMetadataValueType
+		functional
+	]
+	
+	relation StringType [
+		from Metadata
+		to StringMetadataValueType
+		functional
+	]
+	
+	relation IntegerType [
+		from Metadata
+		to IntegerMetadataValueType
 		functional
 	]
 
-	concept IntegerMetadataValueType < MetadataValueType [
-		// restricts IntegerMetadataValue to min 0
-	]
+	concept IntegerMetadataValueType
 
-	scalar property IntegerMetadataValue [
+	scalar property IntegerValue [
 		domain IntegerMetadataValueType
 		range xsd:integer
 	]
 
-	concept FloatMetadataValueType < MetadataValueType [
-		// restricts FloatMetadataValue to min 0
-	]
+	concept FloatMetadataValueType
 
-	scalar property FloatMetadataValue [
+	scalar property FloatValue [
 		domain FloatMetadataValueType
 		range xsd:float
 	]
 
-	concept StringMetadataValueType < MetadataValueType [
+	concept StringMetadataValueType [
 	]
 
-	scalar property StringMetadataValue [
+	scalar property StringValue [
 		domain StringMetadataValueType
 		range xsd:string
 	]

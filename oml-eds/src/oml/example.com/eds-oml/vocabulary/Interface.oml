@@ -6,18 +6,15 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 
 	extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
 
-	extends <http://example.com/eds-oml/vocabulary/DataType#> as dataType
-
 	extends <http://example.com/eds-oml/vocabulary/Field#> as field
 
 	@rdfs:comment "Defines connections and subnetwork interfaces"
 	concept Interface < aspects:IdentifiedThing [
-		restricts abstract to true
-		// restricts level to min 3
-		restricts level to max 4
+		//restricts abstract to true
+		//restricts level to max 4
 	]
 	
-	concept InterfaceSet < aspects:IdentifiedThing
+	concept InterfaceSet
 	
 	relation Element[
 		from InterfaceSet
@@ -123,15 +120,4 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 		to Mapping
 	]
 
-
-
-	@rdfs:comment "Interfaces reference datatypes"
-	relation entity InterfaceReferencesDataType [
-		from Interface
-		to dataType:DataType
-		forward referencesDataType
-		reverse isDataTypeReferencedBy
-		functional
-		inverse functional
-	]
 }

@@ -126,14 +126,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	
 	instance Body : activity:Body[
 		activity:BodyElementsSet "Calibration"
-	]
-	
-	// ------------- Interface -------------------- //
-	
-	instance InterfaceSet : interface:InterfaceSet[
-		//interface:Element Interface
-	]
-	
+	]	
 	
 	
 	// ------------- Metadata -------------------- //
@@ -146,43 +139,43 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	instance Power : metadata:Metadata [
 		aspects:hasId "M.01"
 		aspects:hasCanonicalName "Power"
-		metadata:MetadataType FloatMetadata
+		metadata:FloatType FloatMetadata
 	]
 
 	instance Intensity : metadata:Metadata [
 		aspects:hasId "M.02"
 		aspects:hasCanonicalName "Intensity"
-		metadata:MetadataType FloatMetadata
+		metadata:FloatType FloatMetadata
 	]
 
 	instance Voltage : metadata:Metadata [
 		aspects:hasId "M.03"
 		aspects:hasCanonicalName "Voltage"
-		metadata:MetadataType FloatMetadata
+		metadata:FloatType FloatMetadata
 	]
 
 	instance Size : metadata:Metadata [
 		aspects:hasId "M.04"
 		aspects:hasCanonicalName "Size"
-		metadata:MetadataType FloatMetadata
+		metadata:FloatType FloatMetadata
 	]
 
 	instance Weight : metadata:Metadata [
 		aspects:hasId "M.05"
 		aspects:hasCanonicalName "Weight"
-		metadata:MetadataType FloatMetadata
+		metadata:FloatType FloatMetadata
 	]
 
 	instance BulbMaterial : metadata:Metadata [
 		aspects:hasId "M.06"
 		aspects:hasCanonicalName "Bulb Material"
-		// metadata:MetadataType StringMetadata
+		metadata:StringType StringMetadata
 	]
 
 	instance BaseMaterial : metadata:Metadata [
 		aspects:hasId "M.07"
 		aspects:hasCanonicalName "Base Material" 
-		// metadata:MetadataType StringMetadata
+		metadata:StringType StringMetadata
 	]
 
 	instance ElectricalFeature : metadata:Category [
@@ -216,63 +209,57 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	instance StringMetadata : metadata:StringMetadataValueType [
 	]
 
-	// ------------- Interface ------------------- //
-
-	instance switchSet : interface:InterfaceSet [
-		interface:Element switch
+	// ------------- Interface -------------------- //
+	
+	instance InterfaceSet : interface:InterfaceSet[
+		interface:Element ManualSwitch
+		interface:Element WifiSwitch
+		interface:Element BluetoothSwitch
+		
 	]
 
-	instance wifiSwitchSet : interface:InterfaceSet [
-		interface:Element wifiSwitch
-	]
-
-	instance bluetoothSwitchSet : interface:InterfaceSet [
-		interface:Element bluetoothSwitch
-	]
-
-	instance switch : interface:Interface [
-		// component:isInterfaceReferencedBy LED
+	instance ManualSwitch : interface:Interface [
 		aspects:hasId "I.01"
-		aspects:hasCanonicalName "Switch"
+		aspects:hasCanonicalName "Manual switch"
 	]
 
-	instance wifiSwitch : interface:Interface [
+	instance WifiSwitch : interface:Interface [
 		aspects:hasId "I.02"
 		aspects:hasCanonicalName "Wireless switch"
 	]
 
-	instance bluetoothSwitch : interface:Interface [
+	instance BluetoothSwitch : interface:Interface [
 		aspects:hasId "I.03"
 		aspects:hasCanonicalName "Bluetooth switch"
+		interface:abstract true
 	]
-
-	instance command : interface:Command [
+	
+	instance ManualCommandSet : interface:CommandSet[
+		interface:CommandElement ManualInteruptor
+		interface:CommandElement ManualLuminosity
+	]
+	
+	instance ManualLuminosity : interface:Command[
 		aspects:hasId "CM.01"
-		aspects:hasCanonicalName "Command" 
+		aspects:hasCanonicalName "Luminosity command"
+		interface:ArgumentOnCommand LuminosityHigh
+		interface:ArgumentOnCommand LuminosityLow
 	]
-
-	instance field : field:Field
-
-	instance externalField : field:ExternalField
-
-	instance entries : field:Entries
-
-	instance turnOn : activity:Activity [
-		// component:isContainedByComponent LED
-		stateMachine:isControledByStateMachine lightTransition
+	
+	instance LuminosityHigh : interface:Argument
+	instance LuminosityLow : interface:Argument
+	
+	instance ManualInteruptor : interface:Command[
+		aspects:hasId "CM.02"
+		aspects:hasCanonicalName "Interuptor command"
+		interface:ArgumentOnCommand InteruptorOn
+		interface:ArgumentOnCommand InteruptorOff
 	]
+	
+	instance InteruptorOn : interface:Argument
+	instance InteruptorOff : interface:Argument
+	
+	
 
-	instance lightTransition : stateMachine:StateMachine [
-		stateMachine:controlsActivity turnOn
-		// stateMachine:isStateMachineOf on
-	]
-
-	instance on : stateMachine:Variable [
-		// stateMachine:isVariableOf lightTransition
-	]
-
-	instance off : stateMachine:Variable [
-		// stateMachine:isVariableOf lightTransition
-	]
 
 }
