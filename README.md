@@ -26,7 +26,7 @@ Gradle : 7.4.2 or +
 
 ```bash
 git clone https://github.com/SophieCurinier/EncoreToOML-seed
-cd EncoreToOML-seed
+cd EncoreToOML-seed/oml-eds
 ./gradlew build
 ```
 ### Functionality
@@ -46,8 +46,8 @@ cd EncoreToOML-seed
 - **Component-Interface query:** [Component-Interface](oml-eds/src/sparql/component_interface.sparql) query retrieves information about components and their associated interfaces. It extracts the ID and name of each component, along with the IDs and names of interfaces that are required, declared, and provided by these components. 
 
 - **Interfaces query:** [Interface](oml-eds/src/sparql/interfaces.sparql) query retries information about query and their associated command, generic type and set.It extract the ID and name of each component for each of them.
-
-#### 
+  
+- **Components query:** [Component](oml-eds/src/sparql/components.sparql) query retries information about query.
 
 ## Contact
 
