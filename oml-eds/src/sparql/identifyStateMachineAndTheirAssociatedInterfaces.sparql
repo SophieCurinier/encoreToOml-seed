@@ -1,8 +1,0 @@
-PREFIX structure: <http://example.com/eds-oml/vocabulary/structure#>
-
-SELECT ?stateMachine ?component
-WHERE {
-  ?stateMachine a <http://example.com/eds-oml/vocabulary/StateMachine#StateMachine>.
-  ?component a <http://example.com/eds-oml/vocabulary/Component#Component>.
-  ?stateMachine <http://example.com/eds-oml/vocabulary/Relations#definedByComponent> ?component.
-}
