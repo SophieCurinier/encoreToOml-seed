@@ -8,6 +8,18 @@ vocabulary <http://example.com/eds-oml/vocabulary/DataSheet#> as DataSheet {
 
 	extends <http://example.com/eds-oml/vocabulary/Package#> as package
 
+	extends <http://example.com/eds-oml/vocabulary/Activity#> as Activity
+
+	extends <http://example.com/eds-oml/vocabulary/Component#> as Component
+
+	extends <http://example.com/eds-oml/vocabulary/DataType#> as DataType
+
+	extends <http://example.com/eds-oml/vocabulary/Interface#> as Interface
+
+	extends <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata
+
+	extends <http://example.com/eds-oml/vocabulary/StateMachine#> as StateMachine
+
 	@rdfs:comment "Contains all known information about a particular device or package"
 	concept DataSheet < aspects:IdentifiedThing
 

@@ -25,16 +25,13 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 
 	uses <http://example.com/eds-oml/vocabulary/Field#> as field
 
-
 	// ------------- DataSheet -------------------- //
-	
 	instance LampDatasheet : dataSheet:DataSheet [
 		dataSheet:DatasheetContainsDevice Lamp
 		dataSheet:DatasheetContainsPackage Package
 	]
 
 	// ------------- Device -------------------- //
-	
 	instance Lamp : device:Device [
 		aspects:hasId "L.01"
 		aspects:hasCanonicalName "Lamp LED"
@@ -46,30 +43,26 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 		aspects:hasCanonicalName "Lamp LED2"
 		device:DeviceContainsMetadatas MetadataSet
 	]
-	
+
 	// ------------- Package -------------------- //
-	
 	instance Package : package:Package [
 		package:PackageContainsComponents ComponentSet
 		package:PackageDeclaresInterfaces InterfaceSet
 		package:PackageDefinesDataTypes DataTypeSet
 	]
-	
-	
+
 	// ------------- DataType -------------------- //	
-	
 	instance DataTypeSet : dataType:DataTypeSet
-	
+
 	// ------------- Component -------------------- //
-	
-	instance ComponentSet : component:ComponentSet[
+	instance ComponentSet : component:ComponentSet [
 		aspects:hasId "CS.01"
 		aspects:hasCanonicalName "Lamp component set"
 		component:Element LED
 		component:Element BaseLamp
 		component:Element LampShade
 	]
-	
+
 	instance LED : component:Component [
 		aspects:hasId "C.01"
 		aspects:hasCanonicalName "LED"
@@ -86,51 +79,46 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 		aspects:hasId "C.03"
 		aspects:hasCanonicalName "Lamp shade"
 	]
-	
-	instance LEDImplementation : component:Implementation[
+
+	instance LEDImplementation : component:Implementation [
 		component:ImplementationContainsVariableSet VariableSet
 		component:ImplementationContainsStateMachineSet StateMachineSet
 		component:ImplementationContainsActivitySet ActivitySet
-		
 	]
-	
+
 	// ------------- State Machine -------------------- //
-	
-	instance StateMachineSet : stateMachine:StateMachineSet[
+	instance StateMachineSet : stateMachine:StateMachineSet [
 		stateMachine:Element StateMachine
 	]
-	
-	instance StateMachine : stateMachine:StateMachine[
+
+	instance StateMachine : stateMachine:StateMachine [
 		stateMachine:defaultEntryState "EntryState"
 	]
-	
-	instance VariableSet : stateMachine:VariableSet[
+
+	instance VariableSet : stateMachine:VariableSet [
 		stateMachine:VariableElement Variable
 	]
-	
-	instance Variable : stateMachine:Variable[
+
+	instance Variable : stateMachine:Variable [
 	]
-	
+
 	// ------------- Activity -------------------- //
-	
-	instance ActivitySet : activity:ActivitySet[
+	instance ActivitySet : activity:ActivitySet [
 		activity:Element Activity
 	]
-	
-	instance Activity : activity:Activity[
+
+	instance Activity : activity:Activity [
 		activity:ArgumentOnActivity Argument
 		activity:ActivityContainsBody Body
 	]
-	
+
 	instance Argument : activity:Argument
-	
-	instance Body : activity:Body[
+
+	instance Body : activity:Body [
 		activity:BodyElementsSet "Calibration"
-	]	
-	
-	
+	]
+
 	// ------------- Metadata -------------------- //
-	
 	instance MetadataSet : metadata:MetadataSet [
 		metadata:CategoryOfMetadata ElectricalFeature
 		metadata:CategoryOfMetadata PhysicalFeature
@@ -174,7 +162,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 
 	instance BaseMaterial : metadata:Metadata [
 		aspects:hasId "M.07"
-		aspects:hasCanonicalName "Base Material" 
+		aspects:hasCanonicalName "Base Material"
 		metadata:StringType StringMetadata
 	]
 
@@ -210,12 +198,10 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	]
 
 	// ------------- Interface -------------------- //
-	
-	instance InterfaceSet : interface:InterfaceSet[
+	instance InterfaceSet : interface:InterfaceSet [
 		interface:Element ManualSwitch
 		interface:Element WifiSwitch
 		interface:Element BluetoothSwitch
-		
 	]
 
 	instance ManualSwitch : interface:Interface [
@@ -227,48 +213,46 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 		aspects:hasId "I.02"
 		aspects:hasCanonicalName "Wireless switch"
 	]
-	
+
 	instance BluetoothSwitch : interface:Interface [
 		aspects:hasId "I.03"
 		aspects:hasCanonicalName "Bluetooth switch"
 		interface:abstract true
 	]
-	
-	instance ManualCommandSet : interface:CommandSet[
+
+	instance ManualCommandSet : interface:CommandSet [
 		interface:CommandElement ManualInteruptor
 		interface:CommandElement ManualLuminosity
 	]
-	
-	instance ManualLuminosity : interface:Command[
+
+	instance ManualLuminosity : interface:Command [
 		aspects:hasId "CM.01"
 		aspects:hasCanonicalName "Luminosity command"
 		interface:ArgumentOnCommand LuminosityHigh
 		interface:ArgumentOnCommand LuminosityLow
 	]
-	
+
 	instance LuminosityHigh : interface:Argument
+
 	instance LuminosityLow : interface:Argument
-	
-	instance ManualInteruptor : interface:Command[
+
+	instance ManualInteruptor : interface:Command [
 		aspects:hasId "CM.02"
 		aspects:hasCanonicalName "Interuptor command"
 		interface:ArgumentOnCommand InteruptorOn
 		interface:ArgumentOnCommand InteruptorOff
 	]
-	
+
 	instance InteruptorOn : interface:Argument
+
 	instance InteruptorOff : interface:Argument
-	
-	instance ParameterSet : interface:ParameterSet[
+
+	instance ParameterSet : interface:ParameterSet [
 		interface:ParameterElement WifiPassword
 		interface:ParameterElement SerieNumber
-		
 	]
-	
+
 	instance WifiPassword : interface:Parameter
+
 	instance SerieNumber : interface:Parameter
-	
-	
-
-
 }
