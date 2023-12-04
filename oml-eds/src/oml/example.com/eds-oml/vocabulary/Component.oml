@@ -12,7 +12,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Component#> as Component {
 	
 	extends <http://example.com/eds-oml/vocabulary/DataType#> as dataType
 
-	@rdfs:comment "Components describe entities that have interfaces and computational behaviour"
+	@rdfs:comment "The class of component items"
 	concept Component < aspects:IdentifiedThing
 
 	concept ComponentSet < aspects:IdentifiedThing

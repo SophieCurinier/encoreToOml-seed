@@ -1,7 +1,0 @@
-PREFIX structure: <http://example.com/eds-oml/vocabulary/structure#>
-
-SELECT DISTINCT ?dataType
-WHERE {
-  ?dataType a <http://example.com/eds-oml/vocabulary/DataType#DataType>.
-}
-

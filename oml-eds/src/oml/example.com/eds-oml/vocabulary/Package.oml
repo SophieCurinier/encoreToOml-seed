@@ -1,0 +1,38 @@
+vocabulary <http://example.com/eds-oml/vocabulary/Package#> as Package {
+
+	extends <http://www.w3.org/2000/01/rdf-schema#> as rdfs
+
+	extends <http://example.com/eds-oml/vocabulary/Aspects#> as aspects
+
+	extends <http://example.com/eds-oml/vocabulary/Component#> as component
+
+	extends <http://example.com/eds-oml/vocabulary/Interface#> as interface
+
+	extends <http://example.com/eds-oml/vocabulary/DataType#> as dataType
+
+	// Package Element
+	@rdfs:comment "Packages describe a related set of components, data types, and interfaces"
+	concept Package < aspects:IdentifiedThing
+	
+	
+	@rdfs:comment "A Package contains Components that specify a behavioural mapping between those interfaces"
+	relation PackageContainsComponents [
+		from Package
+		to component:ComponentSet
+		functional
+	]
+
+	@rdfs:comment "A Package declares Interfaces referencing data types"
+	relation PackageDeclaresInterfaces [
+		from Package
+		to interface:InterfaceSet
+		functional
+	]
+
+	@rdfs:comment "A Package defines a variety of Data Types"
+	relation PackageDefinesDataTypes [
+		from Package
+		to dataType:DataTypeSet
+		functional
+	]
+}

@@ -6,8 +6,7 @@ vocabulary <http://example.com/eds-oml/vocabulary/Activity#> as Activity {
 
 	extends <http://example.com/eds-oml/vocabulary/Field#> as field
 
-	@rdfs:comment "An activity is a block of executable statements whose invocation is controlled by
-one or more state machines"
+	// Activity Element
 	concept Activity < aspects:IdentifiedThing
 
 	@rdfs:comment "Provide data values to be used by the activity"

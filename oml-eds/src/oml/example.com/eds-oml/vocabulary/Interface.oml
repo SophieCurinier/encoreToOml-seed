@@ -8,8 +8,11 @@ vocabulary <http://example.com/eds-oml/vocabulary/Interface#> as Interface {
 
 	extends <http://example.com/eds-oml/vocabulary/Field#> as field
 
-	@rdfs:comment "Defines connections between components and datatypes"
-	concept Interface < aspects:IdentifiedThing
+	@rdfs:comment "Defines connections and subnetwork interfaces"
+	concept Interface < aspects:IdentifiedThing [
+		//restricts abstract to true
+		//restricts level to max 4
+	]
 	
 	concept InterfaceSet
 	
