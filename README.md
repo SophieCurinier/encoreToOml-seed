@@ -26,7 +26,7 @@ Gradle : 7.4.2 or +
 
 ```bash
 git clone https://github.com/SophieCurinier/EncoreToOML-seed
-cd EncoreToOML-seed/oml-eds
+cd EncoreToOML-seed
 ./gradlew build
 ```
 ### Functionality
@@ -45,19 +45,9 @@ cd EncoreToOML-seed/oml-eds
 
 - **Component-Interface query:** [Component-Interface](oml-eds/src/sparql/component_interface.sparql) query retrieves information about components and their associated interfaces. It extracts the ID and name of each component, along with the IDs and names of interfaces that are required, declared, and provided by these components. 
 
-- **Component set query:** [Component Set](oml-eds/src/sparql/componentSet.sparql) query extracts the identifiers and names of component sets and their respective components, highlighting the structure and organization of components within the system. Useful for visualizing the modular architecture of components in the datasheet.
-  
-- **Device-Metadata query:** [Device-Metadata](oml-eds/src/sparql/device_metadata.sparql) query identifies each device's ID and name along with the IDs and names of associated metadata. It helps in understanding the metadata attributes specific to each device, crucial for device configuration and management. 
-
 - **Interfaces query:** [Interface](oml-eds/src/sparql/interfaces.sparql) query retries information about query and their associated command, generic type and set.It extract the ID and name of each component for each of them.
 
-## Visualization
-
-Charles part : Explain how to create visualisation and wich module (Eclipse sirius) must be add.
-
-## Demonstration
-
-This is a video [demonstration]().
+#### 
 
 ## Contact
 

@@ -40,6 +40,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 		dataSheet:DeviceContainsMetadatas MetadataSet
 		aspects:hasCanonicalName "Lamp LED 2"
 		dataSheet:DeviceContainsMetadatas MetadataSet
+		device:DeviceContainsMetadatas MetadataSet
 	]
 
 	// ------------- Package -------------------- //
@@ -166,7 +167,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	]
 
 	instance ElectricalFeature : metadata:Category [
-		aspects:hasId "MetaC.01"
+		aspects:hasId "C.01"
 		aspects:hasCanonicalName "Electrical category"
 		metadata:ElementOfCategory Intensity
 		metadata:ElementOfCategory Voltage
@@ -174,7 +175,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	]
 
 	instance PhysicalFeature : metadata:Category [
-		aspects:hasId "MetaC.02"
+		aspects:hasId "C.02"
 		aspects:hasCanonicalName "Physical category"
 		metadata:CategoryOfCategory Materials
 		metadata:CategoryOfCategory Dimensions
