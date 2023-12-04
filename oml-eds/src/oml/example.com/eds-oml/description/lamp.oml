@@ -22,7 +22,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	uses <http://example.com/eds-oml/vocabulary/Field#> as field
 
 	// ------------- DataSheet -------------------- //
-	instance LampDatasheet : dataSheet:DataSheet [
+	instance LampDatasheet : dataSheet:Datasheet [
 		dataSheet:DatasheetContainsDevice Lamp
 		dataSheet:DatasheetContainsPackage Package
 	]
@@ -37,6 +37,8 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	instance Lamp2 : dataSheet:Device [
 		aspects:hasId "L.02"
 		aspects:hasCanonicalName "Lamp LED2"
+		dataSheet:DeviceContainsMetadatas MetadataSet
+		aspects:hasCanonicalName "Lamp LED 2"
 		dataSheet:DeviceContainsMetadatas MetadataSet
 	]
 
@@ -86,9 +88,10 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	instance StateMachineSet : stateMachine:StateMachineSet [
 		stateMachine:Element StateMachine
 	]
+	instance EntryState : stateMachine:EntryState
 
 	instance StateMachine : stateMachine:StateMachine [
-		stateMachine:defaultEntryState "EntryState"
+		stateMachine:StateSet EntryState
 	]
 
 	instance VariableSet : stateMachine:VariableSet [
@@ -163,7 +166,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	]
 
 	instance ElectricalFeature : metadata:Category [
-		aspects:hasId "C.01"
+		aspects:hasId "MetaC.01"
 		aspects:hasCanonicalName "Electrical category"
 		metadata:ElementOfCategory Intensity
 		metadata:ElementOfCategory Voltage
@@ -171,7 +174,7 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	]
 
 	instance PhysicalFeature : metadata:Category [
-		aspects:hasId "C.02"
+		aspects:hasId "MetaC.02"
 		aspects:hasCanonicalName "Physical category"
 		metadata:CategoryOfCategory Materials
 		metadata:CategoryOfCategory Dimensions

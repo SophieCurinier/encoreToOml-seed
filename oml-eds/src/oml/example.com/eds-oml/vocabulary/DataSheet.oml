@@ -14,25 +14,25 @@ vocabulary <http://example.com/eds-oml/vocabulary/DataSheet#> as DataSheet {
 
 
 	@rdfs:comment "Contains all known information about a particular device or package"
-	concept DataSheet < aspects:IdentifiedThing
+	concept Datasheet < aspects:IdentifiedThing
 
 	@rdfs:comment "A DeviceDatasheet contains all known information about a particular device or class of devices"
 	relation DatasheetContainsDevice [
-		from DataSheet
+		from Datasheet
 		to Device
 		functional
 	]
 
 	@rdfs:comment "DataSheet may reference one or more Package Files that capture an independently managed subset of that data"
 	relation DatasheetContainsPackage [
-		from DataSheet
+		from Datasheet
 		to Package
 		functional
 	]
 	
 	@rdfs:comment "A physical element of a system accessed through subnetwork-layer interfaces"
 	concept Device < aspects:IdentifiedThing
-
+ 
 	@rdfs:comment "A device contains metadata that describes the structure of the data contained in the device"
 	relation DeviceContainsMetadatas [
 		from Device

@@ -10,33 +10,35 @@ vocabulary <http://example.com/eds-oml/vocabulary/DataType#> as DataType {
 	@rdfs:comment "Describes the syntax and semantics of units of data that flow through interfaces"
 	concept DataType < aspects:IdentifiedThing
 
-	scalar DataTypeValue [
-		oneOf "Array", "Binary", "Boolean", "Container", "Enumerated", "Float", "Integer", "String", "SubRange"
-	]
-
 	concept DataTypeSet
 	
-	scalar property DataTypeSetType [
-		domain DataType
-		range DataTypeValue
+	relation Element[
+		from DataTypeSet
+		to DataType
 	]
 
 	concept Array < DataType
+	
+	concept Binary < DataType
+	
+	concept Boolean < DataType
 
 	concept Container < DataType
+	
+	concept Enumerated < DataType
+	
+	concept Float < DataType
+	
+	concept Integer < DataType
 
 	concept Scalar < DataType
 
 	concept Range < aspects:IdentifiedThing
 
 	@rdfs:comment " Scalar Data Types can be limited by Ranges"
-	relation entity RangeLimitsScalar [
+	relation RangeLimitsScalar [
 		from Range
 		to Scalar
-		forward limitsScalar
-		reverse isLimitedByRange
-		functional
-		inverse functional
 	]
 
 	@rdfs:comment "Containers are aggregate data types with named entries"
