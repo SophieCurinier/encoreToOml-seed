@@ -7,8 +7,6 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 
 	uses <http://example.com/eds-oml/vocabulary/Component#> as component
 
-	uses <http://example.com/eds-oml/vocabulary/Package#> as package
-
 	uses <http://example.com/eds-oml/vocabulary/Metadata#> as metadata
 
 	uses <http://example.com/eds-oml/vocabulary/Interface#> as interface
@@ -21,8 +19,6 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 
 	uses <http://example.com/eds-oml/vocabulary/DataSheet#> as dataSheet
 
-	uses <http://example.com/eds-oml/vocabulary/Device#> as device
-
 	uses <http://example.com/eds-oml/vocabulary/Field#> as field
 
 	// ------------- DataSheet -------------------- //
@@ -32,23 +28,23 @@ description <http://example.com/eds-oml/description/lamp#> as lamp {
 	]
 
 	// ------------- Device -------------------- //
-	instance Lamp : device:Device [
+	instance Lamp : dataSheet:Device [
 		aspects:hasId "L.01"
 		aspects:hasCanonicalName "Lamp LED"
-		device:DeviceContainsMetadatas MetadataSet
+		dataSheet:DeviceContainsMetadatas MetadataSet
 	]
 
-	instance Lamp2 : device:Device [
+	instance Lamp2 : dataSheet:Device [
 		aspects:hasId "L.02"
 		aspects:hasCanonicalName "Lamp LED2"
-		device:DeviceContainsMetadatas MetadataSet
+		dataSheet:DeviceContainsMetadatas MetadataSet
 	]
 
 	// ------------- Package -------------------- //
-	instance Package : package:Package [
-		package:PackageContainsComponents ComponentSet
-		package:PackageDeclaresInterfaces InterfaceSet
-		package:PackageDefinesDataTypes DataTypeSet
+	instance Package : dataSheet:Package [
+		dataSheet:PackageContainsComponents ComponentSet
+		dataSheet:PackageDeclaresInterfaces InterfaceSet
+		dataSheet:PackageDefinesDataTypes DataTypeSet
 	]
 
 	// ------------- DataType -------------------- //	

@@ -21,7 +21,6 @@ vocabulary <http://example.com/eds-oml/vocabulary/StateMachine#> as StateMachine
 	
 	scalar property defaultEntryState [
 		domain StateMachine
-		range State
 		functional
 	]
 
@@ -33,20 +32,41 @@ vocabulary <http://example.com/eds-oml/vocabulary/StateMachine#> as StateMachine
 		from VariableSet
 		to Variable
 	]
-
-	scalar State [
-		oneOf "EntryState", "ExitState", "State", "Transition"
+	
+	concept StateList
+	
+	concept State < StateList
+	concept Transition < StateList
+	concept EntryState < StateList
+	concept ExitState < StateList
+	
+	scalar property OnEntry[
+		domain State
+		functional
+	]
+	scalar property OnExit[
+		domain State
+		functional
+	]
+	
+	scalar property Guard[
+		domain Transition
+		functional
+	]
+	scalar property Do[
+		domain Transition
+		functional
 	]
 
+	
+	relation StateSet[
+		from StateMachine
+		to StateList
+	]
 
-
-	@rdfs:comment "State Machine controls the execution of a set of Activities "
-	relation entity StateMachineControlsActivity [
+	relation StateMachineControlsActivity[
 		from StateMachine
 		to activity:Activity
-		forward controlsActivity
-		reverse isControledByStateMachine
-		functional
-		inverse functional
 	]
+
 }
