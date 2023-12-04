@@ -53,11 +53,11 @@ cd EncoreToOML-seed/oml-eds
 
 ## Visualization
 
-Charles part : Explain how to create visualisation and wich module (Eclipse sirius) must be add.
+We use Eclipse Sirius to do the visualisation part of our model.
 
 ## Demonstration
 
-This is a video [demonstration]().
+This is a video [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/watch?v=f0WnGYHURZI/0.jpg)](https://www.youtube.com/watch?v=f0WnGYHURZI)
 
 ## Contact
 
