@@ -1,0 +1,9 @@
+PREFIX structure: <http://example.com/eds-oml/vocabulary/structure#>
+
+SELECT ?device ?metadata
+WHERE {
+  ?device a <http://example.com/eds-oml/vocabulary/Concept#Device>.
+  ?metadata a <http://example.com/eds-oml/vocabulary/Metadata#Metadata>.
+  ?device <http://example.com/eds-oml/vocabulary/Relations#containsMetadata> ?metadata.
+}
+
