@@ -1,0 +1,9 @@
+PREFIX structure: <http://example.com/eds-oml/vocabulary/structure#>
+
+SELECT ?activity ?component
+WHERE {
+  ?activity a <http://example.com/eds-oml/vocabulary/Activity#Activity>.
+  ?component a <http://example.com/eds-oml/vocabulary/Component#Component>.
+  ?activity <http://example.com/eds-oml/vocabulary/Relations#containsComponent> ?component.
+}
+
