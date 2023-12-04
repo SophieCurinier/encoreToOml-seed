@@ -7,34 +7,28 @@ vocabulary <http://example.com/eds-oml/vocabulary/Aspects#> as Aspects {
 
 	extends <http://purl.org/dc/elements/1.1/> as dc
 
-	extends <http://example.com/eds-oml/vocabulary/Activity#> as Activity
+	@rdfs:comment "The super-type for each concept that requires name and ID (and optional description)"
+	aspect IdentifiedThing 
 
-	extends <http://example.com/eds-oml/vocabulary/Metadata#> as Metadata
-
-	@rdfs:comment "The class of things that are uniquely identified by id"
-	aspect IdentifiedThing [
-		key hasId
-	]
-
-	@rdfs:comment "The has canonical name property"
+	@rdfs:comment "The name property"
 	scalar property hasCanonicalName [
 		domain IdentifiedThing
 		range xsd:string
 	]
 
-	@rdfs:comment "The short description of a namedEntitype"
+	@rdfs:comment "The short description of a concept"
 	scalar property shortDescription [
 		domain IdentifiedThing
 		range xsd:string
 	]
 
-	@rdfs:comment "The long description of a namedEntitype"
+	@rdfs:comment "The long description of a concept"
 	scalar property longDescription [
 		domain IdentifiedThing
 		range xsd:string
 	]
 
-	@rdfs:comment "The id property of an identified thing"
+	@rdfs:comment "The id property of a concept, must be unique"
 	scalar property hasId [
 		domain IdentifiedThing
 		range xsd:string

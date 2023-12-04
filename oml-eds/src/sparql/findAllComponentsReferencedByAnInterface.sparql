@@ -1,0 +1,10 @@
+PREFIX structure: <http://example.com/eds-oml/vocabulary/structure#>
+
+SELECT ?component ?interface
+WHERE {
+  ?component a <http://example.com/eds-oml/vocabulary/Component#Component>.
+  ?interface a <http://example.com/eds-oml/vocabulary/Interface#Interface>.
+  ?component <http://example.com/eds-oml/vocabulary/Relations#referencesInterface> ?interface.
+}
+
+
