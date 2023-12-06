@@ -59,6 +59,10 @@ Charles part : Explain how to create visualisation and wich module (Eclipse siri
 
 This is a video [demonstration]().
 
+## Documentation
+
+In this [document](./Documentation.md), you will find the purpose on our project, its challenges and all the doucmentation about it.
+
 ## Contact
 
 - Swendart : [Sophie Curinier](www.linkedin.com/in/sophie-curinier)
