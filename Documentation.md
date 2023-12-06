@@ -49,8 +49,49 @@ These previous works collectively highlight the industry's trajectory towards st
 
 ## Abstract Syntax
 
-## Concret Syntax 
+## Concret Syntax
 
 ## Validation rules
 
-## Transformatoin
+## Transformation
+
+In our EDS project, we employ transformation techniques focusing on translating structured data models into readable and informative formats. 
+This transformation process is pivotal in the realm of DSML, as it bridges the gap between complex data models and practical, user-friendly representations.
+So, we developed a Model-to-Text transformation using a template-based approach. This is implemented in a [Jupyter notebook](./oml-eds/src/ipynb/index.ipynb) that combines static parts explaining the organization of the Electronic Data Sheets (EDS) and dynamic Python segments. These dynamic parts utilize Python with the pandas library and PlantUML, processing JSON files generated in response to SPARQL queries.
+
+Additionally, we established a CI/CD pipeline using GitHub Actions. This pipeline automates the building of our Gradle project, mapping to OSL, responding to OWL queries, and constructing the Jupyter notebook for display on a GitHub page.
+
+Our approach revolves around several key transformations:
+
+### Transformation 1 : Device & Metadata
+
+This [Device-Metadata](oml-eds/src/sparql/device_metadata.sparql) transformation leverages SPARQL query to fetch and associate devices, represented by their id and canonical name, with their metadata, also represented by their id and canonical name. 
+The objective is to present a clear view of devices and their metadata attributes within the EDS ecosystem. We utilize tree graphs for visualization, ensuring each device and its metadata are distinctly represented, facilitating easy comprehension and analysis. Each node, is represented by a concatennation of their id and name for more simplicity.
+
+![Device & Metadata](./result/transformation_device-metadata.png)
+
+### Tranformation 2 : Component set
+
+This [Component Set](oml-eds/src/sparql/componentSet.sparql) query extracts the identifiers and names of component sets and their respective components, highlighting the structure and organization of components within the system. 
+Here, the focus is on illustrating the organization of components within their respective sets. 
+To do this, we generate an object diagram. 
+This diagram serves as a visual guide to the arrangement and grouping of components, highlighting the good structure of our components.
+
+![Component set](./result/transformation_componentSet.png)
+
+### Tranformation 3 : Components & interfaces
+This [Components-Interfaces](./oml-eds/src/sparql/component_interface.sparql) offers insights into the relationships between components and their interfaces.
+This transformation is crucial for understanding the interaction and interdependencies of various system elements. The visualization aids in dissecting the complex network of components and interfaces, making it easier to grasp their roles and connections.
+A component diagram visualizes these networks, labeling relationships as required, provided, or declared interfaces.
+
+![Components & interfaces diagram](./result/transformation_component-interface.png)
+
+### Transforamtion 4 : Interaface & co
+
+[Interface](oml-eds/src/sparql/interfaces.sparql) query extracts detailed information about interfaces, including their associated commands, generic types, and sets. It reveals the ID and name of each interface, command, and component, providing a comprehensive overview of the interface architecture. This 
+The SPARQL query provided a detailed breakdown of each interface's characteristics and its role within the system.
+Finaly, these data are displayed in a tabular format for clarity
+
+![Interface & co](./result/transformation_interface.png)
+
+Each of these transformations is designed to make the intricate data of EDS more accessible and understandable, catering to both technical and non-technical stakeholders. This approach not only aids in effective data interpretation but also enhances the usability of DSML in practical scenarios.
