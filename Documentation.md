@@ -45,13 +45,46 @@ Furthermore, the TASTE toolset, a model-driven development environment for real-
 
 These previous works collectively highlight the industry's trajectory towards standardized, model-driven approaches to space systems engineering. They reflect the growing recognition of the benefits of EDS and MDE, from enhancing system interoperability and reliability to reducing development time and costs. As the current project builds on these foundations, it seeks to further these benefits by broadening the application of EDS and MDE principles in the space industry.
 
-## Methodology
-
 ## Abstract Syntax
 
-## Concret Syntax
+### Aspect
 
-## Validation rules
+For our model, we've decided to create a single aspect that will be the common root of all our concepts, which we'll then define. This aspect will therefore be IdentifiedThing. Two ideas motivated this choice. The first is that it's convenient to have a super-entity as the head of the model in terms of model structure. The second is that every attribute of this entity will also be an attribute of each of our concepts. We have therefore given 4 attributes:
+- hasCanonicalName to name all our concepts
+- hasId to assign a unique identifier to each of our concepts, enabling them to be found and identified quickly and easily
+- shortDescription
+- longDescription to describe the role of each concept in greater detail
+
+### Concept
+
+We have defined two concept categories:
+1)  The main concepts, which will be the main entities in our model. All the other entities in our model will derive from these 9 concepts. As an indication, our code is structured in 9 files, corresponding more or less to these 9 main concepts. We list these concepts below:
+- Datasheet : Contains all known information about a particular device or package
+- Device : A physical element of a system accessed through subnetwork-layer interfaces
+- Package : Packages describe a related set of components, data types, and interfaces
+- Metadata : Contains manufacturers information and useful data (electrica feature...)
+- Component : Components describe entities that have interfaces and computational behaviour
+- Interface : Defines connections between components and datatypes
+- State Machine : Responds to event and schedules the execution of activities
+- Activity : An activity is a block of executable statements whose invocation is controlled by
+one or more state machines
+- DataType : Describes the syntax and semantics of units of data that flow through interfaces
+
+The second category of concepts corresponds to the sub-concepts derived from the main concepts. We won't go into detail on each sub-concept, but simply illustrate with an example. The Interface concept contains three sub-concepts:
+- Parameter 
+- Command
+- GenericType
+- Argument
+These sub-concepts add depth to the basic concepts, enabling us to provide more detail when describing a product. We'll see later in the concrete syntax section how these sub-concepts can help in understanding and describing a product. 
+
+### Relations
+
+Relationships define the link between two concepts, and can be of several types:
+- Symmetrical: the link between two concepts runs in both directions
+- Functional: concept 1 can contain at most one concept 2
+Relationships are very explicit on diagrams, so we won't develop their roles further in this document.
+
+## Concrete Syntax
 
 ## Transformation
 
