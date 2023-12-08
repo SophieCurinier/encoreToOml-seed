@@ -86,6 +86,13 @@ Relationships are very explicit on diagrams, so we won't develop their roles fur
 
 ## Concrete Syntax
 
+In this part, we had to find a way of expressing our model in concrete terms. We chose to represent it in diagrammatic form by describing a lamp model. To do this, we used the description part of our model, which allows us to create a model instance using the vocabulary described in the abstract part. What we wanted to highlight in this section are the following points:
+- The fact that our model is functional and allows us to describe the datasheet of a classic device such as a lamp in complete detail.
+- The value of creating different levels of concepts to aid understanding when reading the diagram.  
+- The fact that it is not necessary to use all the vocabularies described in the abstract section, but only those useful for describing the desired model. In our lamp example, we focused on the Metadata, Components and Interface sections, which were the most relevant in this case. Indeed, a vocabulary needs to be broad and complete in order to be able to describe as many different models as possible, but not every model needs to use all this vocabulary. 
+
+This diagram is accessible in the Lamp Editor file, under Lamp.oml in the description section. The advantage of this visualization is that it is interactive, i.e. the user can immediately add or remove instances, relations... and modify the structure of the diagram as required. This was the main objective of this section: to create a practical interface for the user to describe the model he wants using our vocabulary.  
+
 ## Transformation
 
 In our EDS project, we employ transformation techniques focusing on translating structured data models into readable and informative formats. 
