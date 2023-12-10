@@ -59,6 +59,10 @@ We use Eclipse Sirius to do the visualisation part of our model.
 
 This is a video [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/watch?v=f0WnGYHURZI/0.jpg)](https://www.youtube.com/watch?v=f0WnGYHURZI)
 
+## Documentation
+
+In this [document](./Documentation.md), you will find the purpose on our project, its challenges and all the doucmentation about it.
+
 ## Contact
 
 - Swendart : [Sophie Curinier](www.linkedin.com/in/sophie-curinier)
